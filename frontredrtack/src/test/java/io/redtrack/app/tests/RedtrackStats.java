@@ -57,12 +57,9 @@ public class RedtrackStats {
 
     @Test (groups = "Login")
     public void login() {
-        loginPage
-                .inputLogin(Variables.login2);
-        loginPage
-                .inputPassword(Variables.password1);
-        loginPage
-                .clickSubmitButton();
+        loginPage.inputLogin(Variables.login2);
+        loginPage.inputPassword(Variables.password1);
+        loginPage.clickSubmitButton();
         CheckParam = checkingParam.getUserName();
         if (Variables.usrnm.equals(CheckParam)){
             Mess.newdDateInfo();

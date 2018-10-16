@@ -41,7 +41,6 @@ public class ForCheckingStats {
 
     @FindBy(xpath = "(.//*[normalize-space(text()) and normalize-space(.)='#01 Source'])[4]/following::div[2]")
     public static WebElement ClicksClicks;
-
     public static String getClicks(){
         String valueOfClicks = ClicksClicks.getText();
         return valueOfClicks;

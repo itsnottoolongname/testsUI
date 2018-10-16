@@ -77,16 +77,12 @@ public class RedtrackNavigation {
     @Test(groups = "Nav")
     public void Login() throws InterruptedException {
         date = new Date();
-        loginPage
-                .inputLogin(Variables.login1);
-        loginPage
-                .inputPassword(password1);
+        loginPage.inputLogin(Variables.login1);
+        loginPage.inputPassword(password1);
         driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
         Thread.sleep(5000);
-        loginPage
-                .clickSubmitButton();
-        String username = checkingParam
-                .getUserName();
+        loginPage.clickSubmitButton();
+        String username = checkingParam.getUserName();
         Thread.sleep(15000);
         Assert.assertEquals(usrnm, username) ;
         driver.manage().timeouts().implicitlyWait(10000, TimeUnit.SECONDS);
@@ -104,11 +100,9 @@ public class RedtrackNavigation {
     @Test (groups = "Nav", dependsOnMethods = "Login")
     public void campPage() throws InterruptedException {
         date = new Date();
-        navigation
-                .pageCampaigns();
+        navigation.pageCampaigns();
         Thread.sleep(5000);
-        CheckopenedPage = checkingParam
-                .getCheckOpenedPage();
+        CheckopenedPage = checkingParam.getCheckOpenedPage();
         Assert.assertEquals(page0,CheckopenedPage);
         if ( page0.equals(CheckopenedPage)){
             System.out.print("["+date.toString()+"]: ");
@@ -124,11 +118,9 @@ public class RedtrackNavigation {
     @Test (groups = "Nav", dependsOnMethods = "campPage")
     public void offersPage() throws InterruptedException{
         date = new Date();
-        navigation
-                .pageOffers();
+        navigation.pageOffers();
         Thread.sleep(5000);
-        CheckopenedPage = checkingParam
-                .getCheckOpenedPage();
+        CheckopenedPage = checkingParam.getCheckOpenedPage();
         Assert.assertEquals(page1, CheckopenedPage);
         if (page1.equals(CheckopenedPage)){
             System.out.print("["+date.toString()+"]: ");
@@ -144,11 +136,9 @@ public class RedtrackNavigation {
     @Test (groups = "Nav", dependsOnMethods = "offersPage")
     public void landersPage() throws  InterruptedException{
         date = new Date();
-        navigation
-                .pageLanders();
+        navigation.pageLanders();
         driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
-        CheckopenedPage = checkingParam
-                .getCheckOpenedPage();
+        CheckopenedPage = checkingParam.getCheckOpenedPage();
         Assert.assertEquals(page2, CheckopenedPage);
         if (page2.equals(CheckopenedPage)){
             System.out.print("["+date.toString()+"]: ");
@@ -164,11 +154,9 @@ public class RedtrackNavigation {
     @Test (groups = "Nav", dependsOnMethods = "landersPage")
     public void networksPage() throws InterruptedException{
         date = new Date();
-        navigation
-                .pageNetworks();
+        navigation.pageNetworks();
         driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
-        CheckopenedPage = checkingParam
-                .getCheckOpenedPage();
+        CheckopenedPage = checkingParam.getCheckOpenedPage();
         Assert.assertEquals(page3, CheckopenedPage);
         if (page3.equals(CheckopenedPage)){
             System.out.print("["+date.toString()+"]: ");
@@ -185,11 +173,9 @@ public class RedtrackNavigation {
     @Test (groups = "Nav", dependsOnMethods = "networksPage")
     public void tSpage() throws InterruptedException {
         date = new Date();
-        navigation
-                .SourcePage();
+        navigation.SourcePage();
         driver.manage().timeouts().implicitlyWait(10,TimeUnit.SECONDS);
-        CheckopenedPage = checkingParam
-                .getCheckOpenedPage();
+        CheckopenedPage = checkingParam.getCheckOpenedPage();
         Assert.assertEquals(page4, CheckopenedPage);
         if (page4.equals(CheckopenedPage)){
             System.out.print("["+date.toString()+"]: ");
@@ -205,11 +191,9 @@ public class RedtrackNavigation {
     @Test (groups = "Nav", dependsOnMethods = "tSpage")
     public void domainsPage() throws InterruptedException{
         date = new Date();
-        navigation
-                .pageDomains();
+        navigation.pageDomains();
         driver.manage().timeouts().implicitlyWait(10,TimeUnit.SECONDS);
-        CheckopenedPage = checkingParam
-                .getCheckOpenedPage();
+        CheckopenedPage = checkingParam.getCheckOpenedPage();
         Assert.assertEquals(page5, CheckopenedPage);
         if (page5.equals(CheckopenedPage)){
             System.out.print("["+date.toString()+"]: ");
@@ -225,11 +209,9 @@ public class RedtrackNavigation {
     @Test (groups = "Nav", dependsOnMethods = "domainsPage")
     public void dashBoardPage() throws InterruptedException{
         date = new Date();
-        navigation
-                .pageDashboard();
+        navigation.pageDashboard();
         driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
-        CheckopenedPage = checkingParam
-                .getCheckOpenedPage();
+        CheckopenedPage = checkingParam.getCheckOpenedPage();
         Assert.assertEquals(page6, CheckopenedPage);
         if (page6.equals(CheckopenedPage)){
             System.out.print("["+date.toString()+"]: ");
@@ -245,13 +227,10 @@ public class RedtrackNavigation {
     @Test (groups = "NavLogs", dependsOnMethods = "dashBoardPage")
     public void logsClicksPage () throws InterruptedException {
         date = new Date();
-        navigation
-                .dropDownLogs();
+        navigation.dropDownLogs();
         driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
-        navigation
-                .pageClicks();
-        CheckopenedPage = checkingParam
-                .getCheckOpenegPage2();
+        navigation.pageClicks();
+        CheckopenedPage = checkingParam.getCheckOpenegPage2();
         Assert.assertEquals(logspage0, CheckopenedPage);
         if (logspage0.equals(CheckopenedPage)) {
             System.out.print("["+date.toString()+"]: ");
@@ -266,12 +245,9 @@ public class RedtrackNavigation {
     @Test (groups = "NavLogs", dependsOnMethods = "logsClicksPage")
     public void logsConversionPage() throws InterruptedException{
         date = new Date();
-        navigation
-                .dropDownLogs();
-        navigation
-                .pageConversions();
-        CheckopenedPage = checkingParam
-                .getCheckOpenegPage2();
+        navigation.dropDownLogs();
+        navigation.pageConversions();
+        CheckopenedPage = checkingParam.getCheckOpenegPage2();
         Assert.assertEquals(logspage1,CheckopenedPage);
         if (logspage1.equals(CheckopenedPage)){
             System.out.print("["+date.toString()+"]: ");
@@ -287,12 +263,9 @@ public class RedtrackNavigation {
     @Test (groups ="NavLogs", dependsOnMethods = "logsConversionPage")
     public void logsPostbackPage() throws InterruptedException{
         date = new Date();
-        navigation
-                .dropDownLogs();
-        navigation
-                .pagePostbacks();
-        CheckopenedPage = checkingParam
-                .getCheckOpenegPage2();
+        navigation.dropDownLogs();
+        navigation.pagePostbacks();
+        CheckopenedPage = checkingParam.getCheckOpenegPage2();
         Assert.assertEquals(logspage2,CheckopenedPage);
         if (logspage2.equals(CheckopenedPage)){
             System.out.print("["+date.toString()+"]: ");
@@ -308,12 +281,9 @@ public class RedtrackNavigation {
     @Test (groups = "NavTools", dependsOnMethods = "logsPostbackPage")
     public void toolsConversionTracking() throws InterruptedException {
         date = new Date();
-        navigation
-                .dropDownTools();
-        navigation
-                .pageConvTrack();
-        CheckopenedPage = checkingParam
-                .getCheckOpenedPage3();
+        navigation.dropDownTools();
+        navigation.pageConvTrack();
+        CheckopenedPage = checkingParam.getCheckOpenedPage3();
         Assert.assertEquals(toolspage0, CheckopenedPage);
         if (toolspage0.equals(CheckopenedPage)) {
             System.out.print("["+date.toString()+"]: ");
@@ -328,13 +298,10 @@ public class RedtrackNavigation {
 
     @Test (groups = "NavTools", dependsOnMethods = "toolsConversionTracking")
     public void toolsBotBlack() throws InterruptedException{
-        navigation
-                .dropDownTools();
+        navigation.dropDownTools();
         Thread.sleep(5000);
-        navigation
-                .pageBotBlack();
-        CheckopenedPage = checkingParam
-                .getBotBlacklist();
+        navigation.pageBotBlack();
+        CheckopenedPage = checkingParam.getBotBlacklist();
         Assert.assertEquals(toolspage1, CheckopenedPage);
         Thread.sleep(5000);
         date = new Date();
@@ -350,12 +317,9 @@ public class RedtrackNavigation {
 
     @Test (groups = "NavTools", dependsOnMethods = "toolsBotBlack")
     public void toolsDefFallbackURL() throws InterruptedException{
-        navigation
-                .dropDownTools();
-        navigation
-               .pageDefaultFallbackURL();
-        CheckopenedPage = checkingParam
-                .getOpenedPage0();
+        navigation.dropDownTools();
+        navigation.pageDefaultFallbackURL();
+        CheckopenedPage = checkingParam.getOpenedPage0();
         Assert.assertEquals(toolspage2, CheckopenedPage);
         Thread.sleep(3000);
         date = new Date();
@@ -366,17 +330,13 @@ public class RedtrackNavigation {
         else{
             System.out.println("Opening page "+toolspage1 +"failed: " +CheckopenedPage);
         }
-
     }
 
     @Test (groups = "NavTools", dependsOnMethods = "toolsDefFallbackURL")
     public void toolsFilterPresets() throws InterruptedException{
-        navigation
-                .dropDownTools();
-        navigation
-                .pageFilterPresets();
-        CheckopenedPage = checkingParam
-                .getOpenedPage4();
+        navigation.dropDownTools();
+        navigation.pageFilterPresets();
+        CheckopenedPage = checkingParam.getOpenedPage4();
         Assert.assertEquals(toolspage3, CheckopenedPage);
         Thread.sleep(3000);
         date = new Date();
@@ -391,12 +351,9 @@ public class RedtrackNavigation {
 
     @Test (groups = "NavTools", dependsOnMethods = "toolsFilterPresets")
     public void toolsAPIDocumentation() throws InterruptedException{
-        navigation
-                .dropDownTools();
-        navigation
-                .pageAPI_Documentation();
-        CheckopenedPage = checkingParam
-                .getOpenedApiPage();
+        navigation.dropDownTools();
+        navigation.pageAPI_Documentation();
+        CheckopenedPage = checkingParam.getOpenedApiPage();
         Assert.assertEquals(toolsApiPage, CheckopenedPage);
         Thread.sleep(3000);
         date = new Date();
@@ -407,7 +364,6 @@ public class RedtrackNavigation {
         else{
             System.out.println("Opening page "+toolsApiPage +"failed: " +CheckopenedPage);
         }
-
     }
 
 

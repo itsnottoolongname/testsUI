@@ -3,7 +3,6 @@ package io.redtrack.app.tests;
 import io.redtrack.app.other.*;
 import io.redtrack.app.pages.*;
 import io.redtrack.app.variable.*;
-
 //import org.junit.AfterClass;
 import io.redtrack.app.variable.Variables;
 import org.junit.Assert;
@@ -11,9 +10,7 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import java.util.Date;
 import org.testng.annotations.*;
-
 import java.util.concurrent.TimeUnit;
-
 
 public class RedtrackLogin {
 
@@ -30,7 +27,6 @@ public class RedtrackLogin {
 
                     usernotfound = "User not found",
                     cheklogin = "Logs";
-
     public String
             windowHandle,
             invalidcred,
@@ -46,18 +42,13 @@ public class RedtrackLogin {
         driver.switchTo().window(windowHandle);
         driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
         driver.get("https://app.redtrack.io/signin");
-
     }
 
     @Test (groups = "cheking")
-    public void InvalidLogin() throws InterruptedException {
-        loginPage
-                .inputLogin(login2);
-        loginPage
-                .inputPassword(password2);
-        loginPage
-                .clickSubmitButton();
-        Thread.sleep(5000);
+    public void InvalidLogin(){
+        loginPage.inputLogin(login2);
+        loginPage.inputPassword(password2);
+        loginPage.clickSubmitButton();
         driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
         invalidcred = checkingParam.getInvalidCred();
         driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
@@ -69,18 +60,13 @@ public class RedtrackLogin {
             System.out.println("["+date+"]: "+"Somthing went wrong: Test 'InvalidLogin' FAILED");
         }
         Assert.assertEquals(usernotfound, invalidcred);
-        Thread.sleep(3000);
-
     }
 
     @Test (groups = "cheking", dependsOnMethods = "InvalidLogin")
-    public void Login() throws InterruptedException {
-        loginPage
-                .inputLogin(Variables.login1);
-        loginPage
-                .inputPassword(password1);
-        loginPage
-                .clickSubmitButton();
+    public void Login(){
+        loginPage.inputLogin(Variables.login1);
+        loginPage.inputPassword(password1);
+        loginPage.clickSubmitButton();
         username = checkingParam.getUserName();
         date = new Date();
         if (cheklogin.equals(username)){
@@ -91,14 +77,11 @@ public class RedtrackLogin {
         }
         Assert.assertEquals(cheklogin, username);
         driver.manage().timeouts().implicitlyWait(10000, TimeUnit.SECONDS);
-        Thread.sleep(3000);
-
     }
 
     @Test (groups = "exit", dependsOnGroups = "cheking")
     public void closingDrvr(){
         driver.quit();
-
     }
 
 
