@@ -22,8 +22,6 @@ public class RedtrackStats {
     public static OtherElements otherElements;
     public static ForCheckingStats checkingStats;
 
-    //public static TrafficSources sources;
-
     private String
             windowHandle,
             CheckParam;
@@ -40,7 +38,6 @@ public class RedtrackStats {
         checkingStats = new ForCheckingStats(driver);
         navigation = new Navigation(driver);
         otherElements = new OtherElements(driver);
-        //sources = new TrafficSources(driver);
         windowHandle = driver.getWindowHandle();
         //driver.switchTo().window(windowHandle);
         Mess.newdDateInfo();
@@ -82,73 +79,44 @@ public class RedtrackStats {
     }
 
     @Test(dependsOnMethods = "login")
-    public void campaignsPage() throws InterruptedException{
+    public void campaignsPage(){
         navigation
                 .pageCampaigns();
     }
 
     @Test (dependsOnMethods = "campaignsPage")
     public void checkingCPC(){
-        checkingStats
-                .getSome1();
-        checkingStats
-                .string2Double();
-        checkingStats
-                .renewVar();
-        checkingStats
-                .getSome4();
-        checkingStats
-                .getSometoDouble();
-        checkingStats
-                .valueOFcpc();
-        checkingStats
-                .renewVal();
-        checkingStats
-                .getSome2();
-        checkingStats
-                .string2Double();
-        checkingStats
-                .double2String();
-       // checkingStats
-                //.renewVal();
-        checkingStats
-                .checkingVal();
-       // checkingStats
-                //.getSome3();
+        checkingStats.getSome1();
+        checkingStats.string2Double();
+        checkingStats.renewVar();
+        checkingStats.getSome4();
+        checkingStats.getSometoDouble();
+        checkingStats.valueOFcpc();
+        checkingStats.renewVal();
+        checkingStats.getSome2();
+        checkingStats.string2Double();
+        checkingStats.double2String();
+       // checkingStats.renewVal();
+        checkingStats.checkingVal();
+       // checkingStats.getSome3();
        // System.out.println("-------------------------------------------");
-        //checkingStats
-                //.costString2Double();
-        //checkingStats
-               // .renewVal();
-        //checkingStats
-                //.valOfProfit();
-        //checkingStats
-                //.renewVal();
-        //checkingStats
-                //.getSome5();
-        //checkingStats
-                //.string2DoubleWithMinus();
-        //checkingStats
-                //.correctMinus();
-        //checkingStats
-                //.double2StringMinus();
-        //checkingStats
-                //.checkingVal();
+        //checkingStats.costString2Double();
+        //checkingStats.renewVal();
+        //checkingStats.valOfProfit();
+        //checkingStats.renewVal();
+        //checkingStats.getSome5();
+        //checkingStats.string2DoubleWithMinus();
+        //checkingStats.correctMinus();
+        //checkingStats.double2StringMinus();
+        //checkingStats.checkingVal();
         //System.out.println("==============================================");
-        //checkingStats
-                //.check222();
-        //checkingStats
-                //.renewVar2();
-        //checkingStats
-                //.getSome6();
-        //checkingStats
-                //.getSome6toDouble();
-        //checkingStats
-               //.renewVar2();
-       // checkingStats
-                //.check222();
-        //checkingStats
-                //.checkPercetn();
+        //checkingStats.check222();
+        //checkingStats.renewVar2();
+        //checkingStats.getSome6();
+        //checkingStats.getSome6toDouble();
+        //checkingStats.renewVar2();
+       // checkingStats.check222();
+        //checkingStats.checkPercetn();
 
     }
 

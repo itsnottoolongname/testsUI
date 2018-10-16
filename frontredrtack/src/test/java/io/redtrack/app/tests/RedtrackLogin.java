@@ -10,12 +10,6 @@ import org.junit.Assert;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import java.util.Date;
-//import org.junit.Test;
-//import org.junit.Before;
-//import org.junit.*;
-//import org.junit.runner.RunWith;
-//import org.junit.runners.Suite;
-//import org.junit.runners.Suite.SuiteClasses;
 import org.testng.annotations.*;
 
 import java.util.concurrent.TimeUnit;
@@ -48,9 +42,6 @@ public class RedtrackLogin {
         driver = new ChromeDriver();
         loginPage = new LoginPage(driver);
         checkingParam = new CheckingParam(driver);
-        //navigation = new Navigation(driver);
-        //otherElements = new OtherElements(driver);
-        //sources = new TrafficSources(driver);
         windowHandle = driver.getWindowHandle();
         driver.switchTo().window(windowHandle);
         driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
