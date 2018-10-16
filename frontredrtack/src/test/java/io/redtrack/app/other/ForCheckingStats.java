@@ -120,42 +120,22 @@ public class ForCheckingStats {
         System.out.println("Current 'double' value is: " +valOfClicks);
     }
 
-    public void costString2Double() {
-        newchar = new char[50];
-        newchar = CheckCost.toCharArray();
-        copyOfRange = new char[50];
-        Mess.newdDateInfo();
-        System.out.println("Array 'newchar' has "+newchar.length+" elements");
-        for (i = 1; i != newchar.length; i++){
-            System.arraycopy(newchar, 1, copyOfRange, 0, i);
-        }
-        validArrayLength();
-        Mess.newdDateInfo();
-        System.out.println("New array length is: "+asd+". Creating array for "+asd+" elements");
-        copyOfRange2 = new String();
-        copyOfRange2 = copyOfRange.toString();
-        String stringCopyofRange = String.valueOf(copyOfRange);
-        checkCost = (Double.parseDouble(stringCopyofRange));
-        Mess.newdDateInfo();
-        System.out.println("Current 'double' value is: " +checkCost);
-    }
-
     public void string2DoubleWithMinus() {
         newchar = new char[50];
         newchar = CheckCost.toCharArray();
         copyOfRange = new char[50];
-        System.out.println("newchar has "+newchar.length+" elements");
+        Mess.newdDateInfo();
+        System.out.println("Current array has "+newchar.length+" elements");
         for (i = 1;i != newchar.length; i++){
             System.arraycopy(newchar, 2, copyOfRange, 0, i-1);
         }
         validArrayLength();
-        System.out.println("Array length is: "+asd+". Creating array for "+asd+" elements");
+        Mess.newdDateInfo();
+        System.out.println("New length is: "+asd+". Created array for "+asd+" elements");
         copyOfRange2 = new String();
         copyOfRange2 = copyOfRange.toString();
         String stringCopyofRange = String.valueOf(copyOfRange);
         checkCPC = (Double.parseDouble(stringCopyofRange));
-        System.out.println(copyOfRange);
-        System.out.println(checkCost);
     }
 
     public void string2Double(){
@@ -183,7 +163,11 @@ public class ForCheckingStats {
     }
 
     public void double2StringMinus(){
+        Mess.newdDateInfo();
+        System.out.println("Converting 'double' to 'String'");
         valOfCPC = String.valueOf(check3);
+        Mess.newdDateInfo();
+        System.out.println("'Double' to 'String' successful converted");
     }
 
     public void valueOFcpc(){
@@ -215,7 +199,6 @@ public class ForCheckingStats {
         System.out.println("Val is re-newed");
         Mess.newdDateInfo();
         System.out.println("Result of new value is: " +val3 );
-
     }
 
     public void renewVar(){
@@ -236,18 +219,23 @@ public class ForCheckingStats {
 
     public void checkingVal(){
         if (val3.equals(valOfCPC)){
-            System.out.println("Your destiny is found, congrats: "+val2);
+            Mess.newdDateInfo();
+            System.out.println("Checking value is passed. Expected is: "+val3+". Actual is: "+valOfCPC);
         }
         else{
+            Mess.newdDateInfo();
+            System.out.println("Checking value is failed. Expected is: "+val3+". Actual is: "+valOfCPC);
             Assert.assertEquals(val3,valOfCPC);
-            System.out.println("You are lose. GAME OVER");
         }
     }
 
     public void valOfProfit(){
+        Mess.newdDateInfo();
+        System.out.println("Profit is calculating by **** minus *****");
         val = checkCost - check2;
-        System.out.println("Value is "+val);
         val2 = BigDecimal.valueOf(val).setScale(4,RoundingMode.HALF_DOWN).doubleValue();
+        Mess.newdDateInfo();
+        System.out.println("Calculated Profit is: "+val2);
     }
 
     public void check222(){
@@ -261,7 +249,6 @@ public class ForCheckingStats {
         c = a * 6.02 / 100;
         c = BigDecimal.valueOf(c).setScale(0,RoundingMode.UP).doubleValue();
         System.out.println("Percent is: "+c);
-
         String f;
         f = String.valueOf(c);
         //d = Integer.valueOf(b);

@@ -82,7 +82,9 @@ public class RedtrackStats {
     }
 
     @Test (dependsOnMethods = "campaignsPage")
-    public void checkingCPC(){
+    public void checkingCPC() {
+        Mess.newdDateInfo();
+        System.out.println("Checking of CPC value...");
         checkingStats.getSome1();
         checkingStats.string2Double();
         checkingStats.renewVar();
@@ -93,19 +95,23 @@ public class RedtrackStats {
         checkingStats.getSome2();
         checkingStats.string2Double();
         checkingStats.double2String();
-       // checkingStats.renewVal();
+        // checkingStats.renewVal();
         checkingStats.checkingVal();
-       // checkingStats.getSome3();
-       // System.out.println("-------------------------------------------");
-        //checkingStats.costString2Double();
-        //checkingStats.renewVal();
-        //checkingStats.valOfProfit();
-        //checkingStats.renewVal();
-        //checkingStats.getSome5();
-        //checkingStats.string2DoubleWithMinus();
-        //checkingStats.correctMinus();
-        //checkingStats.double2StringMinus();
-        //checkingStats.checkingVal();
+    }
+
+    @Test(dependsOnMethods = "checkingCPC")
+    public void checkingProfit(){
+        Mess.newdDateInfo();
+        System.out.println("Checking of Profit value...");
+        checkingStats.getSome3();
+        checkingStats.string2Double();
+        checkingStats.valOfProfit();
+        checkingStats.renewVal();
+        checkingStats.getSome5();
+        checkingStats.string2DoubleWithMinus();
+        checkingStats.correctMinus();
+        checkingStats.double2StringMinus();
+        checkingStats.checkingVal();
         //System.out.println("==============================================");
         //checkingStats.check222();
         //checkingStats.renewVar2();
