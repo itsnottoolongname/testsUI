@@ -16,17 +16,17 @@ public class ForCheckingStats {
     }
 
     public WebDriver driver;
-    public  String CheckCost;
+    public String CheckCost;
 
     public double checkCost, valOfClicks, checkCPC, val2, val, check2, check3, check4, c, b;
 
-    public  char[] newchar;
-    public  char[] copyOfRange;
-    public  String copyOfRange2, valOfCPC, val3;
+    public char[] newchar;
+    public char[] copyOfRange;
+    public String copyOfRange2, valOfCPC, val3;
     public int i = 1;
     public int asd;
 
-    public void validArrayLength(){
+    public void validArrayLength() {
         asd = newchar.length - 1;
     }
 
@@ -41,167 +41,114 @@ public class ForCheckingStats {
 
     @FindBy(xpath = "(.//*[normalize-space(text()) and normalize-space(.)='#01 Source'])[4]/following::div[2]")
     public static WebElement ClicksClicks;
-    public static String getClicks(){
+
+    public static String getClicks() {
         String valueOfClicks = ClicksClicks.getText();
         return valueOfClicks;
     }
 
-    @FindBy(xpath = ".//*[normalize-space(text()) and normalize-space(.)='-$157.00'][1]/following::div[2]")
+    @FindBy(xpath = "/html[1]/body[1]/div[1]/div[1]/div[1]/div[2]/div[1]/div[1]/div[2]/div[1]/div[3]/div[1]/div[1]/div[1]/div[1]/div[2]/div[4]/div[1]/div[19]")
     public WebElement CheckingCPC;
-    public String getCheckingCPC(){
+
+    public String getCheckingCPC() {
         String checkingCPC = CheckingCPC.getText();
         return checkingCPC;
     }
 
     @FindBy(xpath = "(.//*[normalize-space(text()) and normalize-space(.)='#01 Source'])[4]/following::div[11]")
     public WebElement Revenue;
-    public String getRevenue(){
+
+    public String getRevenue() {
         String checkRevenue = Revenue.getText();
         return checkRevenue;
     }
 
-    @FindBy(xpath = "(.//*[normalize-space(text()) and normalize-space(.)='$180.00'])[1]/following::div[1]")
+    @FindBy(xpath = "/html[1]/body[1]/div[1]/div[1]/div[1]/div[2]/div[1]/div[1]/div[2]/div[1]/div[3]/div[1]/div[1]/div[1]/div[1]/div[2]/div[4]/div[1]/div[17]")
     public WebElement Profit;
-    public String getProfit(){
+
+    public String getProfit() {
         String checkProfit = Profit.getText();
         return checkProfit;
     }
 
     @FindBy(xpath = "(.//*[normalize-space(text()) and normalize-space(.)='#01 Source'])[4]/following::div[7]")
     public WebElement ConversionRate;
-    public String getConversionRate(){
+
+    public String getConversionRate() {
         String checkConversionRate = ConversionRate.getText();
         return checkConversionRate;
     }
 
     @FindBy(xpath = "(.//*[normalize-space(text()) and normalize-space(.)='#01 Source'])[4]/following::div[8]")
     public WebElement CRpercent;
-    public String getCRpercent(){
+
+    public String getCRpercent() {
         String checkCRpercent = CRpercent.getText();
         return checkCRpercent;
     }
 
-
-    public void getSome1(){
+    public void getSome1() {
         CheckCost = getCheckingCosts();
     }
 
-    public void getSome2(){
+    public void getSome2() {
         CheckCost = getCheckingCPC();
     }
 
-    public void getSome3(){
+    public void getSome3() {
         CheckCost = getRevenue();
     }
 
-    public void getSome4(){
+    public void getSome4() {
         CheckCost = getClicks();
     }
 
-    public void getSome5(){
+    public void getSome5() {
         CheckCost = getProfit();
     }
 
-    public void getSome6(){
+    public void getSome6() {
         CheckCost = getConversionRate();
     }
 
-    public void getSome7(){
+    public void getSome7() {
         CheckCost = getCRpercent();
     }
 
-    public void getSometoDouble(){
+    public void getSometoDouble() {
         Mess.newdDateInfo();
         System.out.println("Converting 'String' to 'double'");
         valOfClicks = (Double.parseDouble(CheckCost));
         Mess.newdDateInfo();
         System.out.println("'String' to 'double' successful converted");
         Mess.newdDateInfo();
-        System.out.println("Current 'double' value is: " +valOfClicks);
+        System.out.println("Current 'double' value is: " + valOfClicks);
     }
 
-    public void string2DoubleWithMinus() {
-        newchar = new char[50];
-        newchar = CheckCost.toCharArray();
-        copyOfRange = new char[50];
-        Mess.newdDateInfo();
-        System.out.println("Current array has "+newchar.length+" elements");
-        for (i = 1;i != newchar.length; i++){
-            System.arraycopy(newchar, 2, copyOfRange, 0, i-1);
-        }
-        validArrayLength();
-        Mess.newdDateInfo();
-        System.out.println("New length is: "+asd+". Created array for "+asd+" elements");
-        copyOfRange2 = new String();
-        copyOfRange2 = copyOfRange.toString();
-        String stringCopyofRange = String.valueOf(copyOfRange);
-        checkCPC = (Double.parseDouble(stringCopyofRange));
-    }
-
-    public void string2Double(){
-        newchar = new char[50];
-        newchar = CheckCost.toCharArray();
-        copyOfRange = new char[50];
-        Mess.newdDateInfo();
-        System.out.println("Current array has "+newchar.length+" elements");
-        for (i = 1; i != newchar.length; i++){
-            System.arraycopy(newchar, 1, copyOfRange, 0, i);
-        }
-        validArrayLength();
-        Mess.newdDateInfo();
-        System.out.println("New length is: "+asd+". Created array for "+asd+" elements");
-        copyOfRange2 = new String();
-        copyOfRange2 = copyOfRange.toString();
-        String stringCopyofRange = String.valueOf(copyOfRange);
-        Mess.newdDateInfo();
-        System.out.println("Converting 'String' to 'double'");
-        checkCost = (Double.parseDouble(stringCopyofRange));
-        Mess.newdDateInfo();
-        System.out.println("'String' to 'double' successful converted");
-        Mess.newdDateInfo();
-        System.out.println("Current 'double' value is: " +checkCost);
-    }
-
-    public void double2StringMinus(){
-        Mess.newdDateInfo();
-        System.out.println("Converting 'double' to 'String'");
-        valOfCPC = String.valueOf(check3);
-        Mess.newdDateInfo();
-        System.out.println("'Double' to 'String' successful converted");
-    }
-
-    public void valueOFcpc(){
+    public void valueOFcpc() {
         Mess.newdDateInfo();
         System.out.println("Cost per Clicks is calculating by Cost dividing by Clicks");
         val = checkCost / valOfClicks;
-        val2 = BigDecimal.valueOf(val).setScale(4,RoundingMode.HALF_DOWN).doubleValue();
+        val2 = BigDecimal.valueOf(val).setScale(4, RoundingMode.HALF_DOWN).doubleValue();
         Mess.newdDateInfo();
-        System.out.println("Calculated CPC is: "+val2);
+        System.out.println("Calculated CPC is: " + val2);
     }
 
-    public void double2String(){
-        Mess.newdDateInfo();
-        System.out.println("Converting 'double' to 'String'");
-        valOfCPC = String.valueOf(checkCost);
-        Mess.newdDateInfo();
-        System.out.println("'Double' to 'String' successful converted");
-    }
-
-    public void correctMinus(){
+    public void correctMinus() {
         check3 = checkCPC - checkCPC * 2;
     }
 
-    public void renewVal(){
+    public void renewVal() {
         Mess.newdDateInfo();
         System.out.println("Re-newing Val");
         val3 = String.valueOf(val2);
         Mess.newdDateInfo();
         System.out.println("Val is re-newed");
         Mess.newdDateInfo();
-        System.out.println("Result of new value is: " +val3 );
+        System.out.println("Result of new value is: " + val3);
     }
 
-    public void renewVar(){
+    public void renewVar() {
         Mess.newdDateInfo();
         System.out.println("Re-newing Var");
         check2 = checkCost;
@@ -209,7 +156,7 @@ public class ForCheckingStats {
         System.out.println("Var is re-newed");
     }
 
-    public void renewVar2(){
+    public void renewVar2() {
         Mess.newdDateInfo();
         System.out.println("Re-newing Var");
         check4 = valOfClicks;
@@ -217,45 +164,140 @@ public class ForCheckingStats {
         System.out.println("Var is re-newed");
     }
 
-    public void checkingVal(){
-        if (val3.equals(valOfCPC)){
+    public void checkingVal() {
+        if (val3.equals(valOfCPC)) {
             Mess.newdDateInfo();
-            System.out.println("Checking value is passed. Expected is: "+val3+". Actual is: "+valOfCPC);
-        }
-        else{
+            System.out.println("Checking value is passed. Expected is: " + val3 + ". Actual is: " + valOfCPC);
+        } else {
             Mess.newdDateInfo();
-            System.out.println("Checking value is failed. Expected is: "+val3+". Actual is: "+valOfCPC);
-            Assert.assertEquals(val3,valOfCPC);
+            System.out.println("Checking value is failed. Expected is: " + val3 + ". Actual is: " + valOfCPC);
+            Assert.assertEquals(val3, valOfCPC);
         }
     }
 
-    public void valOfProfit(){
+    public void valOfProfit() {
         Mess.newdDateInfo();
         System.out.println("Profit is calculating by **** minus *****");
         val = checkCost - check2;
-        val2 = BigDecimal.valueOf(val).setScale(4,RoundingMode.HALF_DOWN).doubleValue();
+        val2 = BigDecimal.valueOf(val).setScale(4, RoundingMode.HALF_DOWN).doubleValue();
         Mess.newdDateInfo();
-        System.out.println("Calculated Profit is: "+val2);
+        System.out.println("Calculated Profit is: " + val2);
     }
 
-    public void check222(){
-        System.out.println(CheckCost+ "   "+copyOfRange2 +"   "+valOfCPC+"   "+val3+ "   "+check3+"   "+valOfClicks+"  "/*+check4);*/);
+    public void check222() {
+        System.out.println(CheckCost + "   " + copyOfRange2 + "   " + valOfCPC + "   " + val3 + "   " + check3 + "   " + valOfClicks + "  "/*+check4);*/);
     }
 
-    public void checkPercetn(){
+    public void checkPercetn() {
         double a;
         a = 465;
         int d;
         c = a * 6.02 / 100;
-        c = BigDecimal.valueOf(c).setScale(0,RoundingMode.UP).doubleValue();
-        System.out.println("Percent is: "+c);
+        c = BigDecimal.valueOf(c).setScale(0, RoundingMode.UP).doubleValue();
+        System.out.println("Percent is: " + c);
         String f;
         f = String.valueOf(c);
         //d = Integer.valueOf(b);
-        System.out.println("Percent string to int is: "+f);
+        System.out.println("Percent string to int is: " + f);
 
     }
 
+    public void stringToDouble(){
+        if (CheckCost.contains("-")){
+            newchar = new char[50];
+            newchar = CheckCost.toCharArray();
+            copyOfRange = new char[50];
+            Mess.newdDateInfo();
+            System.out.println("Array contains minus value. Current array has " + newchar.length + " elements");
+            for (i = 1; i != newchar.length; i++) {
+                System.arraycopy(newchar, 2, copyOfRange, 0, i - 1);
+            }
+            validArrayLength();
+            Mess.newdDateInfo();
+            System.out.println("New length is: " + asd + ". Created array for " + asd + " elements");
+            copyOfRange2 = new String();
+            copyOfRange2 = copyOfRange.toString();
+            String stringCopyofRange = String.valueOf(copyOfRange);
+            checkCPC = (Double.parseDouble(stringCopyofRange));
+        }
+        else {
+            if (CheckCost.contains("%")) {
+                newchar = new char[50];
+                newchar = CheckCost.toCharArray();
+                copyOfRange = new char[50];
+                Mess.newdDateInfo();
+                System.out.println("Current array has " + newchar.length + " elements");
+                for (i = 1; i != newchar.length; i++) {
+                    System.arraycopy(newchar, 1, copyOfRange, 0, i);
+                }
+                validArrayLength();
+                Mess.newdDateInfo();
+                System.out.println("New length is: " + asd + ". Created array for " + asd + " elements");
+                copyOfRange2 = new String();
+                copyOfRange2 = copyOfRange.toString();
+                String stringCopyofRange = String.valueOf(copyOfRange);
+                Mess.newdDateInfo();
+                System.out.println("Converting 'String' to 'double'");
+                checkCost = (Double.parseDouble(stringCopyofRange));
+                Mess.newdDateInfo();
+                System.out.println("'String' to 'double' successful converted");
+                Mess.newdDateInfo();
+                System.out.println("Current 'double' value is: " + checkCost);
+            }
+            else{
+                if (!CheckCost.contains("-")) {
+                    newchar = new char[50];
+                    newchar = CheckCost.toCharArray();
+                    copyOfRange = new char[50];
+                    Mess.newdDateInfo();
+                    System.out.println("Current array has " + newchar.length + " elements");
+                    for (i = 1; i != newchar.length; i++) {
+                        System.arraycopy(newchar, 1, copyOfRange, 0, i);
+                    }
+                    validArrayLength();
+                    Mess.newdDateInfo();
+                    System.out.println("New length is: " + asd + ". Created array for " + asd + " elements");
+                    copyOfRange2 = new String();
+                    copyOfRange2 = copyOfRange.toString();
+                    String stringCopyofRange = String.valueOf(copyOfRange);
+                    Mess.newdDateInfo();
+                    System.out.println("Converting 'String' to 'double'");
+                    checkCost = (Double.parseDouble(stringCopyofRange));
+                    Mess.newdDateInfo();
+                    System.out.println("'String' to 'double' successful converted");
+                    Mess.newdDateInfo();
+                    System.out.println("Current 'double' value is: " + checkCost);
+                }
+                else{
+                    Mess.newdDateInfo();
+                    System.out.println("stringToDouble isn't working. Need hotfix");
+                }
+            }
+        }
+    }
 
-    //Comment
+    public void doubleToString() {
+        if (CheckCost.contains("-")){
+            Mess.newdDateInfo();
+            System.out.println("Converting 'double' to 'String' with minus value");
+            valOfCPC = String.valueOf(check3);
+            Mess.newdDateInfo();
+            System.out.println("'Double' to 'String' with minus value successful converted");
+        }
+        else {
+            if (!CheckCost.contains("-")) {
+                Mess.newdDateInfo();
+                System.out.println("Converting 'double' to 'String'");
+                valOfCPC = String.valueOf(checkCost);
+                Mess.newdDateInfo();
+                System.out.println("'Double' to 'String' successful converted");
+            }
+            else{
+                Mess.newdDateInfo();
+                System.out.println("doubleToString isn't working. Need hotfix");
+            }
+        }
+    }
+
 }
+    //Comment

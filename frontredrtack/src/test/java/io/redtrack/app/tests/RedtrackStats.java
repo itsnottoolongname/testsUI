@@ -12,6 +12,7 @@ import java.util.concurrent.TimeUnit;
 import io.redtrack.app.messages.*;
 import io.redtrack.app.errors.Err;
 import io.redtrack.app.other.ForCheckingStats;
+import java.io.IOException;
 
 public class RedtrackStats {
 
@@ -86,16 +87,15 @@ public class RedtrackStats {
         Mess.newdDateInfo();
         System.out.println("Checking of CPC value...");
         checkingStats.getSome1();
-        checkingStats.string2Double();
+        checkingStats.stringToDouble();
         checkingStats.renewVar();
         checkingStats.getSome4();
         checkingStats.getSometoDouble();
         checkingStats.valueOFcpc();
         checkingStats.renewVal();
         checkingStats.getSome2();
-        checkingStats.string2Double();
-        checkingStats.double2String();
-        // checkingStats.renewVal();
+        checkingStats.stringToDouble();
+        checkingStats.doubleToString();
         checkingStats.checkingVal();
     }
 
@@ -104,13 +104,13 @@ public class RedtrackStats {
         Mess.newdDateInfo();
         System.out.println("Checking of Profit value...");
         checkingStats.getSome3();
-        checkingStats.string2Double();
+        checkingStats.stringToDouble();
         checkingStats.valOfProfit();
         checkingStats.renewVal();
         checkingStats.getSome5();
-        checkingStats.string2DoubleWithMinus();
+        checkingStats.stringToDouble();
         checkingStats.correctMinus();
-        checkingStats.double2StringMinus();
+        checkingStats.doubleToString();
         checkingStats.checkingVal();
         //System.out.println("==============================================");
         //checkingStats.check222();
@@ -119,7 +119,7 @@ public class RedtrackStats {
         //checkingStats.getSome6toDouble();
         //checkingStats.renewVar2();
        // checkingStats.check222();
-        //checkingStats.checkPercetn();
+        checkingStats.checkPercetn();
 
     }
 
