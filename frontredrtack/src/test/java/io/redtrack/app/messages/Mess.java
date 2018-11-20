@@ -96,11 +96,17 @@ public class Mess {
     i1 = "INFO",
     i2 = "ERROR";
 
+    public static final String ANSI_RESET = "\u001B[0m";
 
+    public static final String ANSI_RED = "\u001B[31m";
 
+    public static void ansi_reset(){
+        System.out.print(ANSI_RESET);
+    }
 
     public static void error(){
-        System.out.print(add2+i2+add3+add2+date+add3+add4+add6);
+        date = new Date();
+        System.out.print(ANSI_RED+add2+i2+add3+add2+date+add3+add4+add6);
     }
 
     public static void newdDateInfo() {

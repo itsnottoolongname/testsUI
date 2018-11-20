@@ -1,5 +1,6 @@
 package io.redtrack.app.tests;
 
+import io.redtrack.app.messages.Mess;
 import io.redtrack.app.other.*;
 import io.redtrack.app.pages.*;
 import io.redtrack.app.variable.*;
@@ -45,42 +46,74 @@ public class RedtrackLogin {
     }
 
     @Test (groups = "cheking")
-    public void InvalidLogin(){
+    public void InvalidLogin() throws InterruptedException {
         loginPage.inputLogin(login2);
         loginPage.inputPassword(password2);
         loginPage.clickSubmitButton();
+        Thread.sleep(5000);
         driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
-        invalidcred = checkingParam.getInvalidCred();
+        //invalidcred = checkingParam.getInvalidCred();
         driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
-        date = new Date();
-        if (usernotfound.equals(invalidcred)){
-            System.out.println("["+date+"]: "+"Test 'InvalidLogin' passed, found: "+"'"+invalidcred+"'" );
+        if (usernotfound.equals(checkingParam.getInvalidCred())){
+            Mess.newdDateInfo();
+            System.out.println("Test 'InvalidLogin' passed, found: "+"'"+checkingParam.getInvalidCred()+"'" );
         }
         else{
-            System.out.println("["+date+"]: "+"Somthing went wrong: Test 'InvalidLogin' FAILED");
+            Mess.error();
+            System.out.println("Somthing went wrong: Test 'InvalidLogin' FAILED");
+            Mess.ansi_reset();
         }
-        Assert.assertEquals(usernotfound, invalidcred);
+        //Assert.assertEquals(usernotfound, invalidcred);
     }
 
     @Test (groups = "cheking", dependsOnMethods = "InvalidLogin")
-    public void Login(){
+    public void upperCaseLogin() throws InterruptedException {
+        loginPage.inputLogin(Variables.upp_Reg);
+        loginPage.inputPassword(Variables.password1);
+        loginPage.clickSubmitButton();
+        Thread.sleep(5000);
+        if (usernotfound.equals(checkingParam.getInvalidCred())){
+            Mess.error();
+            System.out.println("Test with uppercase failed. Found: "+checkingParam.getInvalidCred());
+            Mess.ansi_reset();
+        }
+        else{
+            Mess.newdDateInfo();
+            System.out.println("Test with uppercase passed. Found: "+checkingParam.getUserName());
+        }
+        //invalidcred = checkingParam.getInvalidCred();
+        //Mess.newdDateInfo();
+        //System.out.println(invalidcred);
+    }
+
+
+    @Test (groups = "cheking", dependsOnMethods = "upperCaseLogin")
+    public void Login() throws InterruptedException {
+        Thread.sleep(5000);
         loginPage.inputLogin(Variables.login1);
         loginPage.inputPassword(password1);
         loginPage.clickSubmitButton();
         username = checkingParam.getUserName();
-        date = new Date();
+
         if (cheklogin.equals(username)){
-            System.out.println("["+date+"]: "+"Test 'Login' passed, found: "+"'"+username+"'" );
+            Mess.newdDateInfo();
+            System.out.println("Test 'Login' passed, found: "+"'"+username+"'" );
         }
         else{
-            System.out.println("["+date+"]: "+"Somthing went wrong: Test 'InvalidLogin' FAILED");
+            Mess.error();
+            System.out.println("Somthing went wrong: Test 'InvalidLogin' FAILED");
+            Mess.ansi_reset();
         }
         Assert.assertEquals(cheklogin, username);
         driver.manage().timeouts().implicitlyWait(10000, TimeUnit.SECONDS);
     }
 
+
+
     @Test (groups = "exit", dependsOnGroups = "cheking")
     public void closingDrvr(){
+        Mess.newdDateInfo();
+        System.out.println("Exiting driver, closing browser");
         driver.quit();
     }
 

@@ -1,18 +1,19 @@
 package io.redtrack.app.tests;
 
+import io.redtrack.app.other.CheckingParam;
+import io.redtrack.app.other.Navigation;
+import io.redtrack.app.other.OtherElements;
+import io.redtrack.app.pages.LoginPage;
+import io.redtrack.app.pages.TrafficSources;
 import io.redtrack.app.variable.Variables;
 import org.junit.Assert;
-import org.testng.annotations.BeforeClass;
-import org.testng.annotations.Test;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.testng.annotations.BeforeClass;
+import org.testng.annotations.Test;
 
-import java.sql.Time;
 import java.util.Date;
 import java.util.concurrent.TimeUnit;
-import java.util.Date;
-import io.redtrack.app.other.*;
-import io.redtrack.app.pages.*;
 
 
 
