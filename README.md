@@ -17,6 +17,9 @@ mvn -version
 для запуска тестов в терминале перейти в папку frontredrtack и написать:
 mvn -Dtest=НазваниеКлассаСТестом test
 
+например:
+mvn -Dtest=RedtrackStats test
+
 список классов с тестами можно найти в проекте frontredrtack/src/test/java/io/redtrack/app/tests
 
 Если будет ошибка driver is not executable чинится командой chmod a+x frontredrtack/src/Drivers/Chrome (команда для мака)
