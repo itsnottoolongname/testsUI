@@ -1,0 +1,520 @@
+INFO  2019-01-11 18:11:18,836 [main][RedtrackStats.java:44] : Initialization driver
+INFO  2019-01-11 18:11:21,040 [main][RedtrackStats.java:53] : Initialization driver success
+INFO  2019-01-11 18:11:21,040 [main][RedtrackStats.java:54] : Opening page: https://app.redtrack.io/signin
+INFO  2019-01-11 18:11:22,401 [main][RedtrackStats.java:60] : Opened page is: https://app.redtrack.io/signin
+INFO  2019-01-11 18:11:22,412 [main][RedtrackStats.java:75] : Logging into app
+INFO  2019-01-11 18:11:28,264 [main][CheckingParam.java:35] : Checking element Expected is: Logs. Actual is: Logs
+INFO  2019-01-11 18:11:28,267 [main][RedtrackStats.java:92] : Login successful 
+INFO  2019-01-11 18:11:28,280 [main][RedtrackStats.java:107] : Opening page: 'Campaigns'
+INFO  2019-01-11 18:11:33,517 [main][RedtrackStats.java:119] : Opening calendar to set period
+INFO  2019-01-11 18:11:33,652 [main][RedtrackStats.java:123] : Set period 'Last 30 days'
+INFO  2019-01-11 18:11:33,782 [main][RedtrackStats.java:134] : Confirming setted period
+INFO  2019-01-11 18:11:39,081 [main][RedtrackStats.java:146] : Getting costs
+INFO  2019-01-11 18:11:39,111 [main][RedtrackStats.java:149] : Converting array with $885.00
+INFO  2019-01-11 18:11:39,115 [main][RedtrackStats.java:151] : Converting successful, current value is 885.0
+INFO  2019-01-11 18:11:39,116 [main][RedtrackStats.java:153] : Getting clicks
+INFO  2019-01-11 18:11:39,141 [main][RedtrackStats.java:156] : Converting array with 185
+INFO  2019-01-11 18:11:39,142 [main][ManipWithString.java:18] : Converting String to double
+INFO  2019-01-11 18:11:39,143 [main][ManipWithString.java:20] : String to double successful converted
+INFO  2019-01-11 18:11:39,143 [main][ManipWithString.java:21] : Current 'double' value is: 185.0
+INFO  2019-01-11 18:11:39,144 [main][RedtrackStats.java:158] : Converting successful, current value is 185.0
+INFO  2019-01-11 18:11:39,146 [main][CalculatingValues.java:19] : Cost per Clicks is calculating by Cost dividing by Clicks
+INFO  2019-01-11 18:11:39,147 [main][CalculatingValues.java:28] : Calculated CPC is: 4.7838
+INFO  2019-01-11 18:11:39,148 [main][RenewingVarsVals.java:20] : Re-newing Val
+INFO  2019-01-11 18:11:39,149 [main][RenewingVarsVals.java:22] : Val is re-newed
+INFO  2019-01-11 18:11:39,150 [main][RenewingVarsVals.java:23] : Result of new value is: 4.7838
+INFO  2019-01-11 18:11:39,150 [main][RedtrackStats.java:161] : Getting CPC
+INFO  2019-01-11 18:11:39,177 [main][RedtrackStats.java:163] : CPC Getted
+INFO  2019-01-11 18:11:42,183 [main][ManipWithString.java:183] : Converting 'double' to 'String'
+INFO  2019-01-11 18:11:42,184 [main][ManipWithString.java:185] : 'Double' to 'String' successful converted 4.7838
+INFO  2019-01-11 18:11:42,185 [main][CheckingParam.java:22] : Checking value Expected is: 4.7838. Actual is: 4.7838
+INFO  2019-01-11 18:11:42,187 [main][RedtrackStats.java:180] : Checking of Profit value...
+INFO  2019-01-11 18:11:42,216 [main][RenewingVarsVals.java:39] : Re-newing Var
+INFO  2019-01-11 18:11:42,216 [main][RenewingVarsVals.java:41] : Var is re-newed. Current Var is: 90161.0
+INFO  2019-01-11 18:11:42,217 [main][RedtrackStats.java:184] : Checking cost
+INFO  2019-01-11 18:11:42,238 [main][RedtrackStats.java:186] : Cost checked
+INFO  2019-01-11 18:11:42,239 [main][RedtrackStats.java:187] : manipulating
+INFO  2019-01-11 18:11:42,239 [main][RedtrackStats.java:189] : manipulating finished
+INFO  2019-01-11 18:11:42,265 [main][CalculatingValues.java:39] : Profit is calculating by **** minus *****
+INFO  2019-01-11 18:11:42,265 [main][CalculatingValues.java:42] : Calculated Profit is: -89276.0
+INFO  2019-01-11 18:11:42,266 [main][CalculatingValues.java:47] : Value doesn't contains minus: -89276.0
+INFO  2019-01-11 18:11:42,266 [main][RenewingVarsVals.java:15] : Re-newing Val
+INFO  2019-01-11 18:11:42,267 [main][RenewingVarsVals.java:17] : Val is re-newed
+INFO  2019-01-11 18:11:42,267 [main][RenewingVarsVals.java:18] : Result of new value is: null
+INFO  2019-01-11 18:11:42,268 [main][ManipWithString.java:183] : Converting 'double' to 'String'
+INFO  2019-01-11 18:11:42,268 [main][ManipWithString.java:185] : 'Double' to 'String' successful converted 89276.0
+ERROR 2019-01-11 18:11:42,269 [main][CheckingParam.java:28] : Assertion error: expected:<null> but was:<89276.0>
+INFO  2019-01-11 18:11:42,297 [main][ManipWithString.java:89] : Current array has 7 elements
+INFO  2019-01-11 18:11:42,298 [main][ManipWithString.java:94] : New length is: 6. Created array for 6 elements
+INFO  2019-01-11 18:11:42,298 [main][ManipWithString.java:98] : Converting 'String' to 'double'
+INFO  2019-01-11 18:11:42,299 [main][ManipWithString.java:100] : 'String' to 'double' successful converted
+INFO  2019-01-11 18:11:42,299 [main][ManipWithString.java:101] : Current 'double' value is: 143.78
+INFO  2019-01-11 18:11:42,300 [main][CalculatingValues.java:57] : Conversions is calculating via val of Clicks dividing CR 
+INFO  2019-01-11 18:11:42,301 [main][CalculatingValues.java:60] : Calculated Conversions is: 266.0
+INFO  2019-01-11 18:11:42,301 [main][ManipWithString.java:183] : Converting 'double' to 'String'
+INFO  2019-01-11 18:11:42,302 [main][ManipWithString.java:185] : 'Double' to 'String' successful converted 143.78
+INFO  2019-01-11 18:11:42,302 [main][RenewingVarsVals.java:15] : Re-newing Val
+INFO  2019-01-11 18:11:42,303 [main][RenewingVarsVals.java:17] : Val is re-newed
+INFO  2019-01-11 18:11:42,304 [main][RenewingVarsVals.java:18] : Result of new value is: null
+INFO  2019-01-11 18:11:42,305 [main][RedtrackStats.java:212] : get conversion
+INFO  2019-01-11 18:11:42,331 [main][RedtrackStats.java:214] : conversion getted
+INFO  2019-01-11 18:11:42,331 [main][ManipWithString.java:107] : Current array has 3 elements
+INFO  2019-01-11 18:11:42,332 [main][ManipWithString.java:112] : New length is: 2. Created array for 2 elements
+INFO  2019-01-11 18:11:42,332 [main][ManipWithString.java:116] : Converting 'String' to 'double'
+INFO  2019-01-11 18:11:42,333 [main][ManipWithString.java:118] : 'String' to 'double' successful converted
+INFO  2019-01-11 18:11:42,333 [main][ManipWithString.java:119] : Current 'double' value is: 266.0
+INFO  2019-01-11 18:11:42,334 [main][ManipWithString.java:183] : Converting 'double' to 'String'
+INFO  2019-01-11 18:11:42,334 [main][ManipWithString.java:185] : 'Double' to 'String' successful converted 266.0
+ERROR 2019-01-11 18:11:42,335 [main][CheckingParam.java:28] : Assertion error: expected:<null> but was:<266.0>
+INFO  2019-01-11 18:11:42,336 [main][RedtrackStats.java:231] : getting cost
+INFO  2019-01-11 18:11:42,355 [main][RedtrackStats.java:233] : cost getted
+INFO  2019-01-11 18:11:42,355 [main][RedtrackStats.java:235] : getting transaction
+INFO  2019-01-11 18:11:42,382 [main][RedtrackStats.java:237] : transaction getted
+INFO  2019-01-11 18:11:42,383 [main][ManipWithString.java:18] : Converting String to double
+INFO  2019-01-11 18:11:42,383 [main][ManipWithString.java:20] : String to double successful converted
+INFO  2019-01-11 18:11:42,384 [main][ManipWithString.java:21] : Current 'double' value is: 0.0
+INFO  2019-01-11 18:11:42,385 [main][CalculatingValues.java:69] : Cost Per Transaction is calculating via Cost dividing Transactions 
+ERROR 2019-01-11 18:11:42,385 [main][CalculatingValues.java:75] : Something went wrong Character I is neither a decimal digit number, decimal point, nor "e" notation exponential mark.
+INFO  2019-01-11 18:11:42,386 [main][ManipWithString.java:183] : Converting 'double' to 'String'
+INFO  2019-01-11 18:11:42,386 [main][ManipWithString.java:185] : 'Double' to 'String' successful converted 885.0
+INFO  2019-01-11 18:11:42,387 [main][RenewingVarsVals.java:15] : Re-newing Val
+INFO  2019-01-11 18:11:42,387 [main][RenewingVarsVals.java:17] : Val is re-newed
+INFO  2019-01-11 18:11:42,388 [main][RenewingVarsVals.java:18] : Result of new value is: null
+INFO  2019-01-11 18:11:42,413 [main][ManipWithString.java:201] : Correcting decimal... Current value is: 0.0
+INFO  2019-01-11 18:11:42,431 [main][ManipWithString.java:205] : Correcting decimal finished... Corrected value is: 0,0000
+ERROR 2019-01-11 18:11:42,432 [main][CheckingParam.java:28] : Assertion error: expected:<null> but was:<0,0000>
+INFO  2019-01-11 18:11:42,450 [main][RenewingVarsVals.java:39] : Re-newing Var
+INFO  2019-01-11 18:11:42,450 [main][RenewingVarsVals.java:41] : Var is re-newed. Current Var is: 885.0
+INFO  2019-01-11 18:11:42,467 [main][ManipWithString.java:107] : Current array has 3 elements
+INFO  2019-01-11 18:11:42,468 [main][ManipWithString.java:112] : New length is: 2. Created array for 2 elements
+INFO  2019-01-11 18:11:42,469 [main][ManipWithString.java:116] : Converting 'String' to 'double'
+INFO  2019-01-11 18:11:42,470 [main][ManipWithString.java:118] : 'String' to 'double' successful converted
+INFO  2019-01-11 18:11:42,471 [main][ManipWithString.java:119] : Current 'double' value is: 266.0
+INFO  2019-01-11 18:11:42,471 [main][CalculatingValues.java:81] : Profit is calculating by **** minus *****
+INFO  2019-01-11 18:11:42,472 [main][CalculatingValues.java:84] : Calculated Profit is: 3.3271
+INFO  2019-01-11 18:11:42,472 [main][CalculatingValues.java:89] : Value doesn't contains minus: 3.3271
+INFO  2019-01-11 18:11:42,473 [main][ManipWithString.java:183] : Converting 'double' to 'String'
+INFO  2019-01-11 18:11:42,473 [main][ManipWithString.java:185] : 'Double' to 'String' successful converted 266.0
+INFO  2019-01-11 18:11:42,474 [main][RenewingVarsVals.java:20] : Re-newing Val
+INFO  2019-01-11 18:11:42,476 [main][RenewingVarsVals.java:22] : Val is re-newed
+INFO  2019-01-11 18:11:42,477 [main][RenewingVarsVals.java:23] : Result of new value is: 3.3271
+INFO  2019-01-11 18:11:42,503 [main][ManipWithString.java:183] : Converting 'double' to 'String'
+INFO  2019-01-11 18:11:42,504 [main][ManipWithString.java:185] : 'Double' to 'String' successful converted 3.3271
+INFO  2019-01-11 18:11:42,504 [main][CheckingParam.java:22] : Checking value Expected is: 3.3271. Actual is: 3.3271
+INFO  2019-01-11 18:11:42,524 [main][RenewingVarsVals.java:39] : Re-newing Var
+INFO  2019-01-11 18:11:42,524 [main][RenewingVarsVals.java:41] : Var is re-newed. Current Var is: 90161.0
+INFO  2019-01-11 18:11:42,546 [main][ManipWithString.java:18] : Converting String to double
+INFO  2019-01-11 18:11:42,547 [main][ManipWithString.java:20] : String to double successful converted
+INFO  2019-01-11 18:11:42,548 [main][ManipWithString.java:21] : Current 'double' value is: 185.0
+INFO  2019-01-11 18:11:42,548 [main][CalculatingValues.java:19] : Cost per Clicks is calculating by Cost dividing by Clicks
+INFO  2019-01-11 18:11:42,549 [main][CalculatingValues.java:28] : Calculated CPC is: 487.3568
+INFO  2019-01-11 18:11:42,550 [main][RenewingVarsVals.java:20] : Re-newing Val
+INFO  2019-01-11 18:11:42,551 [main][RenewingVarsVals.java:22] : Val is re-newed
+INFO  2019-01-11 18:11:42,551 [main][RenewingVarsVals.java:23] : Result of new value is: 487.3568
+INFO  2019-01-11 18:11:42,589 [main][ManipWithString.java:183] : Converting 'double' to 'String'
+INFO  2019-01-11 18:11:42,590 [main][ManipWithString.java:185] : 'Double' to 'String' successful converted 487.3568
+INFO  2019-01-11 18:11:42,591 [main][CheckingParam.java:22] : Checking value Expected is: 487.3568. Actual is: 487.3568
+INFO  2019-01-11 18:11:42,611 [main][ManipWithString.java:18] : Converting String to double
+INFO  2019-01-11 18:11:42,611 [main][ManipWithString.java:20] : String to double successful converted
+INFO  2019-01-11 18:11:42,611 [main][ManipWithString.java:21] : Current 'double' value is: 0.0
+INFO  2019-01-11 18:11:42,612 [main][RenewingVarsVals.java:51] : Re-newing Var2
+INFO  2019-01-11 18:11:42,612 [main][RenewingVarsVals.java:53] : Var2 is re-newed. Current Var2 is: 0.0
+INFO  2019-01-11 18:11:42,631 [main][ManipWithString.java:18] : Converting String to double
+INFO  2019-01-11 18:11:42,631 [main][ManipWithString.java:20] : String to double successful converted
+INFO  2019-01-11 18:11:42,632 [main][ManipWithString.java:21] : Current 'double' value is: 185.0
+INFO  2019-01-11 18:11:42,632 [main][CalculatingValues.java:105] : Value doesn't contains minus: 0.0
+INFO  2019-01-11 18:11:42,633 [main][RenewingVarsVals.java:15] : Re-newing Val
+INFO  2019-01-11 18:11:42,634 [main][RenewingVarsVals.java:17] : Val is re-newed
+INFO  2019-01-11 18:11:42,634 [main][RenewingVarsVals.java:18] : Result of new value is: null
+INFO  2019-01-11 18:11:42,663 [main][ManipWithString.java:89] : Current array has 5 elements
+INFO  2019-01-11 18:11:42,664 [main][ManipWithString.java:94] : New length is: 4. Created array for 4 elements
+INFO  2019-01-11 18:11:42,664 [main][ManipWithString.java:98] : Converting 'String' to 'double'
+INFO  2019-01-11 18:11:42,665 [main][ManipWithString.java:100] : 'String' to 'double' successful converted
+INFO  2019-01-11 18:11:42,666 [main][ManipWithString.java:101] : Current 'double' value is: 0.0
+INFO  2019-01-11 18:11:42,667 [main][ManipWithString.java:201] : Correcting decimal... Current value is: 0.0
+INFO  2019-01-11 18:11:42,670 [main][ManipWithString.java:205] : Correcting decimal finished... Corrected value is: 0,0000
+ERROR 2019-01-11 18:11:42,672 [main][CheckingParam.java:28] : Assertion error: expected:<null> but was:<0,0000>
+INFO  2019-01-11 18:11:42,691 [main][ManipWithString.java:18] : Converting String to double
+INFO  2019-01-11 18:11:42,692 [main][ManipWithString.java:20] : String to double successful converted
+INFO  2019-01-11 18:11:42,692 [main][ManipWithString.java:21] : Current 'double' value is: 266.0
+INFO  2019-01-11 18:11:42,693 [main][RenewingVarsVals.java:51] : Re-newing Var2
+INFO  2019-01-11 18:11:42,694 [main][RenewingVarsVals.java:53] : Var2 is re-newed. Current Var2 is: 266.0
+INFO  2019-01-11 18:11:42,709 [main][ManipWithString.java:18] : Converting String to double
+INFO  2019-01-11 18:11:42,709 [main][ManipWithString.java:20] : String to double successful converted
+INFO  2019-01-11 18:11:42,709 [main][ManipWithString.java:21] : Current 'double' value is: 185.0
+INFO  2019-01-11 18:11:42,710 [main][CalculatingValues.java:105] : Value doesn't contains minus: 143.78
+INFO  2019-01-11 18:11:42,710 [main][RenewingVarsVals.java:20] : Re-newing Val
+INFO  2019-01-11 18:11:42,711 [main][RenewingVarsVals.java:22] : Val is re-newed
+INFO  2019-01-11 18:11:42,712 [main][RenewingVarsVals.java:23] : Result of new value is: 143.78
+INFO  2019-01-11 18:11:42,734 [main][ManipWithString.java:89] : Current array has 7 elements
+INFO  2019-01-11 18:11:42,734 [main][ManipWithString.java:94] : New length is: 6. Created array for 6 elements
+INFO  2019-01-11 18:11:42,735 [main][ManipWithString.java:98] : Converting 'String' to 'double'
+INFO  2019-01-11 18:11:42,735 [main][ManipWithString.java:100] : 'String' to 'double' successful converted
+INFO  2019-01-11 18:11:42,736 [main][ManipWithString.java:101] : Current 'double' value is: 143.78
+INFO  2019-01-11 18:11:42,736 [main][ManipWithString.java:183] : Converting 'double' to 'String'
+INFO  2019-01-11 18:11:42,736 [main][ManipWithString.java:185] : 'Double' to 'String' successful converted 143.78
+INFO  2019-01-11 18:11:42,737 [main][CheckingParam.java:22] : Checking value Expected is: 143.78. Actual is: 143.78
+INFO  2019-01-11 18:11:42,780 [main][RenewingVarsVals.java:39] : Re-newing Var
+INFO  2019-01-11 18:11:42,780 [main][RenewingVarsVals.java:41] : Var is re-newed. Current Var is: 89276.0
+INFO  2019-01-11 18:11:42,810 [main][CalculatingValues.java:105] : Value doesn't contains minus: 30.06
+INFO  2019-01-11 18:11:42,811 [main][RenewingVarsVals.java:20] : Re-newing Val
+INFO  2019-01-11 18:11:42,811 [main][RenewingVarsVals.java:22] : Val is re-newed
+INFO  2019-01-11 18:11:42,811 [main][RenewingVarsVals.java:23] : Result of new value is: 30.06
+INFO  2019-01-11 18:11:42,812 [main][ManipWithString.java:89] : Current array has 9 elements
+INFO  2019-01-11 18:11:42,812 [main][ManipWithString.java:94] : New length is: 8. Created array for 8 elements
+INFO  2019-01-11 18:11:42,812 [main][ManipWithString.java:98] : Converting 'String' to 'double'
+INFO  2019-01-11 18:11:42,813 [main][ManipWithString.java:100] : 'String' to 'double' successful converted
+INFO  2019-01-11 18:11:42,813 [main][ManipWithString.java:101] : Current 'double' value is: 10087.68
+INFO  2019-01-11 18:11:42,813 [main][ManipWithString.java:183] : Converting 'double' to 'String'
+INFO  2019-01-11 18:11:42,814 [main][ManipWithString.java:185] : 'Double' to 'String' successful converted 10087.68
+ERROR 2019-01-11 18:11:42,816 [main][CheckingParam.java:25] : Error expected:<[30.06]> but was:<[10087.68]>
+INFO  2019-01-11 18:15:20,259 [main][RedtrackStats.java:44] : Initialization driver
+INFO  2019-01-11 18:15:22,701 [main][RedtrackStats.java:53] : Initialization driver success
+INFO  2019-01-11 18:15:22,702 [main][RedtrackStats.java:54] : Opening page: https://app.redtrack.io/signin
+INFO  2019-01-11 18:15:24,020 [main][RedtrackStats.java:60] : Opened page is: https://app.redtrack.io/signin
+INFO  2019-01-11 18:15:24,029 [main][RedtrackStats.java:75] : Logging into app
+ERROR 2019-01-11 18:15:26,196 [main][RedtrackStats.java:83] : TestNG failed: stale element reference: element is not attached to the page document
+  (Session info: chrome=71.0.3578.98)
+  (Driver info: chromedriver=2.41.578706 (5f725d1b4f0a4acbf5259df887244095596231db),platform=Mac OS X 10.13.4 x86_64) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 0 milliseconds
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/stale_element_reference.html
+Build info: version: '3.14.0', revision: 'aacccce0', time: '2018-08-02T20:19:58.91Z'
+System info: host: 'MacBook-Pro-Dmitrij.local', ip: 'fe80:0:0:0:140a:4c71:ecf0:b2e%en0', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '10.13.4', java.version: '11.0.1'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, acceptSslCerts: false, applicationCacheEnabled: false, browserConnectionEnabled: false, browserName: chrome, chrome: {chromedriverVersion: 2.41.578706 (5f725d1b4f0a4a..., userDataDir: /var/folders/s7/dlhq31ys7yn...}, cssSelectorsEnabled: true, databaseEnabled: false, goog:chromeOptions: {debuggerAddress: localhost:56432}, handlesAlerts: true, hasTouchScreen: false, javascriptEnabled: true, locationContextEnabled: true, mobileEmulationEnabled: false, nativeEvents: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: MAC, platformName: MAC, rotatable: false, setWindowRect: true, takesHeapSnapshot: true, takesScreenshot: true, unexpectedAlertBehaviour: , unhandledPromptBehavior: , version: 71.0.3578.98, webStorageEnabled: true}
+Session ID: 8f945bf7e8e6cf5d763d8ff6e5a9d12e
+ERROR 2019-01-11 18:15:26,202 [main][CheckingParam.java:41] : Assertion error: expected:<Logs> but was:<null>
+INFO  2019-01-11 18:15:26,202 [main][RedtrackStats.java:92] : Login successful 
+INFO  2019-01-11 18:15:26,208 [main][RedtrackStats.java:107] : Opening page: 'Campaigns'
+INFO  2019-01-11 18:15:31,556 [main][RedtrackStats.java:119] : Opening calendar to set period
+INFO  2019-01-11 18:15:31,675 [main][RedtrackStats.java:123] : Set period 'Last 30 days'
+INFO  2019-01-11 18:15:31,843 [main][RedtrackStats.java:134] : Confirming setted period
+INFO  2019-01-11 18:15:37,056 [main][RedtrackStats.java:146] : Getting costs
+INFO  2019-01-11 18:15:37,091 [main][RedtrackStats.java:149] : Converting array with $885.00
+INFO  2019-01-11 18:15:37,093 [main][RedtrackStats.java:151] : Converting successful, current value is 885.0
+INFO  2019-01-11 18:15:37,094 [main][RedtrackStats.java:153] : Getting clicks
+INFO  2019-01-11 18:15:37,123 [main][RedtrackStats.java:156] : Converting array with 185
+INFO  2019-01-11 18:15:37,124 [main][ManipWithString.java:18] : Converting String to double
+INFO  2019-01-11 18:15:37,124 [main][ManipWithString.java:20] : String to double successful converted
+INFO  2019-01-11 18:15:37,125 [main][ManipWithString.java:21] : Current 'double' value is: 185.0
+INFO  2019-01-11 18:15:37,125 [main][RedtrackStats.java:158] : Converting successful, current value is 185.0
+INFO  2019-01-11 18:15:37,127 [main][CalculatingValues.java:19] : Cost per Clicks is calculating by Cost dividing by Clicks
+INFO  2019-01-11 18:15:37,127 [main][CalculatingValues.java:28] : Calculated CPC is: 4.7838
+INFO  2019-01-11 18:15:37,128 [main][RenewingVarsVals.java:20] : Re-newing Val
+INFO  2019-01-11 18:15:37,129 [main][RenewingVarsVals.java:22] : Val is re-newed
+INFO  2019-01-11 18:15:37,129 [main][RenewingVarsVals.java:23] : Result of new value is: 4.7838
+INFO  2019-01-11 18:15:37,129 [main][RedtrackStats.java:161] : Getting CPC
+INFO  2019-01-11 18:15:37,156 [main][RedtrackStats.java:163] : CPC Getted
+INFO  2019-01-11 18:15:40,162 [main][ManipWithString.java:183] : Converting 'double' to 'String'
+INFO  2019-01-11 18:15:40,163 [main][ManipWithString.java:185] : 'Double' to 'String' successful converted 4.7838
+INFO  2019-01-11 18:15:40,163 [main][CheckingParam.java:22] : Checking value Expected is: 4.7838. Actual is: 4.7838
+INFO  2019-01-11 18:15:40,165 [main][RedtrackStats.java:180] : Checking of Profit value...
+INFO  2019-01-11 18:15:40,195 [main][RenewingVarsVals.java:39] : Re-newing Var
+INFO  2019-01-11 18:15:40,195 [main][RenewingVarsVals.java:41] : Var is re-newed. Current Var is: 90161.0
+INFO  2019-01-11 18:15:40,195 [main][RedtrackStats.java:184] : Checking cost
+INFO  2019-01-11 18:15:40,215 [main][RedtrackStats.java:186] : Cost checked
+INFO  2019-01-11 18:15:40,215 [main][RedtrackStats.java:187] : manipulating
+INFO  2019-01-11 18:15:40,216 [main][RedtrackStats.java:189] : manipulating finished
+INFO  2019-01-11 18:15:40,242 [main][CalculatingValues.java:39] : Profit is calculating by **** minus *****
+INFO  2019-01-11 18:15:40,242 [main][CalculatingValues.java:42] : Calculated Profit is: -89276.0
+INFO  2019-01-11 18:15:40,243 [main][CalculatingValues.java:47] : Value doesn't contains minus: -89276.0
+INFO  2019-01-11 18:15:40,243 [main][RenewingVarsVals.java:15] : Re-newing Val
+INFO  2019-01-11 18:15:40,244 [main][RenewingVarsVals.java:17] : Val is re-newed
+INFO  2019-01-11 18:15:40,245 [main][RenewingVarsVals.java:18] : Result of new value is: null
+INFO  2019-01-11 18:15:40,245 [main][ManipWithString.java:183] : Converting 'double' to 'String'
+INFO  2019-01-11 18:15:40,246 [main][ManipWithString.java:185] : 'Double' to 'String' successful converted 89276.0
+ERROR 2019-01-11 18:15:40,246 [main][CheckingParam.java:28] : Assertion error: expected:<null> but was:<89276.0>
+INFO  2019-01-11 18:15:40,274 [main][ManipWithString.java:89] : Current array has 7 elements
+INFO  2019-01-11 18:15:40,274 [main][ManipWithString.java:94] : New length is: 6. Created array for 6 elements
+INFO  2019-01-11 18:15:40,275 [main][ManipWithString.java:98] : Converting 'String' to 'double'
+INFO  2019-01-11 18:15:40,275 [main][ManipWithString.java:100] : 'String' to 'double' successful converted
+INFO  2019-01-11 18:15:40,276 [main][ManipWithString.java:101] : Current 'double' value is: 143.78
+INFO  2019-01-11 18:15:40,276 [main][CalculatingValues.java:57] : Conversions is calculating via val of Clicks dividing CR 
+INFO  2019-01-11 18:15:40,277 [main][CalculatingValues.java:60] : Calculated Conversions is: 266.0
+INFO  2019-01-11 18:15:40,277 [main][ManipWithString.java:183] : Converting 'double' to 'String'
+INFO  2019-01-11 18:15:40,278 [main][ManipWithString.java:185] : 'Double' to 'String' successful converted 143.78
+INFO  2019-01-11 18:15:40,278 [main][RenewingVarsVals.java:15] : Re-newing Val
+INFO  2019-01-11 18:15:40,278 [main][RenewingVarsVals.java:17] : Val is re-newed
+INFO  2019-01-11 18:15:40,279 [main][RenewingVarsVals.java:18] : Result of new value is: null
+INFO  2019-01-11 18:15:40,280 [main][RedtrackStats.java:212] : get conversion
+INFO  2019-01-11 18:15:40,306 [main][RedtrackStats.java:214] : conversion getted
+INFO  2019-01-11 18:15:40,306 [main][ManipWithString.java:107] : Current array has 3 elements
+INFO  2019-01-11 18:15:40,307 [main][ManipWithString.java:112] : New length is: 2. Created array for 2 elements
+INFO  2019-01-11 18:15:40,307 [main][ManipWithString.java:116] : Converting 'String' to 'double'
+INFO  2019-01-11 18:15:40,307 [main][ManipWithString.java:118] : 'String' to 'double' successful converted
+INFO  2019-01-11 18:15:40,308 [main][ManipWithString.java:119] : Current 'double' value is: 266.0
+INFO  2019-01-11 18:15:40,308 [main][ManipWithString.java:183] : Converting 'double' to 'String'
+INFO  2019-01-11 18:15:40,308 [main][ManipWithString.java:185] : 'Double' to 'String' successful converted 266.0
+ERROR 2019-01-11 18:15:40,315 [main][CheckingParam.java:28] : Assertion error: expected:<null> but was:<266.0>
+INFO  2019-01-11 18:15:40,321 [main][RedtrackStats.java:231] : getting cost
+INFO  2019-01-11 18:15:40,339 [main][RedtrackStats.java:233] : cost getted
+INFO  2019-01-11 18:15:40,340 [main][RedtrackStats.java:235] : getting transaction
+INFO  2019-01-11 18:15:40,366 [main][RedtrackStats.java:237] : transaction getted
+INFO  2019-01-11 18:15:40,366 [main][ManipWithString.java:18] : Converting String to double
+INFO  2019-01-11 18:15:40,366 [main][ManipWithString.java:20] : String to double successful converted
+INFO  2019-01-11 18:15:40,367 [main][ManipWithString.java:21] : Current 'double' value is: 0.0
+INFO  2019-01-11 18:15:40,367 [main][CalculatingValues.java:69] : Cost Per Transaction is calculating via Cost dividing Transactions 
+ERROR 2019-01-11 18:15:40,368 [main][CalculatingValues.java:75] : Something went wrong Character I is neither a decimal digit number, decimal point, nor "e" notation exponential mark.
+INFO  2019-01-11 18:15:40,368 [main][ManipWithString.java:183] : Converting 'double' to 'String'
+INFO  2019-01-11 18:15:40,368 [main][ManipWithString.java:185] : 'Double' to 'String' successful converted 885.0
+INFO  2019-01-11 18:15:40,369 [main][RenewingVarsVals.java:15] : Re-newing Val
+INFO  2019-01-11 18:15:40,369 [main][RenewingVarsVals.java:17] : Val is re-newed
+INFO  2019-01-11 18:15:40,369 [main][RenewingVarsVals.java:18] : Result of new value is: null
+INFO  2019-01-11 18:15:40,396 [main][ManipWithString.java:201] : Correcting decimal... Current value is: 0.0
+INFO  2019-01-11 18:15:40,408 [main][ManipWithString.java:205] : Correcting decimal finished... Corrected value is: 0,0000
+ERROR 2019-01-11 18:15:40,409 [main][CheckingParam.java:28] : Assertion error: expected:<null> but was:<0,0000>
+INFO  2019-01-11 18:15:40,432 [main][RenewingVarsVals.java:39] : Re-newing Var
+INFO  2019-01-11 18:15:40,433 [main][RenewingVarsVals.java:41] : Var is re-newed. Current Var is: 885.0
+INFO  2019-01-11 18:15:40,451 [main][ManipWithString.java:107] : Current array has 3 elements
+INFO  2019-01-11 18:15:40,451 [main][ManipWithString.java:112] : New length is: 2. Created array for 2 elements
+INFO  2019-01-11 18:15:40,452 [main][ManipWithString.java:116] : Converting 'String' to 'double'
+INFO  2019-01-11 18:15:40,452 [main][ManipWithString.java:118] : 'String' to 'double' successful converted
+INFO  2019-01-11 18:15:40,453 [main][ManipWithString.java:119] : Current 'double' value is: 266.0
+INFO  2019-01-11 18:15:40,454 [main][CalculatingValues.java:81] : Profit is calculating by **** minus *****
+INFO  2019-01-11 18:15:40,454 [main][CalculatingValues.java:84] : Calculated Profit is: 3.3271
+INFO  2019-01-11 18:15:40,455 [main][CalculatingValues.java:89] : Value doesn't contains minus: 3.3271
+INFO  2019-01-11 18:15:40,455 [main][ManipWithString.java:183] : Converting 'double' to 'String'
+INFO  2019-01-11 18:15:40,455 [main][ManipWithString.java:185] : 'Double' to 'String' successful converted 266.0
+INFO  2019-01-11 18:15:40,456 [main][RenewingVarsVals.java:20] : Re-newing Val
+INFO  2019-01-11 18:15:40,456 [main][RenewingVarsVals.java:22] : Val is re-newed
+INFO  2019-01-11 18:15:40,456 [main][RenewingVarsVals.java:23] : Result of new value is: 3.3271
+INFO  2019-01-11 18:15:40,483 [main][ManipWithString.java:183] : Converting 'double' to 'String'
+INFO  2019-01-11 18:15:40,484 [main][ManipWithString.java:185] : 'Double' to 'String' successful converted 3.3271
+INFO  2019-01-11 18:15:40,484 [main][CheckingParam.java:22] : Checking value Expected is: 3.3271. Actual is: 3.3271
+INFO  2019-01-11 18:15:40,506 [main][RenewingVarsVals.java:39] : Re-newing Var
+INFO  2019-01-11 18:15:40,507 [main][RenewingVarsVals.java:41] : Var is re-newed. Current Var is: 90161.0
+INFO  2019-01-11 18:15:40,526 [main][ManipWithString.java:18] : Converting String to double
+INFO  2019-01-11 18:15:40,527 [main][ManipWithString.java:20] : String to double successful converted
+INFO  2019-01-11 18:15:40,527 [main][ManipWithString.java:21] : Current 'double' value is: 185.0
+INFO  2019-01-11 18:15:40,527 [main][CalculatingValues.java:19] : Cost per Clicks is calculating by Cost dividing by Clicks
+INFO  2019-01-11 18:15:40,528 [main][CalculatingValues.java:28] : Calculated CPC is: 487.3568
+INFO  2019-01-11 18:15:40,529 [main][RenewingVarsVals.java:20] : Re-newing Val
+INFO  2019-01-11 18:15:40,529 [main][RenewingVarsVals.java:22] : Val is re-newed
+INFO  2019-01-11 18:15:40,529 [main][RenewingVarsVals.java:23] : Result of new value is: 487.3568
+INFO  2019-01-11 18:15:40,560 [main][ManipWithString.java:183] : Converting 'double' to 'String'
+INFO  2019-01-11 18:15:40,560 [main][ManipWithString.java:185] : 'Double' to 'String' successful converted 487.3568
+INFO  2019-01-11 18:15:40,561 [main][CheckingParam.java:22] : Checking value Expected is: 487.3568. Actual is: 487.3568
+INFO  2019-01-11 18:15:40,580 [main][ManipWithString.java:18] : Converting String to double
+INFO  2019-01-11 18:15:40,581 [main][ManipWithString.java:20] : String to double successful converted
+INFO  2019-01-11 18:15:40,581 [main][ManipWithString.java:21] : Current 'double' value is: 0.0
+INFO  2019-01-11 18:15:40,582 [main][RenewingVarsVals.java:51] : Re-newing Var2
+INFO  2019-01-11 18:15:40,582 [main][RenewingVarsVals.java:53] : Var2 is re-newed. Current Var2 is: 0.0
+INFO  2019-01-11 18:15:40,601 [main][ManipWithString.java:18] : Converting String to double
+INFO  2019-01-11 18:15:40,602 [main][ManipWithString.java:20] : String to double successful converted
+INFO  2019-01-11 18:15:40,602 [main][ManipWithString.java:21] : Current 'double' value is: 185.0
+INFO  2019-01-11 18:15:40,603 [main][CalculatingValues.java:105] : Value doesn't contains minus: 0.0
+INFO  2019-01-11 18:15:40,604 [main][RenewingVarsVals.java:15] : Re-newing Val
+INFO  2019-01-11 18:15:40,604 [main][RenewingVarsVals.java:17] : Val is re-newed
+INFO  2019-01-11 18:15:40,605 [main][RenewingVarsVals.java:18] : Result of new value is: null
+INFO  2019-01-11 18:15:40,641 [main][ManipWithString.java:89] : Current array has 5 elements
+INFO  2019-01-11 18:15:40,642 [main][ManipWithString.java:94] : New length is: 4. Created array for 4 elements
+INFO  2019-01-11 18:15:40,643 [main][ManipWithString.java:98] : Converting 'String' to 'double'
+INFO  2019-01-11 18:15:40,643 [main][ManipWithString.java:100] : 'String' to 'double' successful converted
+INFO  2019-01-11 18:15:40,644 [main][ManipWithString.java:101] : Current 'double' value is: 0.0
+INFO  2019-01-11 18:15:40,645 [main][ManipWithString.java:201] : Correcting decimal... Current value is: 0.0
+INFO  2019-01-11 18:15:40,645 [main][ManipWithString.java:205] : Correcting decimal finished... Corrected value is: 0,0000
+ERROR 2019-01-11 18:15:40,646 [main][CheckingParam.java:28] : Assertion error: expected:<null> but was:<0,0000>
+INFO  2019-01-11 18:15:40,663 [main][ManipWithString.java:18] : Converting String to double
+INFO  2019-01-11 18:15:40,663 [main][ManipWithString.java:20] : String to double successful converted
+INFO  2019-01-11 18:15:40,663 [main][ManipWithString.java:21] : Current 'double' value is: 266.0
+INFO  2019-01-11 18:15:40,664 [main][RenewingVarsVals.java:51] : Re-newing Var2
+INFO  2019-01-11 18:15:40,664 [main][RenewingVarsVals.java:53] : Var2 is re-newed. Current Var2 is: 266.0
+INFO  2019-01-11 18:15:40,682 [main][ManipWithString.java:18] : Converting String to double
+INFO  2019-01-11 18:15:40,682 [main][ManipWithString.java:20] : String to double successful converted
+INFO  2019-01-11 18:15:40,683 [main][ManipWithString.java:21] : Current 'double' value is: 185.0
+INFO  2019-01-11 18:15:40,683 [main][CalculatingValues.java:105] : Value doesn't contains minus: 143.78
+INFO  2019-01-11 18:15:40,684 [main][RenewingVarsVals.java:20] : Re-newing Val
+INFO  2019-01-11 18:15:40,684 [main][RenewingVarsVals.java:22] : Val is re-newed
+INFO  2019-01-11 18:15:40,686 [main][RenewingVarsVals.java:23] : Result of new value is: 143.78
+INFO  2019-01-11 18:15:40,703 [main][ManipWithString.java:89] : Current array has 7 elements
+INFO  2019-01-11 18:15:40,704 [main][ManipWithString.java:94] : New length is: 6. Created array for 6 elements
+INFO  2019-01-11 18:15:40,704 [main][ManipWithString.java:98] : Converting 'String' to 'double'
+INFO  2019-01-11 18:15:40,704 [main][ManipWithString.java:100] : 'String' to 'double' successful converted
+INFO  2019-01-11 18:15:40,705 [main][ManipWithString.java:101] : Current 'double' value is: 143.78
+INFO  2019-01-11 18:15:40,705 [main][ManipWithString.java:183] : Converting 'double' to 'String'
+INFO  2019-01-11 18:15:40,705 [main][ManipWithString.java:185] : 'Double' to 'String' successful converted 143.78
+INFO  2019-01-11 18:15:40,705 [main][CheckingParam.java:22] : Checking value Expected is: 143.78. Actual is: 143.78
+INFO  2019-01-11 18:15:40,740 [main][RenewingVarsVals.java:39] : Re-newing Var
+INFO  2019-01-11 18:15:40,741 [main][RenewingVarsVals.java:41] : Var is re-newed. Current Var is: 89276.0
+INFO  2019-01-11 18:15:40,768 [main][CalculatingValues.java:105] : Value doesn't contains minus: 30.06
+INFO  2019-01-11 18:15:40,769 [main][RenewingVarsVals.java:20] : Re-newing Val
+INFO  2019-01-11 18:15:40,769 [main][RenewingVarsVals.java:22] : Val is re-newed
+INFO  2019-01-11 18:15:40,769 [main][RenewingVarsVals.java:23] : Result of new value is: 30.06
+INFO  2019-01-11 18:15:40,769 [main][ManipWithString.java:89] : Current array has 9 elements
+INFO  2019-01-11 18:15:40,770 [main][ManipWithString.java:94] : New length is: 8. Created array for 8 elements
+INFO  2019-01-11 18:15:40,770 [main][ManipWithString.java:98] : Converting 'String' to 'double'
+INFO  2019-01-11 18:15:40,770 [main][ManipWithString.java:100] : 'String' to 'double' successful converted
+INFO  2019-01-11 18:15:40,771 [main][ManipWithString.java:101] : Current 'double' value is: 10087.68
+INFO  2019-01-11 18:15:40,771 [main][ManipWithString.java:183] : Converting 'double' to 'String'
+INFO  2019-01-11 18:15:40,771 [main][ManipWithString.java:185] : 'Double' to 'String' successful converted 10087.68
+ERROR 2019-01-11 18:15:40,772 [main][CheckingParam.java:25] : Error expected:<[30.06]> but was:<[10087.68]>
+INFO  2019-01-11 18:23:18,260 [main][RedtrackStats.java:44] : Initialization driver
+INFO  2019-01-11 18:23:21,029 [main][RedtrackStats.java:53] : Initialization driver success
+INFO  2019-01-11 18:23:21,030 [main][RedtrackStats.java:54] : Opening page: https://app.redtrack.io/signin
+INFO  2019-01-11 18:23:22,317 [main][RedtrackStats.java:60] : Opened page is: https://app.redtrack.io/signin
+INFO  2019-01-11 18:23:22,365 [main][RedtrackStats.java:75] : Logging into app
+INFO  2019-01-11 18:23:28,382 [main][CheckingParam.java:35] : Checking element Expected is: Logs. Actual is: Logs
+INFO  2019-01-11 18:23:28,383 [main][RedtrackStats.java:92] : Login successful 
+INFO  2019-01-11 18:23:28,385 [main][RedtrackStats.java:107] : Opening page: 'Campaigns'
+INFO  2019-01-11 18:23:33,594 [main][RedtrackStats.java:119] : Opening calendar to set period
+INFO  2019-01-11 18:23:33,711 [main][RedtrackStats.java:123] : Set period 'Last 30 days'
+INFO  2019-01-11 18:23:33,817 [main][RedtrackStats.java:134] : Confirming setted period
+INFO  2019-01-11 18:23:39,027 [main][RedtrackStats.java:146] : Getting costs
+INFO  2019-01-11 18:23:39,059 [main][RedtrackStats.java:149] : Converting array with $885.00
+INFO  2019-01-11 18:23:39,064 [main][RedtrackStats.java:151] : Converting successful, current value is 885.0
+INFO  2019-01-11 18:23:39,065 [main][RedtrackStats.java:153] : Getting clicks
+INFO  2019-01-11 18:23:39,093 [main][RedtrackStats.java:156] : Converting array with 185
+INFO  2019-01-11 18:23:39,094 [main][ManipWithString.java:18] : Converting String to double
+INFO  2019-01-11 18:23:39,094 [main][ManipWithString.java:20] : String to double successful converted
+INFO  2019-01-11 18:23:39,094 [main][ManipWithString.java:21] : Current 'double' value is: 185.0
+INFO  2019-01-11 18:23:39,095 [main][RedtrackStats.java:158] : Converting successful, current value is 185.0
+INFO  2019-01-11 18:23:39,096 [main][CalculatingValues.java:19] : Cost per Clicks is calculating by Cost dividing by Clicks
+INFO  2019-01-11 18:23:39,097 [main][CalculatingValues.java:28] : Calculated CPC is: 4.7838
+INFO  2019-01-11 18:23:39,098 [main][RenewingVarsVals.java:20] : Re-newing Val
+INFO  2019-01-11 18:23:39,099 [main][RenewingVarsVals.java:22] : Val is re-newed
+INFO  2019-01-11 18:23:39,099 [main][RenewingVarsVals.java:23] : Result of new value is: 4.7838
+INFO  2019-01-11 18:23:39,100 [main][RedtrackStats.java:161] : Getting CPC
+INFO  2019-01-11 18:23:39,129 [main][RedtrackStats.java:163] : CPC Getted
+INFO  2019-01-11 18:23:42,134 [main][ManipWithString.java:183] : Converting 'double' to 'String'
+INFO  2019-01-11 18:23:42,135 [main][ManipWithString.java:185] : 'Double' to 'String' successful converted 4.7838
+INFO  2019-01-11 18:23:42,136 [main][CheckingParam.java:22] : Checking value Expected is: 4.7838. Actual is: 4.7838
+INFO  2019-01-11 18:23:42,137 [main][RedtrackStats.java:180] : Checking of Profit value...
+INFO  2019-01-11 18:23:42,167 [main][RenewingVarsVals.java:39] : Re-newing Var
+INFO  2019-01-11 18:23:42,167 [main][RenewingVarsVals.java:41] : Var is re-newed. Current Var is: 92161.0
+INFO  2019-01-11 18:23:42,168 [main][RedtrackStats.java:184] : Checking cost
+INFO  2019-01-11 18:23:42,185 [main][RedtrackStats.java:186] : Cost checked
+INFO  2019-01-11 18:23:42,186 [main][RedtrackStats.java:187] : manipulating
+INFO  2019-01-11 18:23:42,186 [main][RedtrackStats.java:189] : manipulating finished
+INFO  2019-01-11 18:23:42,213 [main][CalculatingValues.java:39] : Profit is calculating by **** minus *****
+INFO  2019-01-11 18:23:42,214 [main][CalculatingValues.java:42] : Calculated Profit is: -91276.0
+INFO  2019-01-11 18:23:42,214 [main][CalculatingValues.java:47] : Value doesn't contains minus: -91276.0
+INFO  2019-01-11 18:23:42,215 [main][RenewingVarsVals.java:15] : Re-newing Val
+INFO  2019-01-11 18:23:42,215 [main][RenewingVarsVals.java:17] : Val is re-newed
+INFO  2019-01-11 18:23:42,215 [main][RenewingVarsVals.java:18] : Result of new value is: null
+INFO  2019-01-11 18:23:42,216 [main][ManipWithString.java:183] : Converting 'double' to 'String'
+INFO  2019-01-11 18:23:42,216 [main][ManipWithString.java:185] : 'Double' to 'String' successful converted 91276.0
+ERROR 2019-01-11 18:23:42,216 [main][CheckingParam.java:28] : Assertion error: expected:<null> but was:<91276.0>
+INFO  2019-01-11 18:23:42,244 [main][ManipWithString.java:89] : Current array has 7 elements
+INFO  2019-01-11 18:23:42,245 [main][ManipWithString.java:94] : New length is: 6. Created array for 6 elements
+INFO  2019-01-11 18:23:42,245 [main][ManipWithString.java:98] : Converting 'String' to 'double'
+INFO  2019-01-11 18:23:42,245 [main][ManipWithString.java:100] : 'String' to 'double' successful converted
+INFO  2019-01-11 18:23:42,246 [main][ManipWithString.java:101] : Current 'double' value is: 144.86
+INFO  2019-01-11 18:23:42,246 [main][CalculatingValues.java:57] : Conversions is calculating via val of Clicks dividing CR 
+INFO  2019-01-11 18:23:42,246 [main][CalculatingValues.java:60] : Calculated Conversions is: 268.0
+INFO  2019-01-11 18:23:42,247 [main][ManipWithString.java:183] : Converting 'double' to 'String'
+INFO  2019-01-11 18:23:42,247 [main][ManipWithString.java:185] : 'Double' to 'String' successful converted 144.86
+INFO  2019-01-11 18:23:42,247 [main][RenewingVarsVals.java:15] : Re-newing Val
+INFO  2019-01-11 18:23:42,248 [main][RenewingVarsVals.java:17] : Val is re-newed
+INFO  2019-01-11 18:23:42,248 [main][RenewingVarsVals.java:18] : Result of new value is: null
+INFO  2019-01-11 18:23:42,249 [main][RedtrackStats.java:212] : get conversion
+INFO  2019-01-11 18:23:42,274 [main][RedtrackStats.java:214] : conversion getted
+INFO  2019-01-11 18:23:42,275 [main][ManipWithString.java:107] : Current array has 3 elements
+INFO  2019-01-11 18:23:42,275 [main][ManipWithString.java:112] : New length is: 2. Created array for 2 elements
+INFO  2019-01-11 18:23:42,275 [main][ManipWithString.java:116] : Converting 'String' to 'double'
+INFO  2019-01-11 18:23:42,275 [main][ManipWithString.java:118] : 'String' to 'double' successful converted
+INFO  2019-01-11 18:23:42,276 [main][ManipWithString.java:119] : Current 'double' value is: 268.0
+INFO  2019-01-11 18:23:42,276 [main][ManipWithString.java:183] : Converting 'double' to 'String'
+INFO  2019-01-11 18:23:42,276 [main][ManipWithString.java:185] : 'Double' to 'String' successful converted 268.0
+ERROR 2019-01-11 18:23:42,277 [main][CheckingParam.java:28] : Assertion error: expected:<null> but was:<268.0>
+INFO  2019-01-11 18:23:42,278 [main][RedtrackStats.java:231] : getting cost
+INFO  2019-01-11 18:23:42,296 [main][RedtrackStats.java:233] : cost getted
+INFO  2019-01-11 18:23:42,296 [main][RedtrackStats.java:235] : getting transaction
+INFO  2019-01-11 18:23:42,321 [main][RedtrackStats.java:237] : transaction getted
+INFO  2019-01-11 18:23:42,321 [main][ManipWithString.java:18] : Converting String to double
+INFO  2019-01-11 18:23:42,321 [main][ManipWithString.java:20] : String to double successful converted
+INFO  2019-01-11 18:23:42,321 [main][ManipWithString.java:21] : Current 'double' value is: 0.0
+INFO  2019-01-11 18:23:42,322 [main][CalculatingValues.java:69] : Cost Per Transaction is calculating via Cost dividing Transactions 
+ERROR 2019-01-11 18:23:42,322 [main][CalculatingValues.java:75] : Something went wrong Character I is neither a decimal digit number, decimal point, nor "e" notation exponential mark.
+INFO  2019-01-11 18:23:42,322 [main][ManipWithString.java:183] : Converting 'double' to 'String'
+INFO  2019-01-11 18:23:42,322 [main][ManipWithString.java:185] : 'Double' to 'String' successful converted 885.0
+INFO  2019-01-11 18:23:42,323 [main][RenewingVarsVals.java:15] : Re-newing Val
+INFO  2019-01-11 18:23:42,323 [main][RenewingVarsVals.java:17] : Val is re-newed
+INFO  2019-01-11 18:23:42,323 [main][RenewingVarsVals.java:18] : Result of new value is: null
+INFO  2019-01-11 18:23:42,352 [main][ManipWithString.java:201] : Correcting decimal... Current value is: 0.0
+INFO  2019-01-11 18:23:42,361 [main][ManipWithString.java:205] : Correcting decimal finished... Corrected value is: 0,0000
+ERROR 2019-01-11 18:23:42,361 [main][CheckingParam.java:28] : Assertion error: expected:<null> but was:<0,0000>
+INFO  2019-01-11 18:23:42,376 [main][RenewingVarsVals.java:39] : Re-newing Var
+INFO  2019-01-11 18:23:42,377 [main][RenewingVarsVals.java:41] : Var is re-newed. Current Var is: 885.0
+INFO  2019-01-11 18:23:42,392 [main][ManipWithString.java:107] : Current array has 3 elements
+INFO  2019-01-11 18:23:42,393 [main][ManipWithString.java:112] : New length is: 2. Created array for 2 elements
+INFO  2019-01-11 18:23:42,393 [main][ManipWithString.java:116] : Converting 'String' to 'double'
+INFO  2019-01-11 18:23:42,393 [main][ManipWithString.java:118] : 'String' to 'double' successful converted
+INFO  2019-01-11 18:23:42,394 [main][ManipWithString.java:119] : Current 'double' value is: 268.0
+INFO  2019-01-11 18:23:42,394 [main][CalculatingValues.java:81] : Profit is calculating by **** minus *****
+INFO  2019-01-11 18:23:42,395 [main][CalculatingValues.java:84] : Calculated Profit is: 3.3022
+INFO  2019-01-11 18:23:42,396 [main][CalculatingValues.java:89] : Value doesn't contains minus: 3.3022
+INFO  2019-01-11 18:23:42,396 [main][ManipWithString.java:183] : Converting 'double' to 'String'
+INFO  2019-01-11 18:23:42,396 [main][ManipWithString.java:185] : 'Double' to 'String' successful converted 268.0
+INFO  2019-01-11 18:23:42,397 [main][RenewingVarsVals.java:20] : Re-newing Val
+INFO  2019-01-11 18:23:42,397 [main][RenewingVarsVals.java:22] : Val is re-newed
+INFO  2019-01-11 18:23:42,397 [main][RenewingVarsVals.java:23] : Result of new value is: 3.3022
+INFO  2019-01-11 18:23:42,423 [main][ManipWithString.java:183] : Converting 'double' to 'String'
+INFO  2019-01-11 18:23:42,423 [main][ManipWithString.java:185] : 'Double' to 'String' successful converted 3.3022
+INFO  2019-01-11 18:23:42,424 [main][CheckingParam.java:22] : Checking value Expected is: 3.3022. Actual is: 3.3022
+INFO  2019-01-11 18:23:42,451 [main][RenewingVarsVals.java:39] : Re-newing Var
+INFO  2019-01-11 18:23:42,452 [main][RenewingVarsVals.java:41] : Var is re-newed. Current Var is: 92161.0
+INFO  2019-01-11 18:23:42,469 [main][ManipWithString.java:18] : Converting String to double
+INFO  2019-01-11 18:23:42,469 [main][ManipWithString.java:20] : String to double successful converted
+INFO  2019-01-11 18:23:42,470 [main][ManipWithString.java:21] : Current 'double' value is: 185.0
+INFO  2019-01-11 18:23:42,470 [main][CalculatingValues.java:19] : Cost per Clicks is calculating by Cost dividing by Clicks
+INFO  2019-01-11 18:23:42,470 [main][CalculatingValues.java:28] : Calculated CPC is: 498.1676
+INFO  2019-01-11 18:23:42,470 [main][RenewingVarsVals.java:20] : Re-newing Val
+INFO  2019-01-11 18:23:42,471 [main][RenewingVarsVals.java:22] : Val is re-newed
+INFO  2019-01-11 18:23:42,471 [main][RenewingVarsVals.java:23] : Result of new value is: 498.1676
+INFO  2019-01-11 18:23:42,504 [main][ManipWithString.java:183] : Converting 'double' to 'String'
+INFO  2019-01-11 18:23:42,504 [main][ManipWithString.java:185] : 'Double' to 'String' successful converted 498.1676
+INFO  2019-01-11 18:23:42,505 [main][CheckingParam.java:22] : Checking value Expected is: 498.1676. Actual is: 498.1676
+INFO  2019-01-11 18:23:42,527 [main][ManipWithString.java:18] : Converting String to double
+INFO  2019-01-11 18:23:42,528 [main][ManipWithString.java:20] : String to double successful converted
+INFO  2019-01-11 18:23:42,528 [main][ManipWithString.java:21] : Current 'double' value is: 0.0
+INFO  2019-01-11 18:23:42,529 [main][RenewingVarsVals.java:51] : Re-newing Var2
+INFO  2019-01-11 18:23:42,529 [main][RenewingVarsVals.java:53] : Var2 is re-newed. Current Var2 is: 0.0
+INFO  2019-01-11 18:23:42,548 [main][ManipWithString.java:18] : Converting String to double
+INFO  2019-01-11 18:23:42,549 [main][ManipWithString.java:20] : String to double successful converted
+INFO  2019-01-11 18:23:42,549 [main][ManipWithString.java:21] : Current 'double' value is: 185.0
+INFO  2019-01-11 18:23:42,549 [main][CalculatingValues.java:105] : Value doesn't contains minus: 0.0
+INFO  2019-01-11 18:23:42,550 [main][RenewingVarsVals.java:15] : Re-newing Val
+INFO  2019-01-11 18:23:42,550 [main][RenewingVarsVals.java:17] : Val is re-newed
+INFO  2019-01-11 18:23:42,550 [main][RenewingVarsVals.java:18] : Result of new value is: null
+INFO  2019-01-11 18:23:42,579 [main][ManipWithString.java:89] : Current array has 5 elements
+INFO  2019-01-11 18:23:42,580 [main][ManipWithString.java:94] : New length is: 4. Created array for 4 elements
+INFO  2019-01-11 18:23:42,580 [main][ManipWithString.java:98] : Converting 'String' to 'double'
+INFO  2019-01-11 18:23:42,581 [main][ManipWithString.java:100] : 'String' to 'double' successful converted
+INFO  2019-01-11 18:23:42,581 [main][ManipWithString.java:101] : Current 'double' value is: 0.0
+INFO  2019-01-11 18:23:42,582 [main][ManipWithString.java:201] : Correcting decimal... Current value is: 0.0
+INFO  2019-01-11 18:23:42,582 [main][ManipWithString.java:205] : Correcting decimal finished... Corrected value is: 0,0000
+ERROR 2019-01-11 18:23:42,584 [main][CheckingParam.java:28] : Assertion error: expected:<null> but was:<0,0000>
+INFO  2019-01-11 18:23:42,610 [main][ManipWithString.java:18] : Converting String to double
+INFO  2019-01-11 18:23:42,611 [main][ManipWithString.java:20] : String to double successful converted
+INFO  2019-01-11 18:23:42,611 [main][ManipWithString.java:21] : Current 'double' value is: 268.0
+INFO  2019-01-11 18:23:42,612 [main][RenewingVarsVals.java:51] : Re-newing Var2
+INFO  2019-01-11 18:23:42,612 [main][RenewingVarsVals.java:53] : Var2 is re-newed. Current Var2 is: 268.0
+INFO  2019-01-11 18:23:42,633 [main][ManipWithString.java:18] : Converting String to double
+INFO  2019-01-11 18:23:42,634 [main][ManipWithString.java:20] : String to double successful converted
+INFO  2019-01-11 18:23:42,635 [main][ManipWithString.java:21] : Current 'double' value is: 185.0
+INFO  2019-01-11 18:23:42,636 [main][CalculatingValues.java:105] : Value doesn't contains minus: 144.86
+INFO  2019-01-11 18:23:42,636 [main][RenewingVarsVals.java:20] : Re-newing Val
+INFO  2019-01-11 18:23:42,637 [main][RenewingVarsVals.java:22] : Val is re-newed
+INFO  2019-01-11 18:23:42,638 [main][RenewingVarsVals.java:23] : Result of new value is: 144.86
+INFO  2019-01-11 18:23:42,656 [main][ManipWithString.java:89] : Current array has 7 elements
+INFO  2019-01-11 18:23:42,656 [main][ManipWithString.java:94] : New length is: 6. Created array for 6 elements
+INFO  2019-01-11 18:23:42,657 [main][ManipWithString.java:98] : Converting 'String' to 'double'
+INFO  2019-01-11 18:23:42,657 [main][ManipWithString.java:100] : 'String' to 'double' successful converted
+INFO  2019-01-11 18:23:42,658 [main][ManipWithString.java:101] : Current 'double' value is: 144.86
+INFO  2019-01-11 18:23:42,658 [main][ManipWithString.java:183] : Converting 'double' to 'String'
+INFO  2019-01-11 18:23:42,658 [main][ManipWithString.java:185] : 'Double' to 'String' successful converted 144.86
+INFO  2019-01-11 18:23:42,659 [main][CheckingParam.java:22] : Checking value Expected is: 144.86. Actual is: 144.86
+INFO  2019-01-11 18:23:42,702 [main][RenewingVarsVals.java:39] : Re-newing Var
+INFO  2019-01-11 18:23:42,703 [main][RenewingVarsVals.java:41] : Var is re-newed. Current Var is: 91276.0
+INFO  2019-01-11 18:23:42,732 [main][CalculatingValues.java:105] : Value doesn't contains minus: 30.28
+INFO  2019-01-11 18:23:42,733 [main][RenewingVarsVals.java:20] : Re-newing Val
+INFO  2019-01-11 18:23:42,733 [main][RenewingVarsVals.java:22] : Val is re-newed
+INFO  2019-01-11 18:23:42,733 [main][RenewingVarsVals.java:23] : Result of new value is: 30.28
+INFO  2019-01-11 18:23:42,734 [main][ManipWithString.java:89] : Current array has 9 elements
+INFO  2019-01-11 18:23:42,734 [main][ManipWithString.java:94] : New length is: 8. Created array for 8 elements
+INFO  2019-01-11 18:23:42,734 [main][ManipWithString.java:98] : Converting 'String' to 'double'
+INFO  2019-01-11 18:23:42,735 [main][ManipWithString.java:100] : 'String' to 'double' successful converted
+INFO  2019-01-11 18:23:42,735 [main][ManipWithString.java:101] : Current 'double' value is: 10313.67
+INFO  2019-01-11 18:23:42,736 [main][ManipWithString.java:183] : Converting 'double' to 'String'
+INFO  2019-01-11 18:23:42,736 [main][ManipWithString.java:185] : 'Double' to 'String' successful converted 10313.67
+ERROR 2019-01-11 18:23:42,738 [main][CheckingParam.java:25] : Error expected:<[30.28]> but was:<[10313.67]>

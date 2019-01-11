@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="13" passed="13" failed="0" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2019-01-11T15:23:18Z" name="io.redtrack.app.tests.RedtrackStats" finished-at="2019-01-11T15:23:42Z" duration-ms="24533">
+    <groups>
+    </groups>
+    <test started-at="2019-01-11T15:23:18Z" name="Command line test" finished-at="2019-01-11T15:23:42Z" duration-ms="24533">
+      <class name="io.redtrack.app.tests.RedtrackStats">
+        <test-method is-config="true" signature="init()[pri:0, instance:io.redtrack.app.tests.RedtrackStats@7c7a06ec]" started-at="2019-01-11T15:23:18Z" name="init" finished-at="2019-01-11T15:23:22Z" duration-ms="4103" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- init -->
+        <test-method signature="login()[pri:0, instance:io.redtrack.app.tests.RedtrackStats@7c7a06ec]" started-at="2019-01-11T15:23:22Z" name="login" finished-at="2019-01-11T15:23:28Z" duration-ms="6018" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- login -->
+        <test-method signature="campaignsPage()[pri:0, instance:io.redtrack.app.tests.RedtrackStats@7c7a06ec]" started-at="2019-01-11T15:23:28Z" name="campaignsPage" finished-at="2019-01-11T15:23:28Z" depends-on-methods="io.redtrack.app.tests.RedtrackStats.login" duration-ms="203" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- campaignsPage -->
+        <test-method signature="setCustomPeriod()[pri:0, instance:io.redtrack.app.tests.RedtrackStats@7c7a06ec]" started-at="2019-01-11T15:23:28Z" name="setCustomPeriod" finished-at="2019-01-11T15:23:33Z" depends-on-methods="io.redtrack.app.tests.RedtrackStats.campaignsPage" duration-ms="5227" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setCustomPeriod -->
+        <test-method signature="setDate()[pri:0, instance:io.redtrack.app.tests.RedtrackStats@7c7a06ec]" started-at="2019-01-11T15:23:33Z" name="setDate" finished-at="2019-01-11T15:23:34Z" depends-on-methods="io.redtrack.app.tests.RedtrackStats.setCustomPeriod" duration-ms="207" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setDate -->
+        <test-method signature="checkingCPC()[pri:0, instance:io.redtrack.app.tests.RedtrackStats@7c7a06ec]" started-at="2019-01-11T15:23:34Z" name="checkingCPC" finished-at="2019-01-11T15:23:42Z" depends-on-methods="io.redtrack.app.tests.RedtrackStats.setDate" duration-ms="8112" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- checkingCPC -->
+        <test-method signature="checkingProfit()[pri:0, instance:io.redtrack.app.tests.RedtrackStats@7c7a06ec]" started-at="2019-01-11T15:23:42Z" name="checkingProfit" finished-at="2019-01-11T15:23:42Z" depends-on-methods="io.redtrack.app.tests.RedtrackStats.checkingCPC" duration-ms="80" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- checkingProfit -->
+        <test-method signature="checkingConv()[pri:0, instance:io.redtrack.app.tests.RedtrackStats@7c7a06ec]" started-at="2019-01-11T15:23:42Z" name="checkingConv" finished-at="2019-01-11T15:23:42Z" depends-on-methods="io.redtrack.app.tests.RedtrackStats.checkingProfit" duration-ms="60" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- checkingConv -->
+        <test-method signature="checkingCPT()[pri:0, instance:io.redtrack.app.tests.RedtrackStats@7c7a06ec]" started-at="2019-01-11T15:23:42Z" name="checkingCPT" finished-at="2019-01-11T15:23:42Z" depends-on-methods="io.redtrack.app.tests.RedtrackStats.checkingConv" duration-ms="83" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- checkingCPT -->
+        <test-method signature="checkCPA()[pri:0, instance:io.redtrack.app.tests.RedtrackStats@7c7a06ec]" started-at="2019-01-11T15:23:42Z" name="checkCPA" finished-at="2019-01-11T15:23:42Z" depends-on-methods="io.redtrack.app.tests.RedtrackStats.checkingCPT" duration-ms="62" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- checkCPA -->
+        <test-method signature="checkEPC()[pri:0, instance:io.redtrack.app.tests.RedtrackStats@7c7a06ec]" started-at="2019-01-11T15:23:42Z" name="checkEPC" finished-at="2019-01-11T15:23:42Z" depends-on-methods="io.redtrack.app.tests.RedtrackStats.checkCPA" duration-ms="79" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- checkEPC -->
+        <test-method signature="checkTR()[pri:0, instance:io.redtrack.app.tests.RedtrackStats@7c7a06ec]" started-at="2019-01-11T15:23:42Z" name="checkTR" finished-at="2019-01-11T15:23:42Z" depends-on-methods="io.redtrack.app.tests.RedtrackStats.checkEPC" duration-ms="78" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- checkTR -->
+        <test-method signature="checkCR()[pri:0, instance:io.redtrack.app.tests.RedtrackStats@7c7a06ec]" started-at="2019-01-11T15:23:42Z" name="checkCR" finished-at="2019-01-11T15:23:42Z" depends-on-methods="io.redtrack.app.tests.RedtrackStats.checkTR" duration-ms="73" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- checkCR -->
+        <test-method signature="checkROI()[pri:0, instance:io.redtrack.app.tests.RedtrackStats@7c7a06ec]" started-at="2019-01-11T15:23:42Z" name="checkROI" finished-at="2019-01-11T15:23:42Z" depends-on-methods="io.redtrack.app.tests.RedtrackStats.checkCR" duration-ms="79" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- checkROI -->
+      </class> <!-- io.redtrack.app.tests.RedtrackStats -->
+    </test> <!-- Command line test -->
+  </suite> <!-- io.redtrack.app.tests.RedtrackStats -->
+</testng-results>
