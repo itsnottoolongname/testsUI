@@ -27,7 +27,7 @@ public class RedtrackTrafficSourceCreate {
             windowHandle,
             CheckParam;
 
-    public static final Logger logger = Logger.getLogger(RedtrackStats.class.getName());
+    public static final Logger logger = Logger.getLogger(RedtrackStatsTests.class.getName());
 
     @BeforeClass
     public void init() {

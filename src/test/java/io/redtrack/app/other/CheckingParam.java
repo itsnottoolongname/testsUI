@@ -1,16 +1,9 @@
 package io.redtrack.app.other;
 
-import io.redtrack.app.errors.Err;
-import io.redtrack.app.messages.Mess;
-import io.redtrack.app.tests.RedtrackStats;
-import net.bytebuddy.implementation.bytecode.Throw;
 import org.apache.log4j.Logger;
 import org.junit.Assert;
 import io.redtrack.app.variable.Variables;
 import org.junit.ComparisonFailure;
-
-import java.io.FileWriter;
-import java.io.IOException;
 
 public class CheckingParam {
 

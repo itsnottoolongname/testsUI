@@ -1,13 +1,11 @@
 package io.redtrack.app.pages;
 
-import io.redtrack.app.tests.RedtrackStats;
+import io.redtrack.app.tests.RedtrackStatsTests;
 import org.apache.log4j.Logger;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
-
-import java.io.IOException;
 
 
 public class LoginPage {
@@ -18,7 +16,7 @@ public class LoginPage {
 
 
     }
-    public static final Logger logger = Logger.getLogger(RedtrackStats.class.getSimpleName());
+    public static final Logger logger = Logger.getLogger(RedtrackStatsTests.class.getSimpleName());
     public WebDriver driver;
 
     @FindBy(name = "login")

@@ -2,7 +2,7 @@
 
 import com.sun.xml.internal.fastinfoset.sax.SystemIdResolver;
 import io.redtrack.app.tests.RedtrackLogin;
-import io.redtrack.app.tests.RedtrackStats;
+import io.redtrack.app.tests.RedtrackStatsTests;
 
 import java.io.FileWriter;
 import java.io.IOException;

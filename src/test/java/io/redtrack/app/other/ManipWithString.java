@@ -1,7 +1,6 @@
 package io.redtrack.app.other;
 
 import io.redtrack.app.messages.Mess;
-import io.redtrack.app.tests.RedtrackStats;
 import io.redtrack.app.variable.Variables;
 import org.apache.log4j.Logger;
 
