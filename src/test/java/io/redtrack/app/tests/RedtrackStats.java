@@ -43,9 +43,9 @@ public class RedtrackStats {
         try {
             logger.info("Initialization driver");
             System.setProperty("webdriver.chrome.driver", "./src/Drivers/Chrome/chromedriver");
-                driver.wait(1000000);
+                driver.wait(100000);
             driver = new ChromeDriver();
-                driver.wait(1000000);
+                driver.wait(100000);
             loginPage = new LoginPage(driver);
             getStats = new ForCheckingStats(driver);
             navigation = new Navigation(driver);
