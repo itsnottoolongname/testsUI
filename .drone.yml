@@ -4,4 +4,4 @@ steps:
 - name: test
   image: maven:3-jdk-10
   commands:
-  - sudo mvn test -B
+  - mvn test -B
