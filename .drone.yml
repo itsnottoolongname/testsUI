@@ -1,6 +1,10 @@
 kind: pipeline
 name: default
 steps:
+- name: clean
+  image: maven:3-jdk-10
+  commands:
+  - mvn clean
 - name: test
   image: maven:3-jdk-10
   commands:
