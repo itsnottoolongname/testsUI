@@ -5,4 +5,4 @@ steps:
   image: maven:3-jdk-10
   commands:
   - cd src/test/java/io/redtrack/app/tests
-  - mvn -Dtest=RedtrackStatsTest test
+  - mvn -B test
