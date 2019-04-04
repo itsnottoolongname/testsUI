@@ -40,8 +40,10 @@ public class RedtrackStatsTests {
     private void init() {
         try {
             logger.info("Initialization driver");
-            System.setProperty("webdriver.chrome.driver", "./src/Drivers/Chrome/chromedriver");
+            System.setProperty("webdriver.chrome.driver", "src/Drivers/Chrome/chromedriver");
+            driver.wait(100000);
             driver = new ChromeDriver();
+            driver.wait(100000);
             loginPage = new LoginPage(driver);
             getStats = new ForCheckingStats(driver);
             navigation = new Navigation(driver);
