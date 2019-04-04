@@ -4,5 +4,5 @@ steps:
 - name: test
   image: maven:3-jdk-10
   commands:
-  - cd frontredrtack
+  - cd src/tests/java/ioredtrack/app/tests
   - mvn -Dtest=RedtrackStatsTest test
