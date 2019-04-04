@@ -1,6 +1,11 @@
 kind: pipeline
 name: default
 steps:
+-name: permition
+ image: maven:3-jdk-10
+ commands:
+  - chmod 777 /src/Drivers/Chrome/chromedriver
+steps:
 - name: clean
   image: maven:3-jdk-10
   commands:
