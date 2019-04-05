@@ -9,8 +9,6 @@ services:
       DBUS_SESSION_BUS_ADDRESS: /dev/null
     volumes:
     - /dev/shm:/dev/shm
-    labels:
-      io.rancher.container.start_once: 'true'
   chrome-qa:
     privileged: true
     image: selenium/node-chrome-debug:3.3.1-cesium
@@ -26,9 +24,6 @@ services:
     - selenium-qa:selenium-qa
     ports:
     - XXXX:5900/tcp
-    labels:
-      io.rancher.container.pull_image: always
-      io.rancher.container.start_once: 'true'
   selenium-qa:
     image: selenium/hub:3.3.1-cesium
     environment:
@@ -37,9 +32,6 @@ services:
       GRID_TIMEOUT: '180000'
     volumes:
     - /dev/shm:/dev/shm
-    labels:
-      io.rancher.container.pull_image: always
-      io.rancher.container.start_once: 'true'
   selenium-dev:
     image: selenium/hub:3.3.1-cesium
     environment:
@@ -47,8 +39,6 @@ services:
       GRID_MAX_SESSION: '10'
       LOGSPOUT: ignore
       GRID_TIMEOUT: '180000'
-    labels:
-      io.rancher.container.pull_image: always
-      io.rancher.container.start_once: 'true'
+
 
 
