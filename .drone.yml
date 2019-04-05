@@ -1,11 +1,4 @@
 kind: pipeline
-name: default
-steps:
-- name: standalone
-  image: maven:3-jdk-10
-  commands:
-  - cd ./selenium-java-3.141.59/
-  - java -jar selenium-server-standalone.jar
 name: starttest
 steps:
 - name: clean
