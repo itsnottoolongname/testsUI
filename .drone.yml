@@ -1,44 +1,13 @@
-services:
-    image: selenium/node-chrome:3.3.1-cesium
-    environment:
-      HUB_PORT_4444_TCP_ADDR: selenium-dev
-      HUB_PORT_4444_TCP_PORT: '4444'
-      JAVA_OPTS: -Xmx4G
-      LOGSPOUT: ignore
-      shm_size: 512MB
-      DBUS_SESSION_BUS_ADDRESS: /dev/null
-    volumes:
-    - /dev/shm:/dev/shm
-  chrome-qa:
-    privileged: true
-    image: selenium/node-chrome-debug:3.3.1-cesium
-    environment:
-      HUB_PORT_4444_TCP_ADDR: selenium-qa
-      HUB_PORT_4444_TCP_PORT: '4444'
-    stdin_open: true
-    volumes:
-    - /dev/shm:/dev/shm
-    tty: true
-    links:
-    - selenium-qa:selenium-qa
-    - selenium-qa:selenium-qa
-    ports:
-    - XXXX:5900/tcp
-  selenium-qa:
-    image: selenium/hub:3.3.1-cesium
-    environment:
-      GRID_BROWSER_TIMEOUT: '180000'
-      GRID_MAX_SESSION: '6'
-      GRID_TIMEOUT: '180000'
-    volumes:
-    - /dev/shm:/dev/shm
-  selenium-dev:
-    image: selenium/hub:3.3.1-cesium
-    environment:
-      GRID_BROWSER_TIMEOUT: '180000'
-      GRID_MAX_SESSION: '10'
-      LOGSPOUT: ignore
-      GRID_TIMEOUT: '180000'
-
-
-
+kind: pipeline
+name: default
+steps:
+- name: clean
+  image: maven:3-jdk-10
+  commands:
+  - chmod 777 ./src/Drivers/Chrome/chromedriver
+  - mvn clean
+- name: test
+  image: maven:3-jdk-8
+  commands:
+  - chmod 777 ./src/Drivers/Chrome/chromedriver
+  - mvn -B test
