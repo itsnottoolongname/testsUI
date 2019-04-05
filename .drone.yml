@@ -6,9 +6,8 @@ steps:
   commands:
   - chmod 777 ./src/Drivers/Chrome/chromedriver
   - mvn clean
-  - chmod 777 usr/drone/bin/init
-  - brew cask install chromedriver
 - name: test
   image: maven:3-jdk-8
   commands:
+  - chmod 777 ./src/Drivers/Chrome/chromedriver
   - mvn -B test
