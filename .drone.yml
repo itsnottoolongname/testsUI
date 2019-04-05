@@ -11,3 +11,6 @@ steps:
   commands:
   - chmod 777 ./src/Drivers/Chrome/chromedriver
   - mvn -B test
+services:
+  selenium:
+    image: selenium/standalone-chrome
