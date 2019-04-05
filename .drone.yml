@@ -1,13 +1,8 @@
 kind: pipeline
-name: starttest
+name: default
 steps:
-- name: clean
+- name: standalone
   image: maven:3-jdk-10
   commands:
-  - chmod 777 ./src/Drivers/Chrome/chromedriver
-  - mvn clean
-- name: test
-  image: maven:3-jdk-8
-  commands:
-  - chmod 777 ./src/Drivers/Chrome/chromedriver
-  - mvn -B test
+  - cd ./selenium-java-3.141.59/
+  - java -jar selenium-server-standalone.jar
