@@ -9,5 +9,6 @@ steps:
 - name: test
   image: maven:3-jdk-8
   commands:
+  - brew install
   - chmod 777 ./src/Drivers/Chrome/chromedriver
   - mvn -B test
