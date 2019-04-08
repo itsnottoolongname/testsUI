@@ -1,4 +1,8 @@
 -------------------------------------------------------------------------------
 Test set: TestSuite
 -------------------------------------------------------------------------------
-Tests run: 14, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 33.115 s - in TestSuite
+Tests run: 14, Failures: 1, Errors: 0, Skipped: 13, Time elapsed: 11.512 s <<< FAILURE! - in TestSuite
+login(io.redtrack.app.tests.RedtrackStatsTests)  Time elapsed: 0.057 s  <<< FAILURE!
+java.lang.NullPointerException
+	at io.redtrack.app.tests.RedtrackStatsTests.login(RedtrackStatsTests.java:79)
+

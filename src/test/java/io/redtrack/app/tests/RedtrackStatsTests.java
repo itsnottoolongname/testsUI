@@ -22,7 +22,7 @@ package io.redtrack.app.tests;
 
 public class RedtrackStatsTests {
 
-    public WebDriver driver;
+    public ChromeDriver driver;
     public static LoginPage loginPage;
     public static CheckingParam checkingParam;
     public static Navigation navigation;

@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite thread-count="2" guice-stage="DEVELOPMENT" verbose="0" name="Failed suite [RedtrackFront by packages]" parallel="methods">
+  <test thread-count="2" verbose="0" name="test(failed)" parallel="methods">
+    <classes>
+      <class name="io.redtrack.app.tests.RedtrackStatsTests">
+        <methods>
+          <include name="setCustomPeriod"/>
+          <include name="checkingProfit"/>
+          <include name="checkingCPT"/>
+          <include name="checkingConv"/>
+          <include name="checkCPA"/>
+          <include name="checkTR"/>
+          <include name="setDate"/>
+          <include name="closingDriver"/>
+          <include name="checkROI"/>
+          <include name="checkingCPC"/>
+          <include name="init"/>
+          <include name="campaignsPage"/>
+          <include name="login"/>
+          <include name="checkEPC"/>
+          <include name="checkCR"/>
+        </methods>
+      </class> <!-- io.redtrack.app.tests.RedtrackStatsTests -->
+    </classes>
+  </test> <!-- test(failed) -->
+</suite> <!-- Failed suite [RedtrackFront by packages] -->
