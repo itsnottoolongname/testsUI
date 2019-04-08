@@ -2672,3 +2672,136 @@ INFO  2019-04-04 14:25:37,040 [TestNG-test=test-2][ManipWithString.java:100] : C
 INFO  2019-04-04 14:25:37,041 [TestNG-test=test-2][ManipWithString.java:200] : Correcting decimal... Current value is: 0.0
 INFO  2019-04-04 14:25:37,041 [TestNG-test=test-2][ManipWithString.java:204] : Correcting decimal finished... Corrected value is: 0,0000
 ERROR 2019-04-04 14:25:37,042 [TestNG-test=test-2][CheckingParam.java:18] : Error expected:<[2.35]> but was:<[0,0000]>
+INFO  2019-04-08 19:25:38,649 [TestNG-test=test-1][RedtrackStatsTests.java:45] : Initialization driver
+INFO  2019-04-08 19:25:52,869 [TestNG-test=test-1][RedtrackStatsTests.java:56] : Initialization driver success
+INFO  2019-04-08 19:25:52,872 [TestNG-test=test-1][RedtrackStatsTests.java:57] : Opening page: https://app.redtrack.io/signin
+INFO  2019-04-08 19:25:57,327 [TestNG-test=test-1][RedtrackStatsTests.java:63] : Opened page is: https://app.redtrack.io/signin
+INFO  2019-04-08 19:25:57,341 [TestNG-test=test-1][RedtrackStatsTests.java:78] : Logging into app
+ERROR 2019-04-08 19:26:00,009 [TestNG-test=test-1][RedtrackStatsTests.java:86] : TestNG failed: stale element reference: element is not attached to the page document
+  (Session info: chrome=73.0.3683.86)
+  (Driver info: chromedriver=73.0.3683.68 (47787ec04b6e38e22703e856e101e840b65afe72),platform=Mac OS X 10.13.4 x86_64) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 0 milliseconds
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/stale_element_reference.html
+Build info: version: '3.14.0', revision: 'aacccce0', time: '2018-08-02T20:19:58.91Z'
+System info: host: 'MacBook-Pro-Dmitrij.local', ip: 'fe80:0:0:0:4dd:dcc5:a89c:d149%en0', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '10.13.4', java.version: '1.8.0_201'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, acceptSslCerts: false, applicationCacheEnabled: false, browserConnectionEnabled: false, browserName: chrome, chrome: {chromedriverVersion: 73.0.3683.68 (47787ec04b6e3..., userDataDir: /var/folders/s7/dlhq31ys7yn...}, cssSelectorsEnabled: true, databaseEnabled: false, goog:chromeOptions: {debuggerAddress: localhost:61928}, handlesAlerts: true, hasTouchScreen: false, javascriptEnabled: true, locationContextEnabled: true, mobileEmulationEnabled: false, nativeEvents: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: MAC, platformName: MAC, proxy: Proxy(), rotatable: false, setWindowRect: true, strictFileInteractability: false, takesHeapSnapshot: true, takesScreenshot: true, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unexpectedAlertBehaviour: ignore, unhandledPromptBehavior: ignore, version: 73.0.3683.86, webStorageEnabled: true}
+Session ID: a0cabb24423e62f30ad1a6e0e577c611
+ERROR 2019-04-08 19:26:00,054 [TestNG-test=test-1][CheckingParam.java:34] : Assertion error: expected:<Logs> but was:<null>
+INFO  2019-04-08 19:26:00,055 [TestNG-test=test-1][RedtrackStatsTests.java:95] : Login successful 
+INFO  2019-04-08 19:26:00,061 [TestNG-test=test-2][RedtrackStatsTests.java:110] : Opening page: 'Campaigns'
+INFO  2019-04-08 19:26:05,782 [TestNG-test=test-2][RedtrackStatsTests.java:122] : Opening calendar to set period
+ERROR 2019-04-08 19:26:05,792 [TestNG-test=test-2][RedtrackStatsTests.java:130] : Set period 'Last 30 days' failed: no such window: window was already closed
+  (Session info: chrome=73.0.3683.86)
+  (Driver info: chromedriver=73.0.3683.68 (47787ec04b6e38e22703e856e101e840b65afe72),platform=Mac OS X 10.13.4 x86_64) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 0 milliseconds
+Build info: version: '3.14.0', revision: 'aacccce0', time: '2018-08-02T20:19:58.91Z'
+System info: host: 'MacBook-Pro-Dmitrij.local', ip: 'fe80:0:0:0:4dd:dcc5:a89c:d149%en0', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '10.13.4', java.version: '1.8.0_201'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, acceptSslCerts: false, applicationCacheEnabled: false, browserConnectionEnabled: false, browserName: chrome, chrome: {chromedriverVersion: 73.0.3683.68 (47787ec04b6e3..., userDataDir: /var/folders/s7/dlhq31ys7yn...}, cssSelectorsEnabled: true, databaseEnabled: false, goog:chromeOptions: {debuggerAddress: localhost:61928}, handlesAlerts: true, hasTouchScreen: false, javascriptEnabled: true, locationContextEnabled: true, mobileEmulationEnabled: false, nativeEvents: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: MAC, platformName: MAC, proxy: Proxy(), rotatable: false, setWindowRect: true, strictFileInteractability: false, takesHeapSnapshot: true, takesScreenshot: true, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unexpectedAlertBehaviour: ignore, unhandledPromptBehavior: ignore, version: 73.0.3683.86, webStorageEnabled: true}
+Session ID: a0cabb24423e62f30ad1a6e0e577c611
+*** Element info: {Using=xpath, value=/html[1]/body[1]/div[1]/div[1]/div[1]/div[2]/div[1]/div[1]/div[1]/div[2]/div[2]/div[2]/div[1]/div[1]/button[1]}
+INFO  2019-04-08 19:26:05,797 [TestNG-test=test-2][RedtrackStatsTests.java:137] : Confirming setted period
+ERROR 2019-04-08 19:26:05,807 [TestNG-test=test-2][RedtrackStatsTests.java:141] : Confirming setted period failed: no such window: window was already closed
+  (Session info: chrome=73.0.3683.86)
+  (Driver info: chromedriver=73.0.3683.68 (47787ec04b6e38e22703e856e101e840b65afe72),platform=Mac OS X 10.13.4 x86_64) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 0 milliseconds
+Build info: version: '3.14.0', revision: 'aacccce0', time: '2018-08-02T20:19:58.91Z'
+System info: host: 'MacBook-Pro-Dmitrij.local', ip: 'fe80:0:0:0:4dd:dcc5:a89c:d149%en0', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '10.13.4', java.version: '1.8.0_201'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, acceptSslCerts: false, applicationCacheEnabled: false, browserConnectionEnabled: false, browserName: chrome, chrome: {chromedriverVersion: 73.0.3683.68 (47787ec04b6e3..., userDataDir: /var/folders/s7/dlhq31ys7yn...}, cssSelectorsEnabled: true, databaseEnabled: false, goog:chromeOptions: {debuggerAddress: localhost:61928}, handlesAlerts: true, hasTouchScreen: false, javascriptEnabled: true, locationContextEnabled: true, mobileEmulationEnabled: false, nativeEvents: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: MAC, platformName: MAC, proxy: Proxy(), rotatable: false, setWindowRect: true, strictFileInteractability: false, takesHeapSnapshot: true, takesScreenshot: true, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unexpectedAlertBehaviour: ignore, unhandledPromptBehavior: ignore, version: 73.0.3683.86, webStorageEnabled: true}
+Session ID: a0cabb24423e62f30ad1a6e0e577c611
+*** Element info: {Using=xpath, value=//div[@class='col-md-1']//button[@type='button'][contains(text(),'Apply')]}
+INFO  2019-04-08 19:26:10,813 [TestNG-test=test-2][RedtrackStatsTests.java:149] : Getting costs
+ERROR 2019-04-08 19:26:10,834 [TestNG-test=test-2][RedtrackStatsTests.java:173] : Checking CPC failed: no such window: window was already closed
+  (Session info: chrome=73.0.3683.86)
+  (Driver info: chromedriver=73.0.3683.68 (47787ec04b6e38e22703e856e101e840b65afe72),platform=Mac OS X 10.13.4 x86_64) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 0 milliseconds
+Build info: version: '3.14.0', revision: 'aacccce0', time: '2018-08-02T20:19:58.91Z'
+System info: host: 'MacBook-Pro-Dmitrij.local', ip: 'fe80:0:0:0:4dd:dcc5:a89c:d149%en0', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '10.13.4', java.version: '1.8.0_201'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, acceptSslCerts: false, applicationCacheEnabled: false, browserConnectionEnabled: false, browserName: chrome, chrome: {chromedriverVersion: 73.0.3683.68 (47787ec04b6e3..., userDataDir: /var/folders/s7/dlhq31ys7yn...}, cssSelectorsEnabled: true, databaseEnabled: false, goog:chromeOptions: {debuggerAddress: localhost:61928}, handlesAlerts: true, hasTouchScreen: false, javascriptEnabled: true, locationContextEnabled: true, mobileEmulationEnabled: false, nativeEvents: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: MAC, platformName: MAC, proxy: Proxy(), rotatable: false, setWindowRect: true, strictFileInteractability: false, takesHeapSnapshot: true, takesScreenshot: true, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unexpectedAlertBehaviour: ignore, unhandledPromptBehavior: ignore, version: 73.0.3683.86, webStorageEnabled: true}
+Session ID: a0cabb24423e62f30ad1a6e0e577c611
+*** Element info: {Using=xpath, value=/html[1]/body[1]/div[1]/div[1]/div[1]/div[2]/div[1]/div[1]/div[1]/div[2]/div[2]/div[3]/div[1]/div[1]/div[1]/div[1]/div[2]/div[4]/div[1]/div[16]}
+INFO  2019-04-08 19:26:10,837 [TestNG-test=test-2][RedtrackStatsTests.java:183] : Checking of Profit value...
+ERROR 2019-04-08 19:26:10,846 [TestNG-test=test-2][RedtrackStatsTests.java:201] : Sometring went wrong: no such window: window was already closed
+  (Session info: chrome=73.0.3683.86)
+  (Driver info: chromedriver=73.0.3683.68 (47787ec04b6e38e22703e856e101e840b65afe72),platform=Mac OS X 10.13.4 x86_64) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 0 milliseconds
+Build info: version: '3.14.0', revision: 'aacccce0', time: '2018-08-02T20:19:58.91Z'
+System info: host: 'MacBook-Pro-Dmitrij.local', ip: 'fe80:0:0:0:4dd:dcc5:a89c:d149%en0', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '10.13.4', java.version: '1.8.0_201'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, acceptSslCerts: false, applicationCacheEnabled: false, browserConnectionEnabled: false, browserName: chrome, chrome: {chromedriverVersion: 73.0.3683.68 (47787ec04b6e3..., userDataDir: /var/folders/s7/dlhq31ys7yn...}, cssSelectorsEnabled: true, databaseEnabled: false, goog:chromeOptions: {debuggerAddress: localhost:61928}, handlesAlerts: true, hasTouchScreen: false, javascriptEnabled: true, locationContextEnabled: true, mobileEmulationEnabled: false, nativeEvents: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: MAC, platformName: MAC, proxy: Proxy(), rotatable: false, setWindowRect: true, strictFileInteractability: false, takesHeapSnapshot: true, takesScreenshot: true, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unexpectedAlertBehaviour: ignore, unhandledPromptBehavior: ignore, version: 73.0.3683.86, webStorageEnabled: true}
+Session ID: a0cabb24423e62f30ad1a6e0e577c611
+*** Element info: {Using=xpath, value=/html[1]/body[1]/div[1]/div[1]/div[1]/div[2]/div[1]/div[1]/div[1]/div[2]/div[2]/div[3]/div[1]/div[1]/div[1]/div[1]/div[2]/div[4]/div[1]/div[15]}
+ERROR 2019-04-08 19:26:10,855 [TestNG-test=test-2][RedtrackStatsTests.java:224] : Some error no such window: window was already closed
+  (Session info: chrome=73.0.3683.86)
+  (Driver info: chromedriver=73.0.3683.68 (47787ec04b6e38e22703e856e101e840b65afe72),platform=Mac OS X 10.13.4 x86_64) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 0 milliseconds
+Build info: version: '3.14.0', revision: 'aacccce0', time: '2018-08-02T20:19:58.91Z'
+System info: host: 'MacBook-Pro-Dmitrij.local', ip: 'fe80:0:0:0:4dd:dcc5:a89c:d149%en0', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '10.13.4', java.version: '1.8.0_201'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, acceptSslCerts: false, applicationCacheEnabled: false, browserConnectionEnabled: false, browserName: chrome, chrome: {chromedriverVersion: 73.0.3683.68 (47787ec04b6e3..., userDataDir: /var/folders/s7/dlhq31ys7yn...}, cssSelectorsEnabled: true, databaseEnabled: false, goog:chromeOptions: {debuggerAddress: localhost:61928}, handlesAlerts: true, hasTouchScreen: false, javascriptEnabled: true, locationContextEnabled: true, mobileEmulationEnabled: false, nativeEvents: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: MAC, platformName: MAC, proxy: Proxy(), rotatable: false, setWindowRect: true, strictFileInteractability: false, takesHeapSnapshot: true, takesScreenshot: true, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unexpectedAlertBehaviour: ignore, unhandledPromptBehavior: ignore, version: 73.0.3683.86, webStorageEnabled: true}
+Session ID: a0cabb24423e62f30ad1a6e0e577c611
+*** Element info: {Using=xpath, value=/html[1]/body[1]/div[1]/div[1]/div[1]/div[2]/div[1]/div[1]/div[1]/div[2]/div[2]/div[3]/div[1]/div[1]/div[1]/div[1]/div[2]/div[4]/div[1]/div[12]}
+INFO  2019-04-08 19:26:10,856 [TestNG-test=test-2][RedtrackStatsTests.java:234] : getting cost
+ERROR 2019-04-08 19:26:10,865 [TestNG-test=test-2][RedtrackStatsTests.java:251] : Error checking CPT: no such window: window was already closed
+  (Session info: chrome=73.0.3683.86)
+  (Driver info: chromedriver=73.0.3683.68 (47787ec04b6e38e22703e856e101e840b65afe72),platform=Mac OS X 10.13.4 x86_64) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 0 milliseconds
+Build info: version: '3.14.0', revision: 'aacccce0', time: '2018-08-02T20:19:58.91Z'
+System info: host: 'MacBook-Pro-Dmitrij.local', ip: 'fe80:0:0:0:4dd:dcc5:a89c:d149%en0', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '10.13.4', java.version: '1.8.0_201'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, acceptSslCerts: false, applicationCacheEnabled: false, browserConnectionEnabled: false, browserName: chrome, chrome: {chromedriverVersion: 73.0.3683.68 (47787ec04b6e3..., userDataDir: /var/folders/s7/dlhq31ys7yn...}, cssSelectorsEnabled: true, databaseEnabled: false, goog:chromeOptions: {debuggerAddress: localhost:61928}, handlesAlerts: true, hasTouchScreen: false, javascriptEnabled: true, locationContextEnabled: true, mobileEmulationEnabled: false, nativeEvents: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: MAC, platformName: MAC, proxy: Proxy(), rotatable: false, setWindowRect: true, strictFileInteractability: false, takesHeapSnapshot: true, takesScreenshot: true, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unexpectedAlertBehaviour: ignore, unhandledPromptBehavior: ignore, version: 73.0.3683.86, webStorageEnabled: true}
+Session ID: a0cabb24423e62f30ad1a6e0e577c611
+*** Element info: {Using=xpath, value=/html[1]/body[1]/div[1]/div[1]/div[1]/div[2]/div[1]/div[1]/div[1]/div[2]/div[2]/div[3]/div[1]/div[1]/div[1]/div[1]/div[2]/div[4]/div[1]/div[16]}
+ERROR 2019-04-08 19:26:10,876 [TestNG-test=test-2][RedtrackStatsTests.java:272] : Checking CPA failed: no such window: window was already closed
+  (Session info: chrome=73.0.3683.86)
+  (Driver info: chromedriver=73.0.3683.68 (47787ec04b6e38e22703e856e101e840b65afe72),platform=Mac OS X 10.13.4 x86_64) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 0 milliseconds
+Build info: version: '3.14.0', revision: 'aacccce0', time: '2018-08-02T20:19:58.91Z'
+System info: host: 'MacBook-Pro-Dmitrij.local', ip: 'fe80:0:0:0:4dd:dcc5:a89c:d149%en0', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '10.13.4', java.version: '1.8.0_201'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, acceptSslCerts: false, applicationCacheEnabled: false, browserConnectionEnabled: false, browserName: chrome, chrome: {chromedriverVersion: 73.0.3683.68 (47787ec04b6e3..., userDataDir: /var/folders/s7/dlhq31ys7yn...}, cssSelectorsEnabled: true, databaseEnabled: false, goog:chromeOptions: {debuggerAddress: localhost:61928}, handlesAlerts: true, hasTouchScreen: false, javascriptEnabled: true, locationContextEnabled: true, mobileEmulationEnabled: false, nativeEvents: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: MAC, platformName: MAC, proxy: Proxy(), rotatable: false, setWindowRect: true, strictFileInteractability: false, takesHeapSnapshot: true, takesScreenshot: true, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unexpectedAlertBehaviour: ignore, unhandledPromptBehavior: ignore, version: 73.0.3683.86, webStorageEnabled: true}
+Session ID: a0cabb24423e62f30ad1a6e0e577c611
+*** Element info: {Using=xpath, value=/html[1]/body[1]/div[1]/div[1]/div[1]/div[2]/div[1]/div[1]/div[1]/div[2]/div[2]/div[3]/div[1]/div[1]/div[1]/div[1]/div[2]/div[4]/div[1]/div[16]}
+ERROR 2019-04-08 19:26:10,890 [TestNG-test=test-1][RedtrackStatsTests.java:292] : Checking EPC failed: no such window: window was already closed
+  (Session info: chrome=73.0.3683.86)
+  (Driver info: chromedriver=73.0.3683.68 (47787ec04b6e38e22703e856e101e840b65afe72),platform=Mac OS X 10.13.4 x86_64) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 0 milliseconds
+Build info: version: '3.14.0', revision: 'aacccce0', time: '2018-08-02T20:19:58.91Z'
+System info: host: 'MacBook-Pro-Dmitrij.local', ip: 'fe80:0:0:0:4dd:dcc5:a89c:d149%en0', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '10.13.4', java.version: '1.8.0_201'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, acceptSslCerts: false, applicationCacheEnabled: false, browserConnectionEnabled: false, browserName: chrome, chrome: {chromedriverVersion: 73.0.3683.68 (47787ec04b6e3..., userDataDir: /var/folders/s7/dlhq31ys7yn...}, cssSelectorsEnabled: true, databaseEnabled: false, goog:chromeOptions: {debuggerAddress: localhost:61928}, handlesAlerts: true, hasTouchScreen: false, javascriptEnabled: true, locationContextEnabled: true, mobileEmulationEnabled: false, nativeEvents: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: MAC, platformName: MAC, proxy: Proxy(), rotatable: false, setWindowRect: true, strictFileInteractability: false, takesHeapSnapshot: true, takesScreenshot: true, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unexpectedAlertBehaviour: ignore, unhandledPromptBehavior: ignore, version: 73.0.3683.86, webStorageEnabled: true}
+Session ID: a0cabb24423e62f30ad1a6e0e577c611
+*** Element info: {Using=xpath, value=/html[1]/body[1]/div[1]/div[1]/div[1]/div[2]/div[1]/div[1]/div[1]/div[2]/div[2]/div[3]/div[1]/div[1]/div[1]/div[1]/div[2]/div[4]/div[1]/div[15]}
+ERROR 2019-04-08 19:26:10,907 [TestNG-test=test-1][RedtrackStatsTests.java:312] : Checking TR failed: no such window: window was already closed
+  (Session info: chrome=73.0.3683.86)
+  (Driver info: chromedriver=73.0.3683.68 (47787ec04b6e38e22703e856e101e840b65afe72),platform=Mac OS X 10.13.4 x86_64) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 0 milliseconds
+Build info: version: '3.14.0', revision: 'aacccce0', time: '2018-08-02T20:19:58.91Z'
+System info: host: 'MacBook-Pro-Dmitrij.local', ip: 'fe80:0:0:0:4dd:dcc5:a89c:d149%en0', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '10.13.4', java.version: '1.8.0_201'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, acceptSslCerts: false, applicationCacheEnabled: false, browserConnectionEnabled: false, browserName: chrome, chrome: {chromedriverVersion: 73.0.3683.68 (47787ec04b6e3..., userDataDir: /var/folders/s7/dlhq31ys7yn...}, cssSelectorsEnabled: true, databaseEnabled: false, goog:chromeOptions: {debuggerAddress: localhost:61928}, handlesAlerts: true, hasTouchScreen: false, javascriptEnabled: true, locationContextEnabled: true, mobileEmulationEnabled: false, nativeEvents: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: MAC, platformName: MAC, proxy: Proxy(), rotatable: false, setWindowRect: true, strictFileInteractability: false, takesHeapSnapshot: true, takesScreenshot: true, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unexpectedAlertBehaviour: ignore, unhandledPromptBehavior: ignore, version: 73.0.3683.86, webStorageEnabled: true}
+Session ID: a0cabb24423e62f30ad1a6e0e577c611
+*** Element info: {Using=xpath, value=/html[1]/body[1]/div[1]/div[1]/div[1]/div[2]/div[1]/div[1]/div[1]/div[2]/div[2]/div[3]/div[1]/div[1]/div[1]/div[1]/div[2]/div[4]/div[1]/div[13]}
+ERROR 2019-04-08 19:26:10,920 [TestNG-test=test-1][RedtrackStatsTests.java:332] : Checking CR failed: no such window: window was already closed
+  (Session info: chrome=73.0.3683.86)
+  (Driver info: chromedriver=73.0.3683.68 (47787ec04b6e38e22703e856e101e840b65afe72),platform=Mac OS X 10.13.4 x86_64) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 0 milliseconds
+Build info: version: '3.14.0', revision: 'aacccce0', time: '2018-08-02T20:19:58.91Z'
+System info: host: 'MacBook-Pro-Dmitrij.local', ip: 'fe80:0:0:0:4dd:dcc5:a89c:d149%en0', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '10.13.4', java.version: '1.8.0_201'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, acceptSslCerts: false, applicationCacheEnabled: false, browserConnectionEnabled: false, browserName: chrome, chrome: {chromedriverVersion: 73.0.3683.68 (47787ec04b6e3..., userDataDir: /var/folders/s7/dlhq31ys7yn...}, cssSelectorsEnabled: true, databaseEnabled: false, goog:chromeOptions: {debuggerAddress: localhost:61928}, handlesAlerts: true, hasTouchScreen: false, javascriptEnabled: true, locationContextEnabled: true, mobileEmulationEnabled: false, nativeEvents: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: MAC, platformName: MAC, proxy: Proxy(), rotatable: false, setWindowRect: true, strictFileInteractability: false, takesHeapSnapshot: true, takesScreenshot: true, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unexpectedAlertBehaviour: ignore, unhandledPromptBehavior: ignore, version: 73.0.3683.86, webStorageEnabled: true}
+Session ID: a0cabb24423e62f30ad1a6e0e577c611
+*** Element info: {Using=xpath, value=/html[1]/body[1]/div[1]/div[1]/div[1]/div[2]/div[1]/div[1]/div[1]/div[2]/div[2]/div[3]/div[1]/div[1]/div[1]/div[1]/div[2]/div[4]/div[1]/div[11]}
+ERROR 2019-04-08 19:26:10,930 [TestNG-test=test-1][RedtrackStatsTests.java:354] : Checking ROI failed: no such window: window was already closed
+  (Session info: chrome=73.0.3683.86)
+  (Driver info: chromedriver=73.0.3683.68 (47787ec04b6e38e22703e856e101e840b65afe72),platform=Mac OS X 10.13.4 x86_64) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 0 milliseconds
+Build info: version: '3.14.0', revision: 'aacccce0', time: '2018-08-02T20:19:58.91Z'
+System info: host: 'MacBook-Pro-Dmitrij.local', ip: 'fe80:0:0:0:4dd:dcc5:a89c:d149%en0', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '10.13.4', java.version: '1.8.0_201'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, acceptSslCerts: false, applicationCacheEnabled: false, browserConnectionEnabled: false, browserName: chrome, chrome: {chromedriverVersion: 73.0.3683.68 (47787ec04b6e3..., userDataDir: /var/folders/s7/dlhq31ys7yn...}, cssSelectorsEnabled: true, databaseEnabled: false, goog:chromeOptions: {debuggerAddress: localhost:61928}, handlesAlerts: true, hasTouchScreen: false, javascriptEnabled: true, locationContextEnabled: true, mobileEmulationEnabled: false, nativeEvents: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: MAC, platformName: MAC, proxy: Proxy(), rotatable: false, setWindowRect: true, strictFileInteractability: false, takesHeapSnapshot: true, takesScreenshot: true, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unexpectedAlertBehaviour: ignore, unhandledPromptBehavior: ignore, version: 73.0.3683.86, webStorageEnabled: true}
+Session ID: a0cabb24423e62f30ad1a6e0e577c611
+*** Element info: {Using=xpath, value=/html[1]/body[1]/div[1]/div[1]/div[1]/div[2]/div[1]/div[1]/div[1]/div[2]/div[2]/div[3]/div[1]/div[1]/div[1]/div[1]/div[2]/div[4]/div[1]/div[16]}

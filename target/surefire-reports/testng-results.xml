@@ -2,68 +2,68 @@
 <testng-results skipped="0" failed="0" ignored="0" total="14" passed="14">
   <reporter-output>
   </reporter-output>
-  <suite name="RedtrackFront by packages" duration-ms="26928" started-at="2019-04-04T11:25:10Z" finished-at="2019-04-04T11:25:37Z">
+  <suite name="RedtrackFront by packages" duration-ms="32442" started-at="2019-04-08T16:25:38Z" finished-at="2019-04-08T16:26:11Z">
     <groups>
     </groups>
-    <test name="test" duration-ms="26928" started-at="2019-04-04T11:25:10Z" finished-at="2019-04-04T11:25:37Z">
+    <test name="test" duration-ms="32442" started-at="2019-04-08T16:25:38Z" finished-at="2019-04-08T16:26:11Z">
       <class name="io.redtrack.app.tests.RedtrackStatsTests">
-        <test-method status="PASS" signature="init()[pri:0, instance:io.redtrack.app.tests.RedtrackStatsTests@6e1ec318]" name="init" is-config="true" duration-ms="8318" started-at="2019-04-04T11:25:10Z" finished-at="2019-04-04T11:25:18Z">
+        <test-method status="PASS" signature="init()[pri:0, instance:io.redtrack.app.tests.RedtrackStatsTests@52a86356]" name="init" is-config="true" duration-ms="18690" started-at="2019-04-08T16:25:38Z" finished-at="2019-04-08T16:25:57Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- init -->
-        <test-method status="PASS" signature="login()[pri:0, instance:io.redtrack.app.tests.RedtrackStatsTests@6e1ec318]" name="login" duration-ms="2974" started-at="2019-04-04T11:25:18Z" finished-at="2019-04-04T11:25:21Z">
+        <test-method status="PASS" signature="login()[pri:0, instance:io.redtrack.app.tests.RedtrackStatsTests@52a86356]" name="login" duration-ms="2716" started-at="2019-04-08T16:25:57Z" finished-at="2019-04-08T16:26:00Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- login -->
-        <test-method status="PASS" signature="campaignsPage()[pri:0, instance:io.redtrack.app.tests.RedtrackStatsTests@6e1ec318]" name="campaignsPage" duration-ms="837" started-at="2019-04-04T11:25:21Z" depends-on-methods="io.redtrack.app.tests.RedtrackStatsTests.login" finished-at="2019-04-04T11:25:22Z">
+        <test-method status="PASS" signature="campaignsPage()[pri:0, instance:io.redtrack.app.tests.RedtrackStatsTests@52a86356]" name="campaignsPage" duration-ms="715" started-at="2019-04-08T16:26:00Z" depends-on-methods="io.redtrack.app.tests.RedtrackStatsTests.login" finished-at="2019-04-08T16:26:00Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- campaignsPage -->
-        <test-method status="PASS" signature="setCustomPeriod()[pri:0, instance:io.redtrack.app.tests.RedtrackStatsTests@6e1ec318]" name="setCustomPeriod" duration-ms="5307" started-at="2019-04-04T11:25:22Z" depends-on-methods="io.redtrack.app.tests.RedtrackStatsTests.campaignsPage" finished-at="2019-04-04T11:25:27Z">
+        <test-method status="PASS" signature="setCustomPeriod()[pri:0, instance:io.redtrack.app.tests.RedtrackStatsTests@52a86356]" name="setCustomPeriod" duration-ms="5015" started-at="2019-04-08T16:26:00Z" depends-on-methods="io.redtrack.app.tests.RedtrackStatsTests.campaignsPage" finished-at="2019-04-08T16:26:05Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setCustomPeriod -->
-        <test-method status="PASS" signature="setDate()[pri:0, instance:io.redtrack.app.tests.RedtrackStatsTests@6e1ec318]" name="setDate" duration-ms="290" started-at="2019-04-04T11:25:27Z" depends-on-methods="io.redtrack.app.tests.RedtrackStatsTests.setCustomPeriod" finished-at="2019-04-04T11:25:28Z">
+        <test-method status="PASS" signature="setDate()[pri:0, instance:io.redtrack.app.tests.RedtrackStatsTests@52a86356]" name="setDate" duration-ms="13" started-at="2019-04-08T16:26:05Z" depends-on-methods="io.redtrack.app.tests.RedtrackStatsTests.setCustomPeriod" finished-at="2019-04-08T16:26:05Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setDate -->
-        <test-method status="PASS" signature="checkingCPC()[pri:0, instance:io.redtrack.app.tests.RedtrackStatsTests@6e1ec318]" name="checkingCPC" duration-ms="8159" started-at="2019-04-04T11:25:28Z" depends-on-methods="io.redtrack.app.tests.RedtrackStatsTests.setDate" finished-at="2019-04-04T11:25:36Z">
+        <test-method status="PASS" signature="checkingCPC()[pri:0, instance:io.redtrack.app.tests.RedtrackStatsTests@52a86356]" name="checkingCPC" duration-ms="5025" started-at="2019-04-08T16:26:05Z" depends-on-methods="io.redtrack.app.tests.RedtrackStatsTests.setDate" finished-at="2019-04-08T16:26:10Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- checkingCPC -->
-        <test-method status="PASS" signature="checkingProfit()[pri:0, instance:io.redtrack.app.tests.RedtrackStatsTests@6e1ec318]" name="checkingProfit" duration-ms="132" started-at="2019-04-04T11:25:36Z" depends-on-methods="io.redtrack.app.tests.RedtrackStatsTests.checkingCPC" finished-at="2019-04-04T11:25:36Z">
+        <test-method status="PASS" signature="checkingProfit()[pri:0, instance:io.redtrack.app.tests.RedtrackStatsTests@52a86356]" name="checkingProfit" duration-ms="9" started-at="2019-04-08T16:26:10Z" depends-on-methods="io.redtrack.app.tests.RedtrackStatsTests.checkingCPC" finished-at="2019-04-08T16:26:10Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- checkingProfit -->
-        <test-method status="PASS" signature="checkingConv()[pri:0, instance:io.redtrack.app.tests.RedtrackStatsTests@6e1ec318]" name="checkingConv" duration-ms="105" started-at="2019-04-04T11:25:36Z" depends-on-methods="io.redtrack.app.tests.RedtrackStatsTests.checkingProfit" finished-at="2019-04-04T11:25:36Z">
+        <test-method status="PASS" signature="checkingConv()[pri:0, instance:io.redtrack.app.tests.RedtrackStatsTests@52a86356]" name="checkingConv" duration-ms="9" started-at="2019-04-08T16:26:10Z" depends-on-methods="io.redtrack.app.tests.RedtrackStatsTests.checkingProfit" finished-at="2019-04-08T16:26:10Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- checkingConv -->
-        <test-method status="PASS" signature="checkingCPT()[pri:0, instance:io.redtrack.app.tests.RedtrackStatsTests@6e1ec318]" name="checkingCPT" duration-ms="101" started-at="2019-04-04T11:25:36Z" depends-on-methods="io.redtrack.app.tests.RedtrackStatsTests.checkingConv" finished-at="2019-04-04T11:25:36Z">
+        <test-method status="PASS" signature="checkingCPT()[pri:0, instance:io.redtrack.app.tests.RedtrackStatsTests@52a86356]" name="checkingCPT" duration-ms="9" started-at="2019-04-08T16:26:10Z" depends-on-methods="io.redtrack.app.tests.RedtrackStatsTests.checkingConv" finished-at="2019-04-08T16:26:10Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- checkingCPT -->
-        <test-method status="PASS" signature="checkCPA()[pri:0, instance:io.redtrack.app.tests.RedtrackStatsTests@6e1ec318]" name="checkCPA" duration-ms="84" started-at="2019-04-04T11:25:36Z" depends-on-methods="io.redtrack.app.tests.RedtrackStatsTests.checkingCPT" finished-at="2019-04-04T11:25:36Z">
+        <test-method status="PASS" signature="checkCPA()[pri:0, instance:io.redtrack.app.tests.RedtrackStatsTests@52a86356]" name="checkCPA" duration-ms="11" started-at="2019-04-08T16:26:10Z" depends-on-methods="io.redtrack.app.tests.RedtrackStatsTests.checkingCPT" finished-at="2019-04-08T16:26:10Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- checkCPA -->
-        <test-method status="PASS" signature="checkEPC()[pri:0, instance:io.redtrack.app.tests.RedtrackStatsTests@6e1ec318]" name="checkEPC" duration-ms="91" started-at="2019-04-04T11:25:36Z" depends-on-methods="io.redtrack.app.tests.RedtrackStatsTests.checkCPA" finished-at="2019-04-04T11:25:36Z">
+        <test-method status="PASS" signature="checkEPC()[pri:0, instance:io.redtrack.app.tests.RedtrackStatsTests@52a86356]" name="checkEPC" duration-ms="13" started-at="2019-04-08T16:26:10Z" depends-on-methods="io.redtrack.app.tests.RedtrackStatsTests.checkCPA" finished-at="2019-04-08T16:26:10Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- checkEPC -->
-        <test-method status="PASS" signature="checkTR()[pri:0, instance:io.redtrack.app.tests.RedtrackStatsTests@6e1ec318]" name="checkTR" duration-ms="100" started-at="2019-04-04T11:25:36Z" depends-on-methods="io.redtrack.app.tests.RedtrackStatsTests.checkEPC" finished-at="2019-04-04T11:25:36Z">
+        <test-method status="PASS" signature="checkTR()[pri:0, instance:io.redtrack.app.tests.RedtrackStatsTests@52a86356]" name="checkTR" duration-ms="18" started-at="2019-04-08T16:26:10Z" depends-on-methods="io.redtrack.app.tests.RedtrackStatsTests.checkEPC" finished-at="2019-04-08T16:26:10Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- checkTR -->
-        <test-method status="PASS" signature="checkCR()[pri:0, instance:io.redtrack.app.tests.RedtrackStatsTests@6e1ec318]" name="checkCR" duration-ms="76" started-at="2019-04-04T11:25:36Z" depends-on-methods="io.redtrack.app.tests.RedtrackStatsTests.checkTR" finished-at="2019-04-04T11:25:36Z">
+        <test-method status="PASS" signature="checkCR()[pri:0, instance:io.redtrack.app.tests.RedtrackStatsTests@52a86356]" name="checkCR" duration-ms="12" started-at="2019-04-08T16:26:10Z" depends-on-methods="io.redtrack.app.tests.RedtrackStatsTests.checkTR" finished-at="2019-04-08T16:26:10Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- checkCR -->
-        <test-method status="PASS" signature="checkROI()[pri:0, instance:io.redtrack.app.tests.RedtrackStatsTests@6e1ec318]" name="checkROI" duration-ms="90" started-at="2019-04-04T11:25:36Z" depends-on-methods="io.redtrack.app.tests.RedtrackStatsTests.checkCR" finished-at="2019-04-04T11:25:37Z">
+        <test-method status="PASS" signature="checkROI()[pri:0, instance:io.redtrack.app.tests.RedtrackStatsTests@52a86356]" name="checkROI" duration-ms="9" started-at="2019-04-08T16:26:10Z" depends-on-methods="io.redtrack.app.tests.RedtrackStatsTests.checkCR" finished-at="2019-04-08T16:26:10Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- checkROI -->
-        <test-method status="PASS" signature="closingDriver()[pri:0, instance:io.redtrack.app.tests.RedtrackStatsTests@6e1ec318]" name="closingDriver" duration-ms="201" started-at="2019-04-04T11:25:37Z" depends-on-methods="io.redtrack.app.tests.RedtrackStatsTests.checkROI" finished-at="2019-04-04T11:25:37Z">
+        <test-method status="PASS" signature="closingDriver()[pri:0, instance:io.redtrack.app.tests.RedtrackStatsTests@52a86356]" name="closingDriver" duration-ms="99" started-at="2019-04-08T16:26:10Z" depends-on-methods="io.redtrack.app.tests.RedtrackStatsTests.checkROI" finished-at="2019-04-08T16:26:11Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- closingDriver -->

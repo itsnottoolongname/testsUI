@@ -1,5 +1,8 @@
 package io.redtrack.app.tests;
 
+        import org.openqa.selenium.WebDriver;
+        import org.openqa.selenium.chrome.ChromeDriver;
+        import io.github.bonigarcia.wdm.WebDriverManager;
         import io.redtrack.app.other.*;
         import io.redtrack.app.pages.*;
         import org.junit.Assert;
@@ -40,8 +43,10 @@ public class RedtrackStatsTests {
     private void init() {
         try {
             logger.info("Initialization driver");
-            System.setProperty("webdriver.chrome.driver", "./src/Drivers/Chrome/chromedriver");
+            WebDriverManager.chromedriver().setup();
             driver = new ChromeDriver();
+            //System.setProperty("webdriver.chrome.driver", "./src/Drivers/Chrome/chromedriver");
+            //driver = new WebDriverRunner.setWebDriver(initChromeDriver());
             loginPage = new LoginPage(driver);
             getStats = new ForCheckingStats(driver);
             navigation = new Navigation(driver);
