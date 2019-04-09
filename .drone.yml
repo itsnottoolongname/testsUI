@@ -31,18 +31,13 @@ steps:
   #commands:
   #- chmod 777 ~/Downloads/crouton
   #- sh -e ~/Downloads/crouton -r saucy -t xfce,chrome -n xfce
-- name: updateXDG
-  image: maven:3-jdk-8
-  commands:
-  - apt-get update -y
-  - apt-get install -y xdg-utils
 - name: installChrome
   image: maven:3-jdk-8
   commands: 
-  #- apt-get update -y
-  #- apt-get install -y xdg-utils
+  - apt-get update -y
+  - apt-get install -y xdg-utils
   - chmod 777 google-chrome-stable_current_amd64.deb
-  - dpkg -i --force-all google-chrome-stable_current_amd64.deb
+  - dpkg -i --force-depends google-chrome-stable_current_amd64.deb
 - name: deleteDownloadedChromeInstaller
   image: maven:3-jdk-8
   commands:
