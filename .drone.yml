@@ -42,8 +42,8 @@ steps:
   image: maven:3-jdk-8
   commands:
   - rm google-chrome-stable_current_amd64.deb
-  - cmod 777 /usr/bin/google-chrome
-  - cd /usr/bin/google-chrome
+  - chmod 777 /usr/bin/google-chrome
+  - cd /usr/bin/google-chrome-stable
   #- which google-chrome
   #- google-chrome
 - name: test
