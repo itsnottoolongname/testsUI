@@ -16,6 +16,7 @@ steps:
 - name: updateAPT
   image: maven:3-jdk-8
   commands:
+  - apt-get update
   - apt-get install -f
 - name: downloadChrome
   image: maven:3-jdk-8
