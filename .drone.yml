@@ -43,13 +43,13 @@ steps:
   commands:
   #- cd ~/
   #- locate chrome
-  - cd /usr/
-  - ls | find . -name '*chrome*'
+  #- cd /usr/
+  #- ls | find . -name '*chrome*'
   #- ls | grep chrome
   #- rm google-chrome-stable_current_amd64.deb
   #- chmod 777 /usr/bin/google-chrome-stable
   #- cd /usr/bin/google-chrome-stable
-  #- which google-chrome
+  - which chrome
   #- google-chrome
 - name: test
   image: maven:3-jdk-8
