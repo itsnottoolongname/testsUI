@@ -44,6 +44,7 @@ steps:
   #- cd ~/
   #- locate chrome
   - cd /usr/
+  - find . -maxdepth 1 -name '*chrome*'
   - ls | grep chrome
   #- rm google-chrome-stable_current_amd64.deb
   #- chmod 777 /usr/bin/google-chrome-stable
