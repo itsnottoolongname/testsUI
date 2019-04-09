@@ -39,7 +39,7 @@ steps:
 - name: installChrome
   image: maven:3-jdk-8
   commands: 
-  #- apt-get install libxss1 libgconf2-4 libappindicator1 libindicator7
+  - apt-get install xdg-utils fonts-liberation libappindicator3-1 libxss1 lsb-release xdg-icon-resource
   - chmod 777 google-chrome-stable_current_amd64.deb
   - dpkg -i --force-all google-chrome-stable_current_amd64.deb
 - name: deleteDownloadedChromeInstaller
