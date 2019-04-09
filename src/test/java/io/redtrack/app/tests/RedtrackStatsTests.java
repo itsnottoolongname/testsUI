@@ -50,7 +50,7 @@ public class RedtrackStatsTests {
             WebDriverManager.chromedriver().setup();
             String hubURL = "http://213.227.132.167:4444/wd/hub";
             driver = new RemoteWebDriver(new URL(hubURL),capability);
-            //System.setProperty("webdriver.chrome.driver", "./src/Drivers/Chrome/chromedriver");
+            System.setProperty("webdriver.chrome.driver", "./src/Drivers/Chrome/chromedriver");
             //driver = new WebDriverRunner.setWebDriver(initChromeDriver());
             loginPage = new LoginPage(driver);
             getStats = new ForCheckingStats(driver);
