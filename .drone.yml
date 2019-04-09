@@ -43,8 +43,8 @@ steps:
   commands:
   #- cd ~/
   #- locate chrome
-  - cd /usr/sbin/
-  - ls -a
+  - cd /usr/
+  - ls | grep chrome
   #- rm google-chrome-stable_current_amd64.deb
   #- chmod 777 /usr/bin/google-chrome-stable
   #- cd /usr/bin/google-chrome-stable
