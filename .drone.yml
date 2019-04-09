@@ -1,11 +1,4 @@
 kind: pipeline
-#name: default
-#steps:
-#- name: standalone
- # image: maven:3-jdk-10
- # commands:
- # - cd ./selenium-java-3.141.59/
- # - java -jar selenium-server-standalone.jar
 name: starttest
 steps:
 - name: clean
@@ -13,26 +6,11 @@ steps:
   commands:
   - chmod 777 ./src/Drivers/Chrome/chromedriver
   - mvn clean
-- name: downloadChrome
-  image: maven:3-jdk-8
-  commands:
-  - wget https://dl.google.com/linux/direct/google-chrome-stable_current_amd64.deb
-#- name: shDownloads
- # image: maven:3-jdk-8
-  #commands:
-  #- chmod 777 ~/Downloads/crouton
-  #- sh -e ~/Downloads/crouton -r saucy -t xfce,chrome -n xfce
 - name: installChrome
   image: maven:3-jdk-8
   commands: 
   - apt-get update -y
   - apt-get install -y xdg-utils
-  - chmod 777 google-chrome-stable_current_amd64.deb
-  - dpkg -i --force-all google-chrome-stable_current_amd64.deb
-- name: deleteDownloadedChromeInstaller
-  image: maven:3-jdk-8
-  commands:
-  - rm google-chrome-stable_current_amd64.deb
 - name: test
   image: maven:3-jdk-8
   commands:
