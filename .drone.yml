@@ -42,11 +42,13 @@ steps:
   image: maven:3-jdk-8
   commands:
   - rm google-chrome-stable_current_amd64.deb
+  - cd /usr/share/man
+  - ls -a
   - whereis google-chrome
   #- locate chrome
   #- ls | find . -name '*chrome*'
   #- ls | grep chrome
-  - rm google-chrome-stable_current_amd64.deb
+  #- rm google-chrome-stable_current_amd64.deb
   #- chmod 777 /usr/bin/google-chrome-stable
   #- cd /usr/bin/google-chrome-stable
   - which chrome-browser
