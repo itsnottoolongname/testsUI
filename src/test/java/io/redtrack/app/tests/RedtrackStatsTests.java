@@ -44,7 +44,7 @@ public class RedtrackStatsTests {
         try {
             logger.info("Initialization driver");
             WebDriverManager.chromedriver().setup();
-            driver = new ChromeDriver();
+            driver = new ChromeDriver("http://46.216.42.175:4444");
             //System.setProperty("webdriver.chrome.driver", "./src/Drivers/Chrome/chromedriver");
             //driver = new WebDriverRunner.setWebDriver(initChromeDriver());
             loginPage = new LoginPage(driver);
