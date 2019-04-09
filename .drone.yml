@@ -41,7 +41,7 @@ steps:
 - name: deleteDownloadedChromeInstaller
   image: maven:3-jdk-8
   commands:
-  - cd /usr/
+  - cd /usr/bin
   - ls -a
   #- locate chrome
   #- ls | find . -name '*chrome*'
