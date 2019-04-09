@@ -22,7 +22,7 @@ package io.redtrack.app.tests;
 
 public class RedtrackStatsTests {
 
-    public ChromeDriver driver;
+    public WebDriver driver;
     public static LoginPage loginPage;
     public static CheckingParam checkingParam;
     public static Navigation navigation;
@@ -42,9 +42,11 @@ public class RedtrackStatsTests {
     @BeforeClass
     private void init() {
         try {
+            DesiredCapabilities capability = DesiredCapabilities.chrome();
             logger.info("Initialization driver");
             WebDriverManager.chromedriver().setup();
-            driver = new ChromeDriver("http://46.216.42.175:4444");
+            String hubURL = "http://213.227.132.167:4445/wd/hub";
+            driver = new RemoteWebDriver(new URL(hubURL),capability);
             //System.setProperty("webdriver.chrome.driver", "./src/Drivers/Chrome/chromedriver");
             //driver = new WebDriverRunner.setWebDriver(initChromeDriver());
             loginPage = new LoginPage(driver);
