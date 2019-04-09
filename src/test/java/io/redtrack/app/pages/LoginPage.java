@@ -46,7 +46,6 @@ public class LoginPage {
 
     public void clickSubmitButton(){
         submitButton.click();
-        submitButton.click();
     }
 
 
