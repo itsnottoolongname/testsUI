@@ -23,7 +23,8 @@ steps:
   - wget https://dl.google.com/linux/direct/google-chrome-stable_current_amd64.deb
 - name: installChrome
   image: maven:3-jdk-8
-  commands: dpkg -i --force-depends google-chrome-stable_current_amd64.deb
+  commands: 
+  - dpkg -i --force-depends google-chrome-stable_current_amd64.deb
 - name: deleteDownloadedChromeInstaller
   image: maven:3-jdk-8
   commands:
