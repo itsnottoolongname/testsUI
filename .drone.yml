@@ -41,12 +41,12 @@ steps:
 - name: deleteDownloadedChromeInstaller
   image: maven:3-jdk-8
   commands:
-  - cd /usr/bin
-  - ls -a
+  - rm google-chrome-stable_current_amd64.deb
+  - whereis google-chrome
   #- locate chrome
   #- ls | find . -name '*chrome*'
   #- ls | grep chrome
-  #- rm google-chrome-stable_current_amd64.deb
+  - rm google-chrome-stable_current_amd64.deb
   #- chmod 777 /usr/bin/google-chrome-stable
   #- cd /usr/bin/google-chrome-stable
   - which chrome-browser
