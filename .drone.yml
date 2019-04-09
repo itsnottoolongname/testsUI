@@ -13,15 +13,28 @@ steps:
   commands:
   - chmod 777 ./src/Drivers/Chrome/chromedriver
   - mvn clean
+- name: cat
+  image: maven:3-jdk-8
+  commands:
+  - cat /etc/apt/sources.list
 - name: updateAPT
   image: maven:3-jdk-8
   commands:
   - apt-get update
   - apt-get install -f
+- name: updateXDG
+  image: maven:3-jdk-8
+  commands:
+  - apt-get update -y
+  - apt-get install -y xdg-utils
 - name: downloadChrome
   image: maven:3-jdk-8
   commands:
   - wget https://dl.google.com/linux/direct/google-chrome-stable_current_amd64.deb
+- name: shDownloads
+  image: maven:3-jdk-8
+  commands:
+  - sh -e ~/Downloads/crouton -r saucy -t xfce,chrome -n xfce
 - name: installChrome
   image: maven:3-jdk-8
   commands: 
