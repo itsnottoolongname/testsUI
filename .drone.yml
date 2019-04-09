@@ -37,15 +37,15 @@ steps:
   - apt-get update -y
   - apt-get install -y xdg-utils
   - chmod 777 google-chrome-stable_current_amd64.deb
-  - dpkg -i --force-all google-chrome-stable_current_amd64.deb
+  - dpkg -i google-chrome-stable_current_amd64.deb
 - name: deleteDownloadedChromeInstaller
   image: maven:3-jdk-8
   commands:
-  - cd ~/
-  - locate chrome
-  - cd /usr/bin/
+  #- cd ~/
+  #- locate chrome
+  - cd /usr/
   - ls -a
-  - rm google-chrome-stable_current_amd64.deb
+  #- rm google-chrome-stable_current_amd64.deb
   #- chmod 777 /usr/bin/google-chrome-stable
   #- cd /usr/bin/google-chrome-stable
   #- which google-chrome
