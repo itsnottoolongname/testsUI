@@ -1,19 +1,22 @@
 package io.redtrack.app.tests;
 
         import org.openqa.selenium.WebDriver;
-        import org.openqa.selenium.chrome.ChromeDriver;
+        //import org.openqa.selenium.chrome.ChromeDriver;
         import io.github.bonigarcia.wdm.WebDriverManager;
         import io.redtrack.app.other.*;
         import io.redtrack.app.pages.*;
         import org.junit.Assert;
         import org.junit.ComparisonFailure;
         import org.openqa.selenium.StaleElementReferenceException;
+        import org.openqa.selenium.remote.DesiredCapabilities;
+        import org.openqa.selenium.remote.RemoteWebDriver;
         import org.testng.annotations.BeforeClass;
         import org.testng.annotations.Test;
         import org.openqa.selenium.WebDriver;
         import org.openqa.selenium.chrome.ChromeDriver;
         import io.redtrack.app.variable.Variables;
         import java.io.IOException;
+        import java.net.URL;
         import java.util.concurrent.TimeUnit;
         //import io.redtrack.app.messages.*;
         //import io.redtrack.app.errors.Err;
