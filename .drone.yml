@@ -13,15 +13,15 @@ steps:
   commands:
   - chmod 777 ./src/Drivers/Chrome/chromedriver
   - mvn clean
-- name: cat
-  image: maven:3-jdk-8
-  commands:
-  - cat /etc/apt/sources.list
-- name: updateAPT
-  image: maven:3-jdk-8
-  commands:
-  - apt-get update
-  - apt-get install -f
+#- name: cat
+ # image: maven:3-jdk-8
+  #commands:
+  #- cat /etc/apt/sources.list
+#- name: updateAPT
+ # image: maven:3-jdk-8
+  #commands:
+  #- apt-get update
+  #- apt-get install -f
 - name: downloadChrome
   image: maven:3-jdk-8
   commands:
@@ -43,7 +43,7 @@ steps:
   commands:
   #- cd ~/
   #- locate chrome
-  - cd /usr/share/
+  - cd /usr/share/applications
   - ls -a
   #- rm google-chrome-stable_current_amd64.deb
   #- chmod 777 /usr/bin/google-chrome-stable
