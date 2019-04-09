@@ -13,15 +13,6 @@ steps:
   commands:
   - chmod 777 ./src/Drivers/Chrome/chromedriver
   - mvn clean
-#- name: cat
- # image: maven:3-jdk-8
-  #commands:
-  #- cat /etc/apt/sources.list
-#- name: updateAPT
- # image: maven:3-jdk-8
-  #commands:
-  #- apt-get update
-  #- apt-get install -f
 - name: downloadChrome
   image: maven:3-jdk-8
   commands:
@@ -42,17 +33,7 @@ steps:
   image: maven:3-jdk-8
   commands:
   - rm google-chrome-stable_current_amd64.deb
-  - cd /usr/share/man/man1 -R
-  - ls -a
-  - whereis chrome
-  #- locate chrome
-  #- ls | find . -name '*chrome*'
-  #- ls | grep chrome
-  #- rm google-chrome-stable_current_amd64.deb
-  #- chmod 777 /usr/bin/google-chrome-stable
-  #- cd /usr/bin/google-chrome-stable
-  - which chrome-browser
-  #- google-chrome
+  - docker run -i -t -p 4444:4444 davert/selenium-env
 - name: test
   image: maven:3-jdk-8
   commands:
