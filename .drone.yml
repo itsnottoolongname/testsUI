@@ -26,7 +26,7 @@ steps:
   image: maven:3-jdk-8
   commands:
   - apt-get update -y
-  - apt-get install -y xdg-utils
+  #- apt-get install -y xdg-utils
 - name: downloadChrome
   image: maven:3-jdk-8
   commands:
