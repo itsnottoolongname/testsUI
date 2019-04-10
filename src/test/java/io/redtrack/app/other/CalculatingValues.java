@@ -55,8 +55,8 @@ public class CalculatingValues {
     public static void valOfConver() {
         try {
             logger.info("Conversions is calculating via val of Clicks dividing CR ");
-            vars.val2 = vars.valOfClicks * vars.checkCost / 100;
-            vars.val2 = BigDecimal.valueOf(vars.val2).setScale(1, RoundingMode.HALF_UP).doubleValue();
+            vars.val2 = vars.valOfClicks / vars.check4 * 100;
+            vars.val2 = BigDecimal.valueOf(vars.val2).setScale(2, RoundingMode.HALF_UP).doubleValue();
             logger.info("Calculated Conversions is: " + vars.val2);
         }
         catch(Exception e){
@@ -78,10 +78,10 @@ public class CalculatingValues {
 
     public static void valOfCPA() {
         try {
-            logger.info("Profit is calculating by **** minus *****");
-            vars.val = vars.check2 / vars.checkCost;
+            logger.info("Calculating CPA");
+            vars.val = vars.check2 / vars.valOfClicks;
             vars.val2 = BigDecimal.valueOf(vars.val).setScale(4, RoundingMode.HALF_DOWN).doubleValue();
-            logger.info("Calculated Profit is: " + vars.val2);
+            logger.info("Calculated CPA is: " + vars.val2);
             if (vars.CheckCost.contains("-")) {
                 vars.val2 = -vars.val2;
                 logger.info("Value corrected with minus: " + vars.val2);

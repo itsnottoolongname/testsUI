@@ -147,7 +147,8 @@ public class ManipWithString {
                                         logger.info("'String' to 'double' successful converted");
                                         logger.info("Current 'double' value is: " + vars.checkCost);
                                     } else {
-                                        logger.error("stringToDouble isn't working. Need hotfix");
+
+                                        //logger.error("stringToDouble isn't working. Need hotfix");
                                     }
                                 }
                             }

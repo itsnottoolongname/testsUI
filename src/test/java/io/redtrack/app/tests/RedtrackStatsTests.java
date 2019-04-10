@@ -1,31 +1,27 @@
 package io.redtrack.app.tests;
 
-        import org.openqa.selenium.WebDriver;
-        //import org.openqa.selenium.chrome.ChromeDriver;
-        import io.github.bonigarcia.wdm.WebDriverManager;
         import io.redtrack.app.other.*;
         import io.redtrack.app.pages.*;
         import org.junit.Assert;
         import org.junit.ComparisonFailure;
         import org.openqa.selenium.StaleElementReferenceException;
+        import org.openqa.selenium.chrome.ChromeDriver;
         import org.openqa.selenium.remote.DesiredCapabilities;
         import org.openqa.selenium.remote.RemoteWebDriver;
+        import org.testng.annotations.AfterClass;
         import org.testng.annotations.BeforeClass;
         import org.testng.annotations.Test;
-        import org.openqa.selenium.WebDriver;
-        import org.openqa.selenium.chrome.ChromeDriver;
         import io.redtrack.app.variable.Variables;
         import java.io.IOException;
         import java.net.URL;
         import java.util.concurrent.TimeUnit;
-        //import io.redtrack.app.messages.*;
-        //import io.redtrack.app.errors.Err;
         import org.apache.log4j.*;
 
 
 public class RedtrackStatsTests {
 
-    public WebDriver driver;
+    public RemoteWebDriver driver;
+    //public ChromeDriver driver;
     public static LoginPage loginPage;
     public static CheckingParam checkingParam;
     public static Navigation navigation;
@@ -39,19 +35,24 @@ public class RedtrackStatsTests {
     private String
             windowHandle;
 
-   public static String s;
+    public static String s;
+    private static String hubURL = "http://213.227.132.143:4444/wd/hub";
     public static final Logger logger = Logger.getLogger(RedtrackStatsTests.class.getName());
+
 
     @BeforeClass
     private void init() {
         try {
-            DesiredCapabilities capability = DesiredCapabilities.chrome();
-            logger.info("Initialization driver");
-            WebDriverManager.chromedriver().setup();
-            String hubURL = "http://213.227.132.167:4445/wd/hub";
-            driver = new RemoteWebDriver(new URL(hubURL),capability);
+
+              logger.info("Initialization driver");
+            DesiredCapabilities capabilities = new DesiredCapabilities();
+            capabilities.setBrowserName("chrome");
+            capabilities.setVersion("73.0");
+            capabilities.setCapability("enableVNC", true);
+            capabilities.setCapability("enableVideo", false);
+            driver = new RemoteWebDriver(new URL(hubURL),capabilities);
             //System.setProperty("webdriver.chrome.driver", "./src/Drivers/Chrome/chromedriver");
-            //driver = new WebDriverRunner.setWebDriver(initChromeDriver());
+            //driver = new ChromeDriver();
             loginPage = new LoginPage(driver);
             getStats = new ForCheckingStats(driver);
             navigation = new Navigation(driver);
@@ -137,6 +138,16 @@ public class RedtrackStatsTests {
     }
 
     @Test(dependsOnMethods = "setCustomPeriod")
+    public void offQuickStat(){
+        try{
+            logger.info("Offing Quick Stat");
+            otherElements.offQuickQtat();
+        }
+        catch (Exception e){
+            logger.error("Offing Quick Stat failed: "+e.getMessage());
+        }
+    }
+    @Test(dependsOnMethods = "offQuickStat")
     public void setDate(){
         try {
             logger.info("Confirming setted period");
@@ -206,65 +217,46 @@ public class RedtrackStatsTests {
             logger.error("Sometring went wrong: "+e.getMessage());
         }
     }
-
-   @Test(dependsOnMethods = "checkingProfit")
-    public void checkingConv() throws IOException {
-        try {
-            getStats.getCRpercent();
-            manipulation.stringToDouble();
-            calculate.valOfConver();
-            manipulation.checkingDecimal();
-            renew.renewVal();
-            //getStats.getCRpercent();
-            //System.out.println(getStats.getCRpercent());
-            logger.info("get conversion");
-            getStats.getConversionRate();
-            logger.info("conversion getted");
-            manipulation.stringToDouble();
-            manipulation.checkingDecimal();
-            checkingParam.checkingVal();
-            //logger.info("Checking value Expected is: " +vars.val3+ ". Actual is: " +vars.valOfCPC);
-        }
-        catch(Exception e){
-            logger.error("Some error " +e.getMessage());
-        }
-        catch(ComparisonFailure e){
-            logger.error("Values doesn match: "+e.getMessage());
-        }
-    }
-
-    @Test(dependsOnMethods = "checkingConv")
+    
+    @Test(dependsOnMethods = "checkingProfit")
     public void checkingCPT() throws IOException {
         try {
-            logger.info("getting cost");
-            getStats.getCheckingCosts();
-            logger.info("cost getted");
-            manipulation.stringToDouble();
             logger.info("getting transaction");
             getStats.getTransaction();
             logger.info("transaction getted");
             manipulation.getSometoDouble();
-            calculate.valOfCPT();
-            manipulation.checkingDecimal();
-            renew.renewVal();
-            getStats.getCPT();
-            manipulation.stringToDouble();
-            manipulation.checkingDecimal();
-            checkingParam.checkingVal();
+            if (vars.valOfClicks > 0) {
+                logger.info("getting cost");
+                getStats.getCheckingCosts();
+                logger.info("cost getted");
+                manipulation.stringToDouble();
+                calculate.valOfCPT();
+                manipulation.checkingDecimal();
+                renew.renewVal();
+                getStats.getCPT();
+                manipulation.stringToDouble();
+                manipulation.checkingDecimal();
+                checkingParam.checkingVal();
+            }else
+            {
+                logger.info("Transaction less than 1, continue with next test");
+                checkCPA();
+            }
         }
-        catch (Exception e){
-            logger.error("Error checking CPT: "+e.getMessage());
-        }
+        catch(Exception e){
+                logger.error("Error checking CPT: " + e.getMessage());
+            }
+
     }
 
     @Test(dependsOnMethods = "checkingCPT")
     public void checkCPA() throws IOException {
         try {
+            getStats.getConversionRate();
+            manipulation.getSometoDouble();
             getStats.getCheckingCosts();
             manipulation.stringToDouble();
             renew.renewVar();
-            getStats.getConversionRate();
-            manipulation.stringToDouble();
             calculate.valOfCPA();
             manipulation.checkingDecimal();
             renew.renewVal();
@@ -303,15 +295,21 @@ public class RedtrackStatsTests {
         try {
             getStats.getTransaction();
             manipulation.getSometoDouble();
-            renew.renewVar2();
-            getStats.getClicks();
-            manipulation.getSometoDouble();
-            calculate.valOfTR();
-            renew.renewVal();
-            getStats.getTR();
-            manipulation.stringToDouble();
-            manipulation.checkingDecimal();
-            checkingParam.checkingVal();
+            if (vars.valOfClicks > 0){
+                renew.renewVar2();
+                getStats.getClicks();
+                manipulation.getSometoDouble();
+                calculate.valOfTR();
+                renew.renewVal();
+                getStats.getTR();
+                manipulation.stringToDouble();
+                manipulation.checkingDecimal();
+                checkingParam.checkingVal();
+           }
+            else{
+                logger.info("Transaction rate is less then 1, continue with next test");
+                checkCR();
+            }
         }
         catch(Exception e){
             logger.error("Checking TR failed: "+e.getMessage());
@@ -323,18 +321,29 @@ public class RedtrackStatsTests {
         try {
             getStats.getConversionRate();
             manipulation.getSometoDouble();
-            renew.renewVar2();
-            getStats.getClicks();
-            manipulation.getSometoDouble();
-            calculate.valOfTR();
-            renew.renewVal();
-            getStats.getCRpercent();
-            manipulation.stringToDouble();
-            manipulation.checkingDecimal();
-            checkingParam.checkingVal();
+            if (vars.valOfClicks > 0) {
+                renew.renewVar2();
+                getStats.getClicks();
+                manipulation.getSometoDouble();
+                calculate.valOfTR();
+                renew.renewVal();
+                getStats.getCRpercent();
+                manipulation.stringToDouble();
+                manipulation.checkingDecimal();
+                checkingParam.checkingVal();
+            }
+            else{
+                logger.info("Value of conversion is less then 1, continue with next test");
+                checkROI();
+
+            }
         }
         catch(Exception e){
             logger.error("Checking CR failed: "+e.getMessage());
+
+        }
+        catch(ComparisonFailure e){
+            logger.error("Values doesn't match: "+e.getMessage());
         }
     }
 
@@ -360,7 +369,8 @@ public class RedtrackStatsTests {
         }
     }
 
-    @Test(dependsOnMethods = "checkROI")
+    @AfterClass
+    //@Test(dependsOnMethods = "checkROI")
      private final void closingDriver(){
         driver.quit();
     }

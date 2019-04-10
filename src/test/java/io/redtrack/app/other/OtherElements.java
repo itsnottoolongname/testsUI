@@ -199,6 +199,11 @@ public class OtherElements {
     }
 
 
+    @FindBy(xpath = "/html[1]/body[1]/div[1]/div[1]/div[1]/div[2]/div[1]/div[1]/div[1]/div[2]/div[2]/div[2]/div[1]/fieldset[1]/div[1]/div[1]/div[1]/span[1]/small[1]")
+    public WebElement QuickStat;
+    public void offQuickQtat(){
+        QuickStat.click();
+    }
 
     /* Navigation menu */
 
