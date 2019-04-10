@@ -4,7 +4,6 @@ steps:
 - name: clean
   image: maven:3-jdk-10
   commands:
-  - chmod 777 ./src/Drivers/Chrome/chromedriver
   - mvn clean
 - name: test
   image: maven:3-jdk-8
