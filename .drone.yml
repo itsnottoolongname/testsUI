@@ -1,5 +1,5 @@
 workspace:
- base: test
+ base: /test
  path: /src/Test_ui
  
  branches: master
