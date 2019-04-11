@@ -1,11 +1,17 @@
-kind: pipeline
-name: starttest
-steps:
-- name: clean
-  image: maven:3-jdk-10
-  commands:
-  - mvn clean
-- name: test
-  image: maven:3-jdk-8
-  commands:
-  - mvn -B test
+workspace:
+ base: /test
+ path: /src/Test_ui
+ 
+ branches: master
+
+pipeline:
+  clean:
+    image: maven:3-jdk-10
+    commands:
+      - mvn clean
+      
+  test:
+    image: maven:3-jdk-8
+    commands:
+      - mvn -B test
+ 
