@@ -1,6 +1,6 @@
 workspace:
  base: /test
- path: /src/Test_u
+ path: /src/Test_ui
  
  branches: master
 
