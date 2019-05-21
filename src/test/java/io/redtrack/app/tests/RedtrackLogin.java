@@ -4,7 +4,6 @@ import io.redtrack.app.messages.Mess;
 import io.redtrack.app.other.*;
 import io.redtrack.app.pages.*;
 import io.redtrack.app.variable.*;
-//import org.junit.AfterClass;
 import io.redtrack.app.variable.Variables;
 import org.apache.log4j.Logger;
 import org.junit.Assert;
@@ -12,14 +11,20 @@ import org.junit.ComparisonFailure;
 import org.openqa.selenium.StaleElementReferenceException;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
+
+import java.net.URL;
 import java.util.Date;
+
+import org.openqa.selenium.remote.DesiredCapabilities;
+import org.openqa.selenium.remote.RemoteWebDriver;
 import org.testng.annotations.*;
 import java.util.concurrent.TimeUnit;
 
 public class RedtrackLogin {
 
-    public        Date date;
-    public        WebDriver driver;
+    //public        Date date;
+    //public      ChromeDriver driver;
+    public        RemoteWebDriver driver;
     public static LoginPage loginPage;
     public static CheckingParam checkingParam;
     public static OtherElements otherElements;
@@ -31,18 +36,26 @@ public class RedtrackLogin {
                     password1 = "99948936",
 
                     usernotfound = "User not found",
+                    invalidCred = "Invalid credentials",
                     cheklogin = "Logs";
     public String
             windowHandle,
             invalidcred,
             username;
+    private static String hubURL = "http://213.227.132.143:4444/wd/hub";
     public static final Logger logger = Logger.getLogger(RedtrackLogin.class.getName());
     @BeforeClass
     public void init() {
         try {
             logger.info("Initialization driver");
-            System.setProperty("webdriver.chrome.driver", "./src/Drivers/Chrome/chromedriver");
-            driver = new ChromeDriver();
+            DesiredCapabilities capabilities = new DesiredCapabilities();
+            capabilities.setBrowserName("chrome");
+            capabilities.setVersion("73.0");
+            capabilities.setCapability("enableVNC", true);
+            capabilities.setCapability("enableVideo", true);
+            driver = new RemoteWebDriver(new URL(hubURL),capabilities);
+            //System.setProperty("webdriver.chrome.driver", "./src/Drivers/Chrome/chromedriver");
+            //driver = new ChromeDriver();
             loginPage = new LoginPage(driver);
             otherElements = new OtherElements(driver);
             //checkingParam = new CheckingParam(driver);
@@ -103,7 +116,7 @@ public class RedtrackLogin {
             loginPage.inputPassword(Variables.password1);
             loginPage.clickSubmitButton();
             Thread.sleep(5000);
-            Assert.assertEquals(usernotfound, otherElements.getInvalidCred());
+            Assert.assertEquals(invalidCred, otherElements.getInvalidCred());
             //if (usernotfound.equals(otherElements.getInvalidCred())) {
               //  Mess.error();
             //    System.out.println("Test with uppercase failed. Found: " + otherElements.getInvalidCred());
@@ -133,7 +146,7 @@ public class RedtrackLogin {
         try {
             logger.info("Login with correct creds");
             Thread.sleep(5000);
-            loginPage.inputLogin(Variables.login1);
+            loginPage.inputLogin(Variables.login2);
             loginPage.inputPassword(password1);
             loginPage.clickSubmitButton();
             username = otherElements.getUserName();
@@ -151,7 +164,7 @@ public class RedtrackLogin {
             driver.manage().timeouts().implicitlyWait(10000, TimeUnit.SECONDS);
         }
         catch(StaleElementReferenceException e){
-            logger.fatal("TestNG faileg: "+e.getMessage());
+            logger.fatal("TestNG failed: "+e.getMessage());
         }
         catch(ComparisonFailure e){
             logger.error("Something went wrong: "+e.getMessage());

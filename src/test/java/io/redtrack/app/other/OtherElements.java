@@ -41,14 +41,14 @@ public class OtherElements {
         return invalidCred;
     }
 
-    @FindBy(xpath = ".//*[normalize-space(text()) and normalize-space(.)='E-mail us support@redtrack.io'][1]/following::a[3]")
+    @FindBy(xpath = "/html[1]/body[1]/div[1]/div[1]/div[1]/div[2]/div[1]/div[1]/div[1]/div[2]/div[1]/div[1]/ol[1]/li[1]/a[1]")
     public WebElement CheckOpenedPage;
     public String getCheckOpenedPage(){
         String checkOpenedPage = CheckOpenedPage.getText();
         return checkOpenedPage;
     }
 
-    @FindBy(xpath = ".//*[normalize-space(text()) and normalize-space(.)='E-mail us support@redtrack.io'][1]/following::a[3]")
+    @FindBy(xpath = "/html[1]/body[1]/div[1]/div[1]/div[1]/div[2]/div[1]/div[1]/div[1]/div[2]/div[1]/div[1]/ol[1]/li[1]/a[1]")
     public WebElement CheckOpenedPage2;
     public String getCheckOpenegPage2(){
         String checkOpenedPage2 = CheckOpenedPage2.getText();

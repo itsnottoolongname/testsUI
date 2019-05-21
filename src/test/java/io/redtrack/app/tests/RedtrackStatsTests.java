@@ -44,7 +44,7 @@ public class RedtrackStatsTests {
     private void init() {
         try {
 
-              logger.info("Initialization driver");
+            logger.info("Initialization driver");
             DesiredCapabilities capabilities = new DesiredCapabilities();
             capabilities.setBrowserName("chrome");
             capabilities.setVersion("73.0");
@@ -217,7 +217,7 @@ public class RedtrackStatsTests {
             logger.error("Sometring went wrong: "+e.getMessage());
         }
     }
-    
+
     @Test(dependsOnMethods = "checkingProfit")
     public void checkingCPT() throws IOException {
         try {

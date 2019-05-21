@@ -26,7 +26,7 @@ public class Navigation {
     @FindBy(linkText = "Dashboard")
     public WebElement PageDashboard;
 
-    @FindBy(linkText = "Campaigns")
+    @FindBy(xpath = "/html[1]/body[1]/div[1]/div[1]/div[1]/div[1]/div[2]/ul[1]/li[2]/a[1]/span[1]")
     public WebElement PageCampaigns;
 
     @FindBy(linkText = "Offers")
@@ -38,10 +38,12 @@ public class Navigation {
     @FindBy(linkText = "Networks")
     public WebElement PageNetworks;
 
-    @FindBy(linkText = "Traffic Sources")
+    @FindBy(linkText = "Traffic sources")
+    //@FindBy(xpath = "/html[1]/body[1]/div[1]/div[1]/div[1]/div[1]/div[2]/ul[1]/li[6]/a[1]/span[1]")
     public WebElement trafficSources;
 
-    @FindBy(id = "navbar-top-domains")
+    @FindBy(linkText = "Domains")
+    //@FindBy(id = "navbar-top-domains")
     public WebElement PageDomains;
 
     @FindBy(linkText = "Clicks")

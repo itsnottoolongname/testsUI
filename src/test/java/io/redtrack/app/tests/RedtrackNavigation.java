@@ -94,8 +94,7 @@ public static final Logger logger = Logger.getLogger(RedtrackNavigation.class.ge
     public void Login() throws InterruptedException {
         try {
             logger.info("Logging into app");
-            date = new Date();
-            loginPage.inputLogin(Variables.login1);
+            loginPage.inputLogin(Variables.login2);
             loginPage.inputPassword(password1);
             driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
             Thread.sleep(5000);
@@ -247,6 +246,7 @@ public static final Logger logger = Logger.getLogger(RedtrackNavigation.class.ge
     public void domainsPage() throws InterruptedException{
         try {
             logger.info("Opening page "+page5);
+            navigation.dropDownTools();
             //date = new Date();
             navigation.pageDomains();
             driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
@@ -299,7 +299,7 @@ public static final Logger logger = Logger.getLogger(RedtrackNavigation.class.ge
             driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
             navigation.pageClicks();
             //CheckopenedPage = otherElements.getCheckOpenegPage2();
-            Assert.assertEquals(logspage0, otherElements.getCheckOpenegPage2());
+            Assert.assertEquals(logspage0, otherElements.getCheckOpenedPage());
             //if (logspage0.equals(CheckopenedPage)) {
                // System.out.print("[" + date.toString() + "]: ");
                // System.out.println("Logs -> Clicks page open, found: " + CheckopenedPage);
@@ -367,7 +367,7 @@ public static final Logger logger = Logger.getLogger(RedtrackNavigation.class.ge
             navigation.dropDownTools();
             navigation.pageConvTrack();
             //CheckopenedPage = otherElements.getCheckOpenedPage3();
-            Assert.assertEquals(toolspage0, otherElements.getCheckOpenedPage3());
+            Assert.assertEquals(toolspage0, otherElements.getCheckOpenedPage());
             //if (toolspage0.equals(CheckopenedPage)) {
                 //System.out.print("[" + date.toString() + "]: ");
                // System.out.println("Tools -> Conversion tracking page open, found: " + CheckopenedPage);
@@ -413,7 +413,7 @@ public static final Logger logger = Logger.getLogger(RedtrackNavigation.class.ge
             navigation.dropDownTools();
             navigation.pageDefaultFallbackURL();
             //CheckopenedPage = otherElements.getOpenedPage0();
-            Assert.assertEquals(toolspage2, otherElements.getOpenedPage0());
+            Assert.assertEquals(toolspage2, otherElements.getCheckOpenedPage());
             Thread.sleep(3000);
             //date = new Date();
             //if (toolspage2.equals(CheckopenedPage)) {

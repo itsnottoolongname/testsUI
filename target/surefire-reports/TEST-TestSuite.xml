@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report-3.0.xsd" version="3.0" name="TestSuite" time="28.719" tests="13" errors="0" skipped="0" failures="0">
+<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report-3.0.xsd" version="3.0" name="TestSuite" time="28.718" tests="17" errors="0" skipped="0" failures="0">
   <properties>
     <property name="gopherProxySet" value="false"/>
     <property name="awt.toolkit" value="sun.lwawt.macosx.LWCToolkit"/>
@@ -17,7 +17,7 @@
     <property name="user.country" value="BY"/>
     <property name="sun.java.launcher" value="SUN_STANDARD"/>
     <property name="sun.boot.library.path" value="/Library/Java/JavaVirtualMachines/jdk1.8.0_201.jdk/Contents/Home/jre/lib"/>
-    <property name="sun.java.command" value="/Users/dmytropetryshchak/IdeaProjects/frontredrtack/target/surefire/surefirebooter5762363790063462164.jar /Users/dmytropetryshchak/IdeaProjects/frontredrtack/target/surefire 2019-04-10T18-49-09_684-jvmRun1 surefire568274024417806426tmp surefire_08844516802820514996tmp"/>
+    <property name="sun.java.command" value="/Users/dmytropetryshchak/IdeaProjects/frontredrtack/target/surefire/surefirebooter2380598839577471223.jar /Users/dmytropetryshchak/IdeaProjects/frontredrtack/target/surefire 2019-05-17T16-29-14_304-jvmRun1 surefire4600451585379347547tmp surefire_0428185757869562079tmp"/>
     <property name="http.nonProxyHosts" value="local|*.local|169.254/16|*.169.254/16"/>
     <property name="surefire.test.class.path" value="/Users/dmytropetryshchak/IdeaProjects/frontredrtack/target/test-classes:/Users/dmytropetryshchak/IdeaProjects/frontredrtack/target/classes:/Users/dmytropetryshchak/.m2/repository/org/seleniumhq/selenium/selenium-java/3.14.0/selenium-java-3.14.0.jar:/Users/dmytropetryshchak/.m2/repository/org/seleniumhq/selenium/selenium-api/3.14.0/selenium-api-3.14.0.jar:/Users/dmytropetryshchak/.m2/repository/org/seleniumhq/selenium/selenium-chrome-driver/3.14.0/selenium-chrome-driver-3.14.0.jar:/Users/dmytropetryshchak/.m2/repository/org/seleniumhq/selenium/selenium-edge-driver/3.14.0/selenium-edge-driver-3.14.0.jar:/Users/dmytropetryshchak/.m2/repository/org/seleniumhq/selenium/selenium-firefox-driver/3.14.0/selenium-firefox-driver-3.14.0.jar:/Users/dmytropetryshchak/.m2/repository/org/seleniumhq/selenium/selenium-ie-driver/3.14.0/selenium-ie-driver-3.14.0.jar:/Users/dmytropetryshchak/.m2/repository/org/seleniumhq/selenium/selenium-opera-driver/3.14.0/selenium-opera-driver-3.14.0.jar:/Users/dmytropetryshchak/.m2/repository/org/seleniumhq/selenium/selenium-remote-driver/3.14.0/selenium-remote-driver-3.14.0.jar:/Users/dmytropetryshchak/.m2/repository/org/seleniumhq/selenium/selenium-safari-driver/3.14.0/selenium-safari-driver-3.14.0.jar:/Users/dmytropetryshchak/.m2/repository/org/seleniumhq/selenium/selenium-support/3.14.0/selenium-support-3.14.0.jar:/Users/dmytropetryshchak/.m2/repository/net/bytebuddy/byte-buddy/1.8.15/byte-buddy-1.8.15.jar:/Users/dmytropetryshchak/.m2/repository/org/apache/commons/commons-exec/1.3/commons-exec-1.3.jar:/Users/dmytropetryshchak/.m2/repository/commons-codec/commons-codec/1.10/commons-codec-1.10.jar:/Users/dmytropetryshchak/.m2/repository/commons-logging/commons-logging/1.2/commons-logging-1.2.jar:/Users/dmytropetryshchak/.m2/repository/com/google/guava/guava/25.0-jre/guava-25.0-jre.jar:/Users/dmytropetryshchak/.m2/repository/com/google/code/findbugs/jsr305/1.3.9/jsr305-1.3.9.jar:/Users/dmytropetryshchak/.m2/repository/org/checkerframework/checker-compat-qual/2.0.0/checker-compat-qual-2.0.0.jar:/Users/dmytropetryshchak/.m2/repository/com/google/errorprone/error_prone_annotations/2.1.3/error_prone_annotations-2.1.3.jar:/Users/dmytropetryshchak/.m2/repository/com/google/j2objc/j2objc-annotations/1.1/j2objc-annotations-1.1.jar:/Users/dmytropetryshchak/.m2/repository/org/codehaus/mojo/animal-sniffer-annotations/1.14/animal-sniffer-annotations-1.14.jar:/Users/dmytropetryshchak/.m2/repository/org/apache/httpcomponents/httpclient/4.5.5/httpclient-4.5.5.jar:/Users/dmytropetryshchak/.m2/repository/org/apache/httpcomponents/httpcore/4.4.9/httpcore-4.4.9.jar:/Users/dmytropetryshchak/.m2/repository/com/squareup/okhttp3/okhttp/3.10.0/okhttp-3.10.0.jar:/Users/dmytropetryshchak/.m2/repository/com/squareup/okio/okio/1.14.1/okio-1.14.1.jar:/Users/dmytropetryshchak/.m2/repository/junit/junit/4.12/junit-4.12.jar:/Users/dmytropetryshchak/.m2/repository/org/hamcrest/hamcrest-core/1.3/hamcrest-core-1.3.jar:/Users/dmytropetryshchak/.m2/repository/org/testng/testng/6.14.3/testng-6.14.3.jar:/Users/dmytropetryshchak/.m2/repository/com/beust/jcommander/1.72/jcommander-1.72.jar:/Users/dmytropetryshchak/.m2/repository/org/apache-extras/beanshell/bsh/2.0b6/bsh-2.0b6.jar:/Users/dmytropetryshchak/.m2/repository/log4j/log4j/1.2.12/log4j-1.2.12.jar:"/>
     <property name="sun.cpu.endian" value="little"/>
@@ -32,7 +32,7 @@
     <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
     <property name="java.specification.name" value="Java Platform API Specification"/>
     <property name="java.awt.graphicsenv" value="sun.awt.CGraphicsEnvironment"/>
-    <property name="surefire.real.class.path" value="/Users/dmytropetryshchak/IdeaProjects/frontredrtack/target/surefire/surefirebooter5762363790063462164.jar:/Users/dmytropetryshchak/.m2/repository/org/aspectj/aspectjweaver/1.8.10/aspectjweaver-1.8.10.jar"/>
+    <property name="surefire.real.class.path" value="/Users/dmytropetryshchak/IdeaProjects/frontredrtack/target/surefire/surefirebooter2380598839577471223.jar:/Users/dmytropetryshchak/.m2/repository/org/aspectj/aspectjweaver/1.8.10/aspectjweaver-1.8.10.jar"/>
     <property name="sun.boot.class.path" value="/Library/Java/JavaVirtualMachines/jdk1.8.0_201.jdk/Contents/Home/jre/lib/resources.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_201.jdk/Contents/Home/jre/lib/rt.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_201.jdk/Contents/Home/jre/lib/sunrsasign.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_201.jdk/Contents/Home/jre/lib/jsse.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_201.jdk/Contents/Home/jre/lib/jce.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_201.jdk/Contents/Home/jre/lib/charsets.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_201.jdk/Contents/Home/jre/lib/jfr.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_201.jdk/Contents/Home/jre/classes"/>
     <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
     <property name="ftp.nonProxyHosts" value="local|*.local|169.254/16|*.169.254/16"/>
@@ -63,17 +63,21 @@
     <property name="java.class.version" value="52.0"/>
     <property name="socksNonProxyHosts" value="local|*.local|169.254/16|*.169.254/16"/>
   </properties>
-  <testcase name="login" classname="io.redtrack.app.tests.RedtrackStatsTests" time="5.98"/>
-  <testcase name="campaignsPage" classname="io.redtrack.app.tests.RedtrackStatsTests" time="0.38"/>
-  <testcase name="setCustomPeriod" classname="io.redtrack.app.tests.RedtrackStatsTests" time="5.536"/>
-  <testcase name="offQuickStat" classname="io.redtrack.app.tests.RedtrackStatsTests" time="0.195"/>
-  <testcase name="setDate" classname="io.redtrack.app.tests.RedtrackStatsTests" time="0.378"/>
-  <testcase name="checkingCPC" classname="io.redtrack.app.tests.RedtrackStatsTests" time="8.466"/>
-  <testcase name="checkingProfit" classname="io.redtrack.app.tests.RedtrackStatsTests" time="0.425"/>
-  <testcase name="checkingCPT" classname="io.redtrack.app.tests.RedtrackStatsTests" time="0.567"/>
-  <testcase name="checkCPA" classname="io.redtrack.app.tests.RedtrackStatsTests" time="0.382"/>
-  <testcase name="checkEPC" classname="io.redtrack.app.tests.RedtrackStatsTests" time="0.408"/>
-  <testcase name="checkTR" classname="io.redtrack.app.tests.RedtrackStatsTests" time="0.526"/>
-  <testcase name="checkCR" classname="io.redtrack.app.tests.RedtrackStatsTests" time="0.379"/>
-  <testcase name="checkROI" classname="io.redtrack.app.tests.RedtrackStatsTests" time="0.399"/>
+  <testcase name="login" classname="io.redtrack.app.tests.RedtrackStatsTests" time="5.306"/>
+  <testcase name="campaignsPage" classname="io.redtrack.app.tests.RedtrackStatsTests" time="0.431"/>
+  <testcase name="InvalidLogin" classname="io.redtrack.app.tests.RedtrackLogin" time="0.246"/>
+  <testcase name="setCustomPeriod" classname="io.redtrack.app.tests.RedtrackStatsTests" time="5.579"/>
+  <testcase name="offQuickStat" classname="io.redtrack.app.tests.RedtrackStatsTests" time="0.169"/>
+  <testcase name="upperCaseLogin" classname="io.redtrack.app.tests.RedtrackLogin" time="0.004"/>
+  <testcase name="setDate" classname="io.redtrack.app.tests.RedtrackStatsTests" time="0.333"/>
+  <testcase name="Login" classname="io.redtrack.app.tests.RedtrackLogin" time="6.546"/>
+  <testcase name="closingDrvr" classname="io.redtrack.app.tests.RedtrackLogin" time="0.105"/>
+  <testcase name="checkingCPC" classname="io.redtrack.app.tests.RedtrackStatsTests" time="1.917"/>
+  <testcase name="checkingProfit" classname="io.redtrack.app.tests.RedtrackStatsTests" time="0.489"/>
+  <testcase name="checkingCPT" classname="io.redtrack.app.tests.RedtrackStatsTests" time="0.551"/>
+  <testcase name="checkCPA" classname="io.redtrack.app.tests.RedtrackStatsTests" time="0.375"/>
+  <testcase name="checkEPC" classname="io.redtrack.app.tests.RedtrackStatsTests" time="0.39"/>
+  <testcase name="checkTR" classname="io.redtrack.app.tests.RedtrackStatsTests" time="0.521"/>
+  <testcase name="checkCR" classname="io.redtrack.app.tests.RedtrackStatsTests" time="0.37"/>
+  <testcase name="checkROI" classname="io.redtrack.app.tests.RedtrackStatsTests" time="0.385"/>
 </testsuite>
