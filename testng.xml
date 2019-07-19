@@ -4,9 +4,10 @@
     <test verbose="2" name="test">
         <classes>
 
-            <class name="io.redtrack.app.tests.RedtrackStatsTests"></class>
-            <class name="io.redtrack.app.tests.RedtrackLogin"></class>
+            <!--class name="io.redtrack.app.tests.RedtrackStatsTests"></class-->
+            <!--class name="io.redtrack.app.tests.RedtrackLogin"></class-->
             <!--class name="io.redtrack.app.tests.RedtrackNavigation"></class-->
+            <class name="io.redtrack.app.tests.RedtrackCustomDomains"></class>
         </classes>
     </test>
 </suite>
