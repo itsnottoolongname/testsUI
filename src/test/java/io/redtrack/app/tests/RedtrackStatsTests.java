@@ -7,7 +7,9 @@ package io.redtrack.app.tests;
         import org.openqa.selenium.StaleElementReferenceException;
         import org.openqa.selenium.chrome.ChromeDriver;
         import org.openqa.selenium.remote.DesiredCapabilities;
+        //import org.openqa.selenium.remote.RemoteWebDriver;
         import org.openqa.selenium.remote.RemoteWebDriver;
+        import org.openqa.selenium.support.PageFactory;
         import org.testng.annotations.AfterClass;
         import org.testng.annotations.BeforeClass;
         import org.testng.annotations.Test;
@@ -19,6 +21,7 @@ package io.redtrack.app.tests;
 
 
 public class RedtrackStatsTests {
+
 
     public RemoteWebDriver driver;
     //public ChromeDriver driver;
@@ -79,7 +82,7 @@ public class RedtrackStatsTests {
     }
 
     @Test
-    public static void login() throws InterruptedException{
+    public static void login(RemoteWebDriver driver) throws InterruptedException{
         try {
             logger.info("Logging into app");
             loginPage.inputLogin(vars.login2);

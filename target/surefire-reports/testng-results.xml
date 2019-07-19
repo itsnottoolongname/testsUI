@@ -1,102 +1,672 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="0" ignored="0" total="17" passed="17">
+<testng-results skipped="24" failed="3" ignored="0" total="40" passed="13">
   <reporter-output>
   </reporter-output>
-  <suite name="RedtrackFront by packages" duration-ms="28052" started-at="2019-05-17T13:29:16Z" finished-at="2019-05-17T13:29:44Z">
+  <suite name="RedtrackFront by packages" duration-ms="82902" started-at="2019-07-19T14:15:27Z" finished-at="2019-07-19T14:16:50Z">
     <groups>
       <group name="exit">
-        <method signature="RedtrackLogin.closingDrvr()[pri:0, instance:io.redtrack.app.tests.RedtrackLogin@60c6f5b]" name="closingDrvr" class="io.redtrack.app.tests.RedtrackLogin"/>
+        <method signature="RedtrackLogin.closingDrvr()[pri:0, instance:io.redtrack.app.tests.RedtrackLogin@370736d9]" name="closingDrvr" class="io.redtrack.app.tests.RedtrackLogin"/>
       </group> <!-- exit -->
       <group name="cheking">
-        <method signature="RedtrackLogin.InvalidLogin()[pri:0, instance:io.redtrack.app.tests.RedtrackLogin@60c6f5b]" name="InvalidLogin" class="io.redtrack.app.tests.RedtrackLogin"/>
-        <method signature="RedtrackLogin.upperCaseLogin()[pri:0, instance:io.redtrack.app.tests.RedtrackLogin@60c6f5b]" name="upperCaseLogin" class="io.redtrack.app.tests.RedtrackLogin"/>
-        <method signature="RedtrackLogin.Login()[pri:0, instance:io.redtrack.app.tests.RedtrackLogin@60c6f5b]" name="Login" class="io.redtrack.app.tests.RedtrackLogin"/>
+        <method signature="RedtrackLogin.InvalidLogin()[pri:0, instance:io.redtrack.app.tests.RedtrackLogin@370736d9]" name="InvalidLogin" class="io.redtrack.app.tests.RedtrackLogin"/>
+        <method signature="RedtrackLogin.upperCaseLogin()[pri:0, instance:io.redtrack.app.tests.RedtrackLogin@370736d9]" name="upperCaseLogin" class="io.redtrack.app.tests.RedtrackLogin"/>
       </group> <!-- cheking -->
     </groups>
-    <test name="test" duration-ms="28052" started-at="2019-05-17T13:29:16Z" finished-at="2019-05-17T13:29:44Z">
+    <test name="test" duration-ms="82902" started-at="2019-07-19T14:15:27Z" finished-at="2019-07-19T14:16:50Z">
       <class name="io.redtrack.app.tests.RedtrackStatsTests">
-        <test-method status="PASS" signature="init()[pri:0, instance:io.redtrack.app.tests.RedtrackStatsTests@1e127982]" name="init" is-config="true" duration-ms="3456" started-at="2019-05-17T13:29:16Z" finished-at="2019-05-17T13:29:19Z">
+        <test-method status="PASS" signature="init()[pri:0, instance:io.redtrack.app.tests.RedtrackStatsTests@3108bc]" name="init" is-config="true" duration-ms="5149" started-at="2019-07-19T14:15:27Z" finished-at="2019-07-19T14:15:33Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- init -->
-        <test-method status="PASS" signature="login()[pri:0, instance:io.redtrack.app.tests.RedtrackStatsTests@1e127982]" name="login" duration-ms="6160" started-at="2019-05-17T13:29:19Z" finished-at="2019-05-17T13:29:25Z">
+        <test-method status="FAIL" signature="login(org.openqa.selenium.remote.RemoteWebDriver)[pri:0, instance:io.redtrack.app.tests.RedtrackStatsTests@3108bc]" name="login" duration-ms="0" started-at="2019-07-19T14:15:33Z" finished-at="2019-07-19T14:15:33Z">
+          <exception class="org.testng.TestNGException">
+            <message>
+              <![CDATA[
+Cannot inject @Test annotated Method [login] with [class org.openqa.selenium.remote.RemoteWebDriver].
+For more information on native dependency injection please refer to http://testng.org/doc/documentation-main.html#native-dependency-injection]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.testng.TestNGException: 
+Cannot inject @Test annotated Method [login] with [class org.openqa.selenium.remote.RemoteWebDriver].
+For more information on native dependency injection please refer to http://testng.org/doc/documentation-main.html#native-dependency-injection
+at org.testng.internal.Parameters.checkParameterTypes(Parameters.java:407)
+at org.testng.internal.Parameters.createParametersForMethod(Parameters.java:356)
+at org.testng.internal.Parameters.createParameters(Parameters.java:635)
+at org.testng.internal.Parameters.handleParameters(Parameters.java:769)
+at org.testng.internal.ParameterHandler.handleParameters(ParameterHandler.java:49)
+at org.testng.internal.ParameterHandler.createParameters(ParameterHandler.java:37)
+at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:924)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+at java.lang.Thread.run(Thread.java:748)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.testng.TestNGException -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- login -->
-        <test-method status="PASS" signature="campaignsPage()[pri:0, instance:io.redtrack.app.tests.RedtrackStatsTests@1e127982]" name="campaignsPage" duration-ms="432" started-at="2019-05-17T13:29:25Z" depends-on-methods="io.redtrack.app.tests.RedtrackStatsTests.login" finished-at="2019-05-17T13:29:26Z">
+        <test-method status="SKIP" signature="campaignsPage()[pri:0, instance:io.redtrack.app.tests.RedtrackStatsTests@3108bc]" name="campaignsPage" duration-ms="0" started-at="2019-07-19T14:15:40Z" depends-on-methods="io.redtrack.app.tests.RedtrackStatsTests.login" finished-at="2019-07-19T14:15:40Z">
+          <exception class="java.lang.Throwable">
+            <message>
+              <![CDATA[Method RedtrackStatsTests.campaignsPage()[pri:0, instance:io.redtrack.app.tests.RedtrackStatsTests@3108bc] depends on not successfully finished methods]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.Throwable: Method RedtrackStatsTests.campaignsPage()[pri:0, instance:io.redtrack.app.tests.RedtrackStatsTests@3108bc] depends on not successfully finished methods
+at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:888)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+at java.lang.Thread.run(Thread.java:748)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.Throwable -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- campaignsPage -->
-        <test-method status="PASS" signature="setCustomPeriod()[pri:0, instance:io.redtrack.app.tests.RedtrackStatsTests@1e127982]" name="setCustomPeriod" duration-ms="5825" started-at="2019-05-17T13:29:26Z" depends-on-methods="io.redtrack.app.tests.RedtrackStatsTests.campaignsPage" finished-at="2019-05-17T13:29:32Z">
+        <test-method status="SKIP" signature="setCustomPeriod()[pri:0, instance:io.redtrack.app.tests.RedtrackStatsTests@3108bc]" name="setCustomPeriod" duration-ms="0" started-at="2019-07-19T14:15:42Z" depends-on-methods="io.redtrack.app.tests.RedtrackStatsTests.campaignsPage" finished-at="2019-07-19T14:15:42Z">
+          <exception class="java.lang.Throwable">
+            <message>
+              <![CDATA[Method RedtrackStatsTests.setCustomPeriod()[pri:0, instance:io.redtrack.app.tests.RedtrackStatsTests@3108bc] depends on not successfully finished methods]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.Throwable: Method RedtrackStatsTests.setCustomPeriod()[pri:0, instance:io.redtrack.app.tests.RedtrackStatsTests@3108bc] depends on not successfully finished methods
+at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:888)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+at java.lang.Thread.run(Thread.java:748)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.Throwable -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setCustomPeriod -->
-        <test-method status="PASS" signature="offQuickStat()[pri:0, instance:io.redtrack.app.tests.RedtrackStatsTests@1e127982]" name="offQuickStat" duration-ms="171" started-at="2019-05-17T13:29:32Z" depends-on-methods="io.redtrack.app.tests.RedtrackStatsTests.setCustomPeriod" finished-at="2019-05-17T13:29:32Z">
+        <test-method status="SKIP" signature="offQuickStat()[pri:0, instance:io.redtrack.app.tests.RedtrackStatsTests@3108bc]" name="offQuickStat" duration-ms="0" started-at="2019-07-19T14:15:51Z" depends-on-methods="io.redtrack.app.tests.RedtrackStatsTests.setCustomPeriod" finished-at="2019-07-19T14:15:51Z">
+          <exception class="java.lang.Throwable">
+            <message>
+              <![CDATA[Method RedtrackStatsTests.offQuickStat()[pri:0, instance:io.redtrack.app.tests.RedtrackStatsTests@3108bc] depends on not successfully finished methods]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.Throwable: Method RedtrackStatsTests.offQuickStat()[pri:0, instance:io.redtrack.app.tests.RedtrackStatsTests@3108bc] depends on not successfully finished methods
+at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:888)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+at java.lang.Thread.run(Thread.java:748)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.Throwable -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- offQuickStat -->
-        <test-method status="PASS" signature="setDate()[pri:0, instance:io.redtrack.app.tests.RedtrackStatsTests@1e127982]" name="setDate" duration-ms="338" started-at="2019-05-17T13:29:32Z" depends-on-methods="io.redtrack.app.tests.RedtrackStatsTests.offQuickStat" finished-at="2019-05-17T13:29:32Z">
+        <test-method status="SKIP" signature="setDate()[pri:0, instance:io.redtrack.app.tests.RedtrackStatsTests@3108bc]" name="setDate" duration-ms="0" started-at="2019-07-19T14:15:56Z" depends-on-methods="io.redtrack.app.tests.RedtrackStatsTests.offQuickStat" finished-at="2019-07-19T14:15:56Z">
+          <exception class="java.lang.Throwable">
+            <message>
+              <![CDATA[Method RedtrackStatsTests.setDate()[pri:0, instance:io.redtrack.app.tests.RedtrackStatsTests@3108bc] depends on not successfully finished methods]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.Throwable: Method RedtrackStatsTests.setDate()[pri:0, instance:io.redtrack.app.tests.RedtrackStatsTests@3108bc] depends on not successfully finished methods
+at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:888)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+at java.lang.Thread.run(Thread.java:748)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.Throwable -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setDate -->
-        <test-method status="PASS" signature="checkingCPC()[pri:0, instance:io.redtrack.app.tests.RedtrackStatsTests@1e127982]" name="checkingCPC" duration-ms="8463" started-at="2019-05-17T13:29:32Z" depends-on-methods="io.redtrack.app.tests.RedtrackStatsTests.setDate" finished-at="2019-05-17T13:29:41Z">
+        <test-method status="SKIP" signature="checkingCPC()[pri:0, instance:io.redtrack.app.tests.RedtrackStatsTests@3108bc]" name="checkingCPC" duration-ms="0" started-at="2019-07-19T14:15:56Z" depends-on-methods="io.redtrack.app.tests.RedtrackStatsTests.setDate" finished-at="2019-07-19T14:15:56Z">
+          <exception class="java.lang.Throwable">
+            <message>
+              <![CDATA[Method RedtrackStatsTests.checkingCPC()[pri:0, instance:io.redtrack.app.tests.RedtrackStatsTests@3108bc] depends on not successfully finished methods]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.Throwable: Method RedtrackStatsTests.checkingCPC()[pri:0, instance:io.redtrack.app.tests.RedtrackStatsTests@3108bc] depends on not successfully finished methods
+at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:888)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+at java.lang.Thread.run(Thread.java:748)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.Throwable -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- checkingCPC -->
-        <test-method status="PASS" signature="checkingProfit()[pri:0, instance:io.redtrack.app.tests.RedtrackStatsTests@1e127982]" name="checkingProfit" duration-ms="488" started-at="2019-05-17T13:29:41Z" depends-on-methods="io.redtrack.app.tests.RedtrackStatsTests.checkingCPC" finished-at="2019-05-17T13:29:41Z">
+        <test-method status="SKIP" signature="checkingProfit()[pri:0, instance:io.redtrack.app.tests.RedtrackStatsTests@3108bc]" name="checkingProfit" duration-ms="0" started-at="2019-07-19T14:15:56Z" depends-on-methods="io.redtrack.app.tests.RedtrackStatsTests.checkingCPC" finished-at="2019-07-19T14:15:56Z">
+          <exception class="java.lang.Throwable">
+            <message>
+              <![CDATA[Method RedtrackStatsTests.checkingProfit()[pri:0, instance:io.redtrack.app.tests.RedtrackStatsTests@3108bc] depends on not successfully finished methods]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.Throwable: Method RedtrackStatsTests.checkingProfit()[pri:0, instance:io.redtrack.app.tests.RedtrackStatsTests@3108bc] depends on not successfully finished methods
+at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:888)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+at java.lang.Thread.run(Thread.java:748)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.Throwable -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- checkingProfit -->
-        <test-method status="PASS" signature="checkingCPT()[pri:0, instance:io.redtrack.app.tests.RedtrackStatsTests@1e127982]" name="checkingCPT" duration-ms="550" started-at="2019-05-17T13:29:41Z" depends-on-methods="io.redtrack.app.tests.RedtrackStatsTests.checkingProfit" finished-at="2019-05-17T13:29:42Z">
+        <test-method status="SKIP" signature="checkingCPT()[pri:0, instance:io.redtrack.app.tests.RedtrackStatsTests@3108bc]" name="checkingCPT" duration-ms="0" started-at="2019-07-19T14:15:56Z" depends-on-methods="io.redtrack.app.tests.RedtrackStatsTests.checkingProfit" finished-at="2019-07-19T14:15:56Z">
+          <exception class="java.lang.Throwable">
+            <message>
+              <![CDATA[Method RedtrackStatsTests.checkingCPT()[pri:0, instance:io.redtrack.app.tests.RedtrackStatsTests@3108bc] depends on not successfully finished methods]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.Throwable: Method RedtrackStatsTests.checkingCPT()[pri:0, instance:io.redtrack.app.tests.RedtrackStatsTests@3108bc] depends on not successfully finished methods
+at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:888)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+at java.lang.Thread.run(Thread.java:748)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.Throwable -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- checkingCPT -->
-        <test-method status="PASS" signature="checkCPA()[pri:0, instance:io.redtrack.app.tests.RedtrackStatsTests@1e127982]" name="checkCPA" duration-ms="375" started-at="2019-05-17T13:29:42Z" depends-on-methods="io.redtrack.app.tests.RedtrackStatsTests.checkingCPT" finished-at="2019-05-17T13:29:42Z">
+        <test-method status="SKIP" signature="checkCPA()[pri:0, instance:io.redtrack.app.tests.RedtrackStatsTests@3108bc]" name="checkCPA" duration-ms="0" started-at="2019-07-19T14:15:56Z" depends-on-methods="io.redtrack.app.tests.RedtrackStatsTests.checkingCPT" finished-at="2019-07-19T14:15:56Z">
+          <exception class="java.lang.Throwable">
+            <message>
+              <![CDATA[Method RedtrackStatsTests.checkCPA()[pri:0, instance:io.redtrack.app.tests.RedtrackStatsTests@3108bc] depends on not successfully finished methods]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.Throwable: Method RedtrackStatsTests.checkCPA()[pri:0, instance:io.redtrack.app.tests.RedtrackStatsTests@3108bc] depends on not successfully finished methods
+at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:888)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+at java.lang.Thread.run(Thread.java:748)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.Throwable -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- checkCPA -->
-        <test-method status="PASS" signature="checkEPC()[pri:0, instance:io.redtrack.app.tests.RedtrackStatsTests@1e127982]" name="checkEPC" duration-ms="390" started-at="2019-05-17T13:29:42Z" depends-on-methods="io.redtrack.app.tests.RedtrackStatsTests.checkCPA" finished-at="2019-05-17T13:29:42Z">
+        <test-method status="SKIP" signature="checkEPC()[pri:0, instance:io.redtrack.app.tests.RedtrackStatsTests@3108bc]" name="checkEPC" duration-ms="0" started-at="2019-07-19T14:15:56Z" depends-on-methods="io.redtrack.app.tests.RedtrackStatsTests.checkCPA" finished-at="2019-07-19T14:15:56Z">
+          <exception class="java.lang.Throwable">
+            <message>
+              <![CDATA[Method RedtrackStatsTests.checkEPC()[pri:0, instance:io.redtrack.app.tests.RedtrackStatsTests@3108bc] depends on not successfully finished methods]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.Throwable: Method RedtrackStatsTests.checkEPC()[pri:0, instance:io.redtrack.app.tests.RedtrackStatsTests@3108bc] depends on not successfully finished methods
+at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:888)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+at java.lang.Thread.run(Thread.java:748)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.Throwable -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- checkEPC -->
-        <test-method status="PASS" signature="checkTR()[pri:0, instance:io.redtrack.app.tests.RedtrackStatsTests@1e127982]" name="checkTR" duration-ms="522" started-at="2019-05-17T13:29:42Z" depends-on-methods="io.redtrack.app.tests.RedtrackStatsTests.checkEPC" finished-at="2019-05-17T13:29:43Z">
+        <test-method status="SKIP" signature="checkTR()[pri:0, instance:io.redtrack.app.tests.RedtrackStatsTests@3108bc]" name="checkTR" duration-ms="0" started-at="2019-07-19T14:15:56Z" depends-on-methods="io.redtrack.app.tests.RedtrackStatsTests.checkEPC" finished-at="2019-07-19T14:15:56Z">
+          <exception class="java.lang.Throwable">
+            <message>
+              <![CDATA[Method RedtrackStatsTests.checkTR()[pri:0, instance:io.redtrack.app.tests.RedtrackStatsTests@3108bc] depends on not successfully finished methods]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.Throwable: Method RedtrackStatsTests.checkTR()[pri:0, instance:io.redtrack.app.tests.RedtrackStatsTests@3108bc] depends on not successfully finished methods
+at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:888)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+at java.lang.Thread.run(Thread.java:748)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.Throwable -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- checkTR -->
-        <test-method status="PASS" signature="checkCR()[pri:0, instance:io.redtrack.app.tests.RedtrackStatsTests@1e127982]" name="checkCR" duration-ms="369" started-at="2019-05-17T13:29:43Z" depends-on-methods="io.redtrack.app.tests.RedtrackStatsTests.checkTR" finished-at="2019-05-17T13:29:43Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- checkCR -->
-        <test-method status="PASS" signature="checkROI()[pri:0, instance:io.redtrack.app.tests.RedtrackStatsTests@1e127982]" name="checkROI" duration-ms="385" started-at="2019-05-17T13:29:43Z" depends-on-methods="io.redtrack.app.tests.RedtrackStatsTests.checkCR" finished-at="2019-05-17T13:29:44Z">
+        <test-method status="SKIP" signature="checkROI()[pri:0, instance:io.redtrack.app.tests.RedtrackStatsTests@3108bc]" name="checkROI" duration-ms="0" started-at="2019-07-19T14:15:56Z" depends-on-methods="io.redtrack.app.tests.RedtrackStatsTests.checkCR" finished-at="2019-07-19T14:15:56Z">
+          <exception class="java.lang.Throwable">
+            <message>
+              <![CDATA[Method RedtrackStatsTests.checkROI()[pri:0, instance:io.redtrack.app.tests.RedtrackStatsTests@3108bc] depends on not successfully finished methods]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.Throwable: Method RedtrackStatsTests.checkROI()[pri:0, instance:io.redtrack.app.tests.RedtrackStatsTests@3108bc] depends on not successfully finished methods
+at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:888)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+at java.lang.Thread.run(Thread.java:748)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.Throwable -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- checkROI -->
-        <test-method status="PASS" signature="closingDriver()[pri:0, instance:io.redtrack.app.tests.RedtrackStatsTests@1e127982]" name="closingDriver" is-config="true" duration-ms="97" started-at="2019-05-17T13:29:44Z" finished-at="2019-05-17T13:29:44Z">
+        <test-method status="SKIP" signature="checkCR()[pri:0, instance:io.redtrack.app.tests.RedtrackStatsTests@3108bc]" name="checkCR" duration-ms="0" started-at="2019-07-19T14:15:56Z" depends-on-methods="io.redtrack.app.tests.RedtrackStatsTests.checkTR" finished-at="2019-07-19T14:15:56Z">
+          <exception class="java.lang.Throwable">
+            <message>
+              <![CDATA[Method RedtrackStatsTests.checkCR()[pri:0, instance:io.redtrack.app.tests.RedtrackStatsTests@3108bc] depends on not successfully finished methods]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.Throwable: Method RedtrackStatsTests.checkCR()[pri:0, instance:io.redtrack.app.tests.RedtrackStatsTests@3108bc] depends on not successfully finished methods
+at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:888)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+at java.lang.Thread.run(Thread.java:748)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.Throwable -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- checkCR -->
+        <test-method status="PASS" signature="closingDriver()[pri:0, instance:io.redtrack.app.tests.RedtrackStatsTests@3108bc]" name="closingDriver" is-config="true" duration-ms="171" started-at="2019-07-19T14:15:56Z" finished-at="2019-07-19T14:15:56Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- closingDriver -->
       </class> <!-- io.redtrack.app.tests.RedtrackStatsTests -->
-      <class name="io.redtrack.app.tests.RedtrackLogin">
-        <test-method status="PASS" signature="init()[pri:0, instance:io.redtrack.app.tests.RedtrackLogin@60c6f5b]" name="init" is-config="true" duration-ms="4321" started-at="2019-05-17T13:29:16Z" finished-at="2019-05-17T13:29:20Z">
+      <class name="io.redtrack.app.tests.RedtrackCustomDomains">
+        <test-method status="PASS" signature="init()[pri:0, instance:io.redtrack.app.tests.RedtrackCustomDomains@5f9d02cb]" name="init" is-config="true" duration-ms="3644" started-at="2019-07-19T14:15:33Z" finished-at="2019-07-19T14:15:36Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- init -->
-        <test-method status="PASS" signature="InvalidLogin()[pri:0, instance:io.redtrack.app.tests.RedtrackLogin@60c6f5b]" name="InvalidLogin" duration-ms="5985" started-at="2019-05-17T13:29:20Z" finished-at="2019-05-17T13:29:26Z">
+        <test-method status="PASS" signature="login()[pri:0, instance:io.redtrack.app.tests.RedtrackCustomDomains@5f9d02cb]" name="login" duration-ms="5825" started-at="2019-07-19T14:15:36Z" finished-at="2019-07-19T14:15:42Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- login -->
+        <test-method status="PASS" signature="navToDomains()[pri:0, instance:io.redtrack.app.tests.RedtrackCustomDomains@5f9d02cb]" name="navToDomains" duration-ms="8558" started-at="2019-07-19T14:15:42Z" depends-on-methods="io.redtrack.app.tests.RedtrackCustomDomains.login" finished-at="2019-07-19T14:15:51Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- navToDomains -->
+        <test-method status="PASS" signature="openCreateDomain()[pri:0, instance:io.redtrack.app.tests.RedtrackCustomDomains@5f9d02cb]" name="openCreateDomain" duration-ms="5373" started-at="2019-07-19T14:15:51Z" depends-on-methods="io.redtrack.app.tests.RedtrackCustomDomains.navToDomains" finished-at="2019-07-19T14:15:56Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- openCreateDomain -->
+        <test-method status="PASS" signature="inputName()[pri:0, instance:io.redtrack.app.tests.RedtrackCustomDomains@5f9d02cb]" name="inputName" duration-ms="5444" started-at="2019-07-19T14:15:56Z" depends-on-methods="io.redtrack.app.tests.RedtrackCustomDomains.openCreateDomain" finished-at="2019-07-19T14:16:01Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- inputName -->
+        <test-method status="PASS" signature="inputURL()[pri:0, instance:io.redtrack.app.tests.RedtrackCustomDomains@5f9d02cb]" name="inputURL" duration-ms="5408" started-at="2019-07-19T14:16:01Z" depends-on-methods="io.redtrack.app.tests.RedtrackCustomDomains.inputName" finished-at="2019-07-19T14:16:07Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- inputURL -->
+        <test-method status="PASS" signature="getName()[pri:0, instance:io.redtrack.app.tests.RedtrackCustomDomains@5f9d02cb]" name="getName" duration-ms="504" started-at="2019-07-19T14:16:07Z" depends-on-methods="io.redtrack.app.tests.RedtrackCustomDomains.inputURL" finished-at="2019-07-19T14:16:07Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getName -->
+        <test-method status="PASS" signature="saveDomain()[pri:0, instance:io.redtrack.app.tests.RedtrackCustomDomains@5f9d02cb]" name="saveDomain" duration-ms="5435" started-at="2019-07-19T14:16:07Z" depends-on-methods="io.redtrack.app.tests.RedtrackCustomDomains.getName" finished-at="2019-07-19T14:16:13Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- saveDomain -->
+        <test-method status="PASS" signature="goToCampaignPage()[pri:0, instance:io.redtrack.app.tests.RedtrackCustomDomains@5f9d02cb]" name="goToCampaignPage" duration-ms="5442" started-at="2019-07-19T14:16:13Z" depends-on-methods="io.redtrack.app.tests.RedtrackCustomDomains.saveDomain" finished-at="2019-07-19T14:16:18Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- goToCampaignPage -->
+        <test-method status="PASS" signature="openCampaign()[pri:0, instance:io.redtrack.app.tests.RedtrackCustomDomains@5f9d02cb]" name="openCampaign" duration-ms="13234" started-at="2019-07-19T14:16:18Z" depends-on-methods="io.redtrack.app.tests.RedtrackCustomDomains.goToCampaignPage" finished-at="2019-07-19T14:16:32Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- openCampaign -->
+        <test-method status="PASS" signature="chooseDomain()[pri:0, instance:io.redtrack.app.tests.RedtrackCustomDomains@5f9d02cb]" name="chooseDomain" duration-ms="13501" started-at="2019-07-19T14:16:32Z" depends-on-methods="io.redtrack.app.tests.RedtrackCustomDomains.openCampaign" finished-at="2019-07-19T14:16:45Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- chooseDomain -->
+        <test-method status="FAIL" signature="saveCamp()[pri:0, instance:io.redtrack.app.tests.RedtrackCustomDomains@5f9d02cb]" name="saveCamp" duration-ms="228" started-at="2019-07-19T14:16:45Z" depends-on-methods="io.redtrack.app.tests.RedtrackCustomDomains.chooseDomain" finished-at="2019-07-19T14:16:45Z">
+          <exception class="org.openqa.selenium.WebDriverException">
+            <message>
+              <![CDATA[unknown error: Element <span>...</span> is not clickable at point (535, 138). Other element would receive the click: <div class="navbar-collapse collapse">...</div>
+  (Session info: chrome=73.0.3683.75)
+  (Driver info: chromedriver=73.0.3683.68 (47787ec04b6e38e22703e856e101e840b65afe72),platform=Linux 4.4.0-138-generic x86_64) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 0 milliseconds
+Build info: version: '3.14.0', revision: 'aacccce0', time: '2018-08-02T20:19:58.91Z'
+System info: host: 'MacBook-Pro-Dmitrij.local', ip: 'fe80:0:0:0:189b:5ec1:a089:dbcb%en0', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '10.13.4', java.version: '1.8.0_201'
+Driver info: org.openqa.selenium.remote.RemoteWebDriver
+Capabilities {acceptInsecureCerts: false, acceptSslCerts: false, applicationCacheEnabled: false, browserConnectionEnabled: false, browserName: chrome, chrome: {chromedriverVersion: 73.0.3683.68 (47787ec04b6e3..., userDataDir: /tmp/.com.google.Chrome.yOxnSm}, cssSelectorsEnabled: true, databaseEnabled: false, goog:chromeOptions: {debuggerAddress: localhost:38229}, handlesAlerts: true, hasTouchScreen: false, javascriptEnabled: true, locationContextEnabled: true, mobileEmulationEnabled: false, nativeEvents: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: LINUX, platformName: LINUX, proxy: Proxy(), rotatable: false, setWindowRect: true, strictFileInteractability: false, takesHeapSnapshot: true, takesScreenshot: true, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unexpectedAlertBehaviour: ignore, unhandledPromptBehavior: ignore, version: 73.0.3683.75, webStorageEnabled: true}
+Session ID: bec49c0e70eeb25fcfc3b58445165a0c]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.WebDriverException: unknown error: Element <span>...</span> is not clickable at point (535, 138). Other element would receive the click: <div class="navbar-collapse collapse">...</div>
+  (Session info: chrome=73.0.3683.75)
+  (Driver info: chromedriver=73.0.3683.68 (47787ec04b6e38e22703e856e101e840b65afe72),platform=Linux 4.4.0-138-generic x86_64) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 0 milliseconds
+Build info: version: '3.14.0', revision: 'aacccce0', time: '2018-08-02T20:19:58.91Z'
+System info: host: 'MacBook-Pro-Dmitrij.local', ip: 'fe80:0:0:0:189b:5ec1:a089:dbcb%en0', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '10.13.4', java.version: '1.8.0_201'
+Driver info: org.openqa.selenium.remote.RemoteWebDriver
+Capabilities {acceptInsecureCerts: false, acceptSslCerts: false, applicationCacheEnabled: false, browserConnectionEnabled: false, browserName: chrome, chrome: {chromedriverVersion: 73.0.3683.68 (47787ec04b6e3..., userDataDir: /tmp/.com.google.Chrome.yOxnSm}, cssSelectorsEnabled: true, databaseEnabled: false, goog:chromeOptions: {debuggerAddress: localhost:38229}, handlesAlerts: true, hasTouchScreen: false, javascriptEnabled: true, locationContextEnabled: true, mobileEmulationEnabled: false, nativeEvents: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: LINUX, platformName: LINUX, proxy: Proxy(), rotatable: false, setWindowRect: true, strictFileInteractability: false, takesHeapSnapshot: true, takesScreenshot: true, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unexpectedAlertBehaviour: ignore, unhandledPromptBehavior: ignore, version: 73.0.3683.75, webStorageEnabled: true}
+Session ID: bec49c0e70eeb25fcfc3b58445165a0c
+at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:214)
+at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:166)
+at org.openqa.selenium.remote.http.JsonHttpResponseCodec.reconstructValue(JsonHttpResponseCodec.java:40)
+at org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:80)
+at org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:44)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:548)
+at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:276)
+at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:83)
+at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.lang.reflect.Method.invoke(Method.java:498)
+at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:51)
+at com.sun.proxy.$Proxy7.click(Unknown Source)
+at io.redtrack.app.pages.Campaigns.saveCamp(Campaigns.java:80)
+at io.redtrack.app.tests.RedtrackCustomDomains.saveCamp(RedtrackCustomDomains.java:257)
+at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.lang.reflect.Method.invoke(Method.java:498)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+at org.testng.internal.Invoker.invokeMethod(Invoker.java:583)
+at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:719)
+at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:989)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+at java.lang.Thread.run(Thread.java:748)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.WebDriverException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- saveCamp -->
+        <test-method status="SKIP" signature="getClickURL()[pri:0, instance:io.redtrack.app.tests.RedtrackCustomDomains@5f9d02cb]" name="getClickURL" duration-ms="0" started-at="2019-07-19T14:16:45Z" depends-on-methods="io.redtrack.app.tests.RedtrackCustomDomains.saveCamp" finished-at="2019-07-19T14:16:45Z">
+          <exception class="java.lang.Throwable">
+            <message>
+              <![CDATA[Method RedtrackCustomDomains.getClickURL()[pri:0, instance:io.redtrack.app.tests.RedtrackCustomDomains@5f9d02cb] depends on not successfully finished methods]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.Throwable: Method RedtrackCustomDomains.getClickURL()[pri:0, instance:io.redtrack.app.tests.RedtrackCustomDomains@5f9d02cb] depends on not successfully finished methods
+at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:888)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+at java.lang.Thread.run(Thread.java:748)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.Throwable -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getClickURL -->
+        <test-method status="SKIP" signature="parsingURL()[pri:0, instance:io.redtrack.app.tests.RedtrackCustomDomains@5f9d02cb]" name="parsingURL" duration-ms="0" started-at="2019-07-19T14:16:45Z" depends-on-methods="io.redtrack.app.tests.RedtrackCustomDomains.creatingClick" finished-at="2019-07-19T14:16:45Z">
+          <exception class="java.lang.Throwable">
+            <message>
+              <![CDATA[Method RedtrackCustomDomains.parsingURL()[pri:0, instance:io.redtrack.app.tests.RedtrackCustomDomains@5f9d02cb] depends on not successfully finished methods]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.Throwable: Method RedtrackCustomDomains.parsingURL()[pri:0, instance:io.redtrack.app.tests.RedtrackCustomDomains@5f9d02cb] depends on not successfully finished methods
+at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:888)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+at java.lang.Thread.run(Thread.java:748)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.Throwable -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- parsingURL -->
+        <test-method status="SKIP" signature="creatingConversion()[pri:0, instance:io.redtrack.app.tests.RedtrackCustomDomains@5f9d02cb]" name="creatingConversion" duration-ms="0" started-at="2019-07-19T14:16:45Z" depends-on-methods="io.redtrack.app.tests.RedtrackCustomDomains.parsingURL" finished-at="2019-07-19T14:16:45Z">
+          <exception class="java.lang.Throwable">
+            <message>
+              <![CDATA[Method RedtrackCustomDomains.creatingConversion()[pri:0, instance:io.redtrack.app.tests.RedtrackCustomDomains@5f9d02cb] depends on not successfully finished methods]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.Throwable: Method RedtrackCustomDomains.creatingConversion()[pri:0, instance:io.redtrack.app.tests.RedtrackCustomDomains@5f9d02cb] depends on not successfully finished methods
+at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:888)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+at java.lang.Thread.run(Thread.java:748)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.Throwable -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- creatingConversion -->
+        <test-method status="SKIP" signature="creatingClick()[pri:0, instance:io.redtrack.app.tests.RedtrackCustomDomains@5f9d02cb]" name="creatingClick" duration-ms="0" started-at="2019-07-19T14:16:45Z" depends-on-methods="io.redtrack.app.tests.RedtrackCustomDomains.getClickURL" finished-at="2019-07-19T14:16:45Z">
+          <exception class="java.lang.Throwable">
+            <message>
+              <![CDATA[Method RedtrackCustomDomains.creatingClick()[pri:0, instance:io.redtrack.app.tests.RedtrackCustomDomains@5f9d02cb] depends on not successfully finished methods]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.Throwable: Method RedtrackCustomDomains.creatingClick()[pri:0, instance:io.redtrack.app.tests.RedtrackCustomDomains@5f9d02cb] depends on not successfully finished methods
+at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:888)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+at java.lang.Thread.run(Thread.java:748)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.Throwable -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- creatingClick -->
+        <test-method status="SKIP" signature="parsingID()[pri:0, instance:io.redtrack.app.tests.RedtrackCustomDomains@5f9d02cb]" name="parsingID" duration-ms="0" started-at="2019-07-19T14:16:45Z" depends-on-methods="io.redtrack.app.tests.RedtrackCustomDomains.creatingConversion" finished-at="2019-07-19T14:16:45Z">
+          <exception class="java.lang.Throwable">
+            <message>
+              <![CDATA[Method RedtrackCustomDomains.parsingID()[pri:0, instance:io.redtrack.app.tests.RedtrackCustomDomains@5f9d02cb] depends on not successfully finished methods]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.Throwable: Method RedtrackCustomDomains.parsingID()[pri:0, instance:io.redtrack.app.tests.RedtrackCustomDomains@5f9d02cb] depends on not successfully finished methods
+at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:888)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+at java.lang.Thread.run(Thread.java:748)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.Throwable -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- parsingID -->
+        <test-method status="SKIP" signature="findPostback()[pri:0, instance:io.redtrack.app.tests.RedtrackCustomDomains@5f9d02cb]" name="findPostback" duration-ms="0" started-at="2019-07-19T14:16:45Z" depends-on-methods="io.redtrack.app.tests.RedtrackCustomDomains.checkingPostback" finished-at="2019-07-19T14:16:45Z">
+          <exception class="java.lang.Throwable">
+            <message>
+              <![CDATA[Method RedtrackCustomDomains.findPostback()[pri:0, instance:io.redtrack.app.tests.RedtrackCustomDomains@5f9d02cb] depends on not successfully finished methods]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.Throwable: Method RedtrackCustomDomains.findPostback()[pri:0, instance:io.redtrack.app.tests.RedtrackCustomDomains@5f9d02cb] depends on not successfully finished methods
+at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:888)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+at java.lang.Thread.run(Thread.java:748)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.Throwable -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- findPostback -->
+        <test-method status="SKIP" signature="checkingPostback()[pri:0, instance:io.redtrack.app.tests.RedtrackCustomDomains@5f9d02cb]" name="checkingPostback" duration-ms="0" started-at="2019-07-19T14:16:45Z" depends-on-methods="io.redtrack.app.tests.RedtrackCustomDomains.parsingID" finished-at="2019-07-19T14:16:45Z">
+          <exception class="java.lang.Throwable">
+            <message>
+              <![CDATA[Method RedtrackCustomDomains.checkingPostback()[pri:0, instance:io.redtrack.app.tests.RedtrackCustomDomains@5f9d02cb] depends on not successfully finished methods]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.Throwable: Method RedtrackCustomDomains.checkingPostback()[pri:0, instance:io.redtrack.app.tests.RedtrackCustomDomains@5f9d02cb] depends on not successfully finished methods
+at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:888)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+at java.lang.Thread.run(Thread.java:748)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.Throwable -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- checkingPostback -->
+        <test-method status="SKIP" signature="checkingConv()[pri:0, instance:io.redtrack.app.tests.RedtrackCustomDomains@5f9d02cb]" name="checkingConv" duration-ms="0" started-at="2019-07-19T14:16:45Z" depends-on-methods="io.redtrack.app.tests.RedtrackCustomDomains.findPostback" finished-at="2019-07-19T14:16:45Z">
+          <exception class="java.lang.Throwable">
+            <message>
+              <![CDATA[Method RedtrackCustomDomains.checkingConv()[pri:0, instance:io.redtrack.app.tests.RedtrackCustomDomains@5f9d02cb] depends on not successfully finished methods]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.Throwable: Method RedtrackCustomDomains.checkingConv()[pri:0, instance:io.redtrack.app.tests.RedtrackCustomDomains@5f9d02cb] depends on not successfully finished methods
+at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:888)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+at java.lang.Thread.run(Thread.java:748)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.Throwable -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- checkingConv -->
+        <test-method status="SKIP" signature="findConv()[pri:0, instance:io.redtrack.app.tests.RedtrackCustomDomains@5f9d02cb]" name="findConv" duration-ms="0" started-at="2019-07-19T14:16:45Z" depends-on-methods="io.redtrack.app.tests.RedtrackCustomDomains.checkingConv" finished-at="2019-07-19T14:16:45Z">
+          <exception class="java.lang.Throwable">
+            <message>
+              <![CDATA[Method RedtrackCustomDomains.findConv()[pri:0, instance:io.redtrack.app.tests.RedtrackCustomDomains@5f9d02cb] depends on not successfully finished methods]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.Throwable: Method RedtrackCustomDomains.findConv()[pri:0, instance:io.redtrack.app.tests.RedtrackCustomDomains@5f9d02cb] depends on not successfully finished methods
+at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:888)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+at java.lang.Thread.run(Thread.java:748)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.Throwable -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- findConv -->
+        <test-method status="SKIP" signature="backToDomains()[pri:0, instance:io.redtrack.app.tests.RedtrackCustomDomains@5f9d02cb]" name="backToDomains" duration-ms="0" started-at="2019-07-19T14:16:45Z" depends-on-methods="io.redtrack.app.tests.RedtrackCustomDomains.findConv" finished-at="2019-07-19T14:16:45Z">
+          <exception class="java.lang.Throwable">
+            <message>
+              <![CDATA[Method RedtrackCustomDomains.backToDomains()[pri:0, instance:io.redtrack.app.tests.RedtrackCustomDomains@5f9d02cb] depends on not successfully finished methods]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.Throwable: Method RedtrackCustomDomains.backToDomains()[pri:0, instance:io.redtrack.app.tests.RedtrackCustomDomains@5f9d02cb] depends on not successfully finished methods
+at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:888)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+at java.lang.Thread.run(Thread.java:748)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.Throwable -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- backToDomains -->
+        <test-method status="PASS" signature="closingDriver()[pri:0, instance:io.redtrack.app.tests.RedtrackCustomDomains@5f9d02cb]" name="closingDriver" is-config="true" duration-ms="5109" started-at="2019-07-19T14:16:45Z" finished-at="2019-07-19T14:16:50Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closingDriver -->
+        <test-method status="SKIP" signature="closingDriver()[pri:0, instance:io.redtrack.app.tests.RedtrackCustomDomains@5f9d02cb]" name="closingDriver" duration-ms="0" started-at="2019-07-19T14:16:45Z" depends-on-methods="io.redtrack.app.tests.RedtrackCustomDomains.deleteDomain" finished-at="2019-07-19T14:16:45Z">
+          <exception class="java.lang.Throwable">
+            <message>
+              <![CDATA[Method RedtrackCustomDomains.closingDriver()[pri:0, instance:io.redtrack.app.tests.RedtrackCustomDomains@5f9d02cb] depends on not successfully finished methods]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.Throwable: Method RedtrackCustomDomains.closingDriver()[pri:0, instance:io.redtrack.app.tests.RedtrackCustomDomains@5f9d02cb] depends on not successfully finished methods
+at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:888)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+at java.lang.Thread.run(Thread.java:748)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.Throwable -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closingDriver -->
+        <test-method status="SKIP" signature="deleteDomain()[pri:0, instance:io.redtrack.app.tests.RedtrackCustomDomains@5f9d02cb]" name="deleteDomain" duration-ms="0" started-at="2019-07-19T14:16:45Z" depends-on-methods="io.redtrack.app.tests.RedtrackCustomDomains.backToDomains" finished-at="2019-07-19T14:16:45Z">
+          <exception class="java.lang.Throwable">
+            <message>
+              <![CDATA[Method RedtrackCustomDomains.deleteDomain()[pri:0, instance:io.redtrack.app.tests.RedtrackCustomDomains@5f9d02cb] depends on not successfully finished methods]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.Throwable: Method RedtrackCustomDomains.deleteDomain()[pri:0, instance:io.redtrack.app.tests.RedtrackCustomDomains@5f9d02cb] depends on not successfully finished methods
+at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:888)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+at java.lang.Thread.run(Thread.java:748)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.Throwable -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- deleteDomain -->
+      </class> <!-- io.redtrack.app.tests.RedtrackCustomDomains -->
+      <class name="io.redtrack.app.tests.RedtrackLogin">
+        <test-method status="PASS" signature="init()[pri:0, instance:io.redtrack.app.tests.RedtrackLogin@370736d9]" name="init" is-config="true" duration-ms="4946" started-at="2019-07-19T14:15:27Z" finished-at="2019-07-19T14:15:32Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- init -->
+        <test-method status="PASS" signature="InvalidLogin()[pri:0, instance:io.redtrack.app.tests.RedtrackLogin@370736d9]" name="InvalidLogin" duration-ms="7601" started-at="2019-07-19T14:15:32Z" finished-at="2019-07-19T14:15:40Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- InvalidLogin -->
-        <test-method status="PASS" signature="upperCaseLogin()[pri:0, instance:io.redtrack.app.tests.RedtrackLogin@60c6f5b]" name="upperCaseLogin" duration-ms="5753" started-at="2019-05-17T13:29:26Z" depends-on-methods="io.redtrack.app.tests.RedtrackLogin.InvalidLogin" finished-at="2019-05-17T13:29:32Z">
+        <test-method status="PASS" signature="upperCaseLogin()[pri:0, instance:io.redtrack.app.tests.RedtrackLogin@370736d9]" name="upperCaseLogin" duration-ms="15795" started-at="2019-07-19T14:15:40Z" depends-on-methods="io.redtrack.app.tests.RedtrackLogin.InvalidLogin" finished-at="2019-07-19T14:15:56Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- upperCaseLogin -->
-        <test-method status="PASS" signature="Login()[pri:0, instance:io.redtrack.app.tests.RedtrackLogin@60c6f5b]" name="Login" duration-ms="6880" started-at="2019-05-17T13:29:32Z" depends-on-methods="io.redtrack.app.tests.RedtrackLogin.upperCaseLogin" finished-at="2019-05-17T13:29:39Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- Login -->
-        <test-method status="PASS" signature="closingDrvr()[pri:0, instance:io.redtrack.app.tests.RedtrackLogin@60c6f5b]" name="closingDrvr" duration-ms="105" depends-on-groups="cheking" started-at="2019-05-17T13:29:39Z" finished-at="2019-05-17T13:29:39Z">
+        <test-method status="PASS" signature="closingDrvr()[pri:0, instance:io.redtrack.app.tests.RedtrackLogin@370736d9]" name="closingDrvr" duration-ms="154" depends-on-groups="cheking" started-at="2019-07-19T14:15:56Z" finished-at="2019-07-19T14:15:56Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- closingDrvr -->
+        <test-method status="FAIL" signature="Login(org.openqa.selenium.remote.RemoteWebDriver)[pri:0, instance:io.redtrack.app.tests.RedtrackLogin@370736d9]" name="Login" duration-ms="0" started-at="2019-07-19T14:15:56Z" depends-on-methods="io.redtrack.app.tests.RedtrackLogin.upperCaseLogin" finished-at="2019-07-19T14:15:56Z">
+          <exception class="org.testng.TestNGException">
+            <message>
+              <![CDATA[
+Cannot inject @Test annotated Method [Login] with [class org.openqa.selenium.remote.RemoteWebDriver].
+For more information on native dependency injection please refer to http://testng.org/doc/documentation-main.html#native-dependency-injection]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.testng.TestNGException: 
+Cannot inject @Test annotated Method [Login] with [class org.openqa.selenium.remote.RemoteWebDriver].
+For more information on native dependency injection please refer to http://testng.org/doc/documentation-main.html#native-dependency-injection
+at org.testng.internal.Parameters.checkParameterTypes(Parameters.java:407)
+at org.testng.internal.Parameters.createParametersForMethod(Parameters.java:356)
+at org.testng.internal.Parameters.createParameters(Parameters.java:635)
+at org.testng.internal.Parameters.handleParameters(Parameters.java:769)
+at org.testng.internal.ParameterHandler.handleParameters(ParameterHandler.java:49)
+at org.testng.internal.ParameterHandler.createParameters(ParameterHandler.java:37)
+at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:924)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+at java.lang.Thread.run(Thread.java:748)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.testng.TestNGException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Login -->
       </class> <!-- io.redtrack.app.tests.RedtrackLogin -->
     </test> <!-- test -->
   </suite> <!-- RedtrackFront by packages -->

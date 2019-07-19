@@ -32,6 +32,8 @@ public class OtherElements {
     public static Variables vars;
     public WebDriver driver;
 
+    public static String rand;
+
     /* Apply buttonuttons in Logs page Clicks && Conversions */
 
     @FindBy(xpath = ".//*[normalize-space(text()) and normalize-space(.)='Your credentials'][1]/following::div[5]")
@@ -190,12 +192,13 @@ public class OtherElements {
         Period.click();
     }
 
-    public void sourceTitleRand(){
+    public void TitleRand(){
         //System.out.println("Clearing Source name");
         TitleTitle.clear();
         //System.out.println("Sourcename Clear");
         //System.out.println("Send random keys to Source name");
-        TitleTitle.sendKeys(Integer.toString(new Random().nextInt(254335363)+987765352));
+        rand = Integer.toString(new Random().nextInt(254335363)+987765352);
+        TitleTitle.sendKeys(rand);
     }
 
 
@@ -206,6 +209,12 @@ public class OtherElements {
     }
 
     /* Navigation menu */
+
+    @FindBy (linkText = "Edit")
+    public WebElement editCamp;
+    public void editCamp(){
+        editCamp.click();
+    }
 
 
 

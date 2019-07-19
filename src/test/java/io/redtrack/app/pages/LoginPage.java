@@ -6,9 +6,12 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
+import io.redtrack.app.variable.Variables;
 
 
 public class LoginPage {
+
+    public static Variables vars;
 
     public LoginPage (WebDriver driver){
         PageFactory.initElements(driver,this);
@@ -48,6 +51,10 @@ public class LoginPage {
         submitButton.click();
     }
 
-
+    public void Login(){
+        inputLogin(vars.login2);
+        inputPassword(vars.password1);
+        clickSubmitButton();
+    }
 
 }

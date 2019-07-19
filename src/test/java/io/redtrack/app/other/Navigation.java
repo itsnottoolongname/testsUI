@@ -1,7 +1,7 @@
 package io.redtrack.app.other;
 
 
-import com.sun.org.apache.xpath.internal.operations.Bool;
+//import com.sun.org.apache.xpath.internal.operations.Bool;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
@@ -38,12 +38,13 @@ public class Navigation {
     @FindBy(linkText = "Networks")
     public WebElement PageNetworks;
 
+
     @FindBy(linkText = "Traffic sources")
     //@FindBy(xpath = "/html[1]/body[1]/div[1]/div[1]/div[1]/div[1]/div[2]/ul[1]/li[6]/a[1]/span[1]")
     public WebElement trafficSources;
 
-    @FindBy(linkText = "Domains")
-    //@FindBy(id = "navbar-top-domains")
+    //@FindBy(linkText = "Domains")
+    @FindBy(xpath = "//span[contains(text(),'Domains')]")
     public WebElement PageDomains;
 
     @FindBy(linkText = "Clicks")

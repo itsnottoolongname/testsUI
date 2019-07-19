@@ -3,27 +3,62 @@
 <suite thread-count="2" guice-stage="DEVELOPMENT" verbose="0" name="Failed suite [RedtrackFront by packages]" parallel="methods">
   <test thread-count="2" verbose="0" name="test(failed)" parallel="methods">
     <classes>
-      <class name="io.redtrack.app.tests.RedtrackNavigation">
+      <class name="io.redtrack.app.tests.RedtrackLogin">
         <methods>
-          <include name="campPage"/>
-          <include name="networksPage"/>
-          <include name="tSpage"/>
-          <include name="logsPostbackPage"/>
-          <include name="domainsPage"/>
-          <include name="logsConversionPage"/>
-          <include name="init"/>
-          <include name="logsClicksPage"/>
+          <include name="upperCaseLogin"/>
+          <include name="InvalidLogin"/>
           <include name="Login"/>
-          <include name="offersPage"/>
-          <include name="toolsBotBlack"/>
-          <include name="landersPage"/>
-          <include name="dashBoardPage"/>
-          <include name="toolsConversionTracking"/>
-          <include name="toolsAPIDocumentation"/>
-          <include name="toolsDefFallbackURL"/>
-          <include name="toolsFilterPresets"/>
+          <include name="init"/>
         </methods>
-      </class> <!-- io.redtrack.app.tests.RedtrackNavigation -->
+      </class> <!-- io.redtrack.app.tests.RedtrackLogin -->
+      <class name="io.redtrack.app.tests.RedtrackCustomDomains">
+        <methods>
+          <include name="getClickURL"/>
+          <include name="goToCampaignPage"/>
+          <include name="creatingConversion"/>
+          <include name="deleteDomain"/>
+          <include name="creatingClick"/>
+          <include name="inputName"/>
+          <include name="parsingID"/>
+          <include name="inputURL"/>
+          <include name="chooseDomain"/>
+          <include name="openCampaign"/>
+          <include name="login"/>
+          <include name="closingDriver"/>
+          <include name="closingDriver"/>
+          <include name="saveDomain"/>
+          <include name="backToDomains"/>
+          <include name="findPostback"/>
+          <include name="getName"/>
+          <include name="saveCamp"/>
+          <include name="parsingURL"/>
+          <include name="findConv"/>
+          <include name="checkingConv"/>
+          <include name="openCreateDomain"/>
+          <include name="checkingPostback"/>
+          <include name="navToDomains"/>
+          <include name="init"/>
+        </methods>
+      </class> <!-- io.redtrack.app.tests.RedtrackCustomDomains -->
+      <class name="io.redtrack.app.tests.RedtrackStatsTests">
+        <methods>
+          <include name="setCustomPeriod"/>
+          <include name="checkingProfit"/>
+          <include name="checkingCPT"/>
+          <include name="offQuickStat"/>
+          <include name="checkCPA"/>
+          <include name="checkTR"/>
+          <include name="setDate"/>
+          <include name="closingDriver"/>
+          <include name="checkROI"/>
+          <include name="checkingCPC"/>
+          <include name="init"/>
+          <include name="campaignsPage"/>
+          <include name="login"/>
+          <include name="checkEPC"/>
+          <include name="checkCR"/>
+        </methods>
+      </class> <!-- io.redtrack.app.tests.RedtrackStatsTests -->
     </classes>
   </test> <!-- test(failed) -->
 </suite> <!-- Failed suite [RedtrackFront by packages] -->

@@ -44,6 +44,10 @@ public class RedtrackLogin {
             username;
     private static String hubURL = "http://213.227.132.143:4444/wd/hub";
     public static final Logger logger = Logger.getLogger(RedtrackLogin.class.getName());
+
+    //public RedtrackLogin(RemoteWebDriver driver) {
+    //}
+
     @BeforeClass
     public void init() {
         try {
@@ -141,8 +145,13 @@ public class RedtrackLogin {
     }
 
 
-    @Test (groups = "cheking", dependsOnMethods = "upperCaseLogin")
-    public void Login() throws InterruptedException {
+   // @Test (groups = "cheking", dependsOnMethods = "upperCaseLogin")
+   // public void Login(RemoteWebDriver driver) throws InterruptedException {
+
+    //}
+
+    @Test(dependsOnMethods = "upperCaseLogin")
+    public void Login(RemoteWebDriver driver) {
         try {
             logger.info("Login with correct creds");
             Thread.sleep(5000);
@@ -153,13 +162,13 @@ public class RedtrackLogin {
             Assert.assertEquals(cheklogin, username);
             logger.info("Login successful");
             //if (cheklogin.equals(username)) {
-                //Mess.newdDateInfo();
-                //System.out.println("Test 'Login' passed, found: " + "'" + username + "'");
-           // } else {
-               // Mess.error();
-                //System.out.println("Somthing went wrong: Test 'InvalidLogin' FAILED");
-                //Mess.ansi_reset();
-           // }
+            //Mess.newdDateInfo();
+            //System.out.println("Test 'Login' passed, found: " + "'" + username + "'");
+            // } else {
+            // Mess.error();
+            //System.out.println("Somthing went wrong: Test 'InvalidLogin' FAILED");
+            //Mess.ansi_reset();
+            // }
             //Assert.assertEquals(cheklogin, username);
             driver.manage().timeouts().implicitlyWait(10000, TimeUnit.SECONDS);
         }
@@ -174,37 +183,12 @@ public class RedtrackLogin {
         }
     }
 
-
-
     @Test (groups = "exit", dependsOnGroups = "cheking")
     public void closingDrvr(){
         Mess.newdDateInfo();
         System.out.println("Exiting driver, closing browser");
         driver.quit();
     }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 }

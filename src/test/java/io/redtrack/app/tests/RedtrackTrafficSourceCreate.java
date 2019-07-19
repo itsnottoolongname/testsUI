@@ -137,7 +137,7 @@ public class RedtrackTrafficSourceCreate {
                 Assert.assertEquals(Variables.NCTS, CheckParam);
             }
             Thread.sleep(3000);
-            otherElements.sourceTitleRand();
+            otherElements.TitleRand();
         }
         catch(Exception e){
             logger.error("Something went wrong "+e.getMessage());

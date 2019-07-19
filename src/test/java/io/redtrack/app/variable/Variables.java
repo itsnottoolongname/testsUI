@@ -11,7 +11,12 @@ public static String login1 = "assartek@gmail.com",
                      urlProd = "https://app.redtrack.io/signin",
                      TrafficSource = "Sources",
                      NCTS = "New custom traffic source",
-                     upp_Reg = "Assartek@gmail.com";
+                     upp_Reg = "Assartek@gmail.com",
+                     domainURL = "donk2track.com";
+                     //currentURL;
+
+    public static String currentURL;
+    public static String[] parseURL;
 
     public static double checkCost, valOfClicks, val2, val, check2, check3, check4;
 
